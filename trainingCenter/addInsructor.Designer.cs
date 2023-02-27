@@ -36,7 +36,9 @@
             this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.label3 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,8 +51,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.metroSetButton4 = new MetroSet_UI.Controls.MetroSetButton();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -223,6 +223,16 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "رقم الهاتف";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(543, 156);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(85, 20);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "تأكيد كلمة السر";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -232,6 +242,13 @@
             this.label6.Size = new System.Drawing.Size(82, 20);
             this.label6.TabIndex = 1;
             this.label6.Text = "كلمـــة الســـر";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(329, 153);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(199, 27);
+            this.textBox6.TabIndex = 5;
             // 
             // textBox3
             // 
@@ -354,24 +371,7 @@
             this.metroSetButton4.ThemeAuthor = "Narwin";
             this.metroSetButton4.ThemeName = "MetroLite";
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(329, 153);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(199, 27);
-            this.textBox6.TabIndex = 5;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(543, 156);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 20);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "تأكيد كلمة السر";
-            // 
-            // adduser
+            // addInstructor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -383,10 +383,11 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.metroSetControlBox1);
             this.Controls.Add(this.label4);
-            this.Name = "adduser";
+            this.Name = "addInstructor";
             this.SmallLineColor1 = System.Drawing.Color.Transparent;
             this.SmallLineColor2 = System.Drawing.Color.Transparent;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.addInstructor_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

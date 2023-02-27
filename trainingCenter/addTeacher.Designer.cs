@@ -366,6 +366,7 @@
             this.SmallLineColor1 = System.Drawing.Color.Transparent;
             this.SmallLineColor2 = System.Drawing.Color.Transparent;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.addTeacher_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

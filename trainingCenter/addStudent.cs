@@ -15,11 +15,20 @@ namespace trainingCenter
     {
         public addStudent()
         {
+           
             InitializeComponent();
 
 
         }
 
-        
+        private void addStudent_Load(object sender, EventArgs e)
+        {
+
+            this.TopMost = true;
+
+            this.FormBorderStyle = FormBorderStyle.None;
+
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }

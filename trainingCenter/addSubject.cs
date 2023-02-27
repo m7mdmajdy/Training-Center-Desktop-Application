@@ -20,6 +20,13 @@ namespace trainingCenter
 
         }
 
-        
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            this.TopMost = true;
+
+            this.FormBorderStyle = FormBorderStyle.None;
+
+            this.WindowState = FormWindowState.Maximized;
+        }
     }
 }

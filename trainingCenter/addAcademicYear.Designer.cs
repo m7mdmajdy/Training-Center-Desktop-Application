@@ -30,6 +30,7 @@
         {
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.metroSetComboBox1 = new MetroSet_UI.Controls.MetroSetComboBox();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
@@ -42,7 +43,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.metroSetButton4 = new MetroSet_UI.Controls.MetroSetButton();
-            this.metroSetComboBox1 = new MetroSet_UI.Controls.MetroSetComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -95,6 +95,47 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "البيانات";
+            // 
+            // metroSetComboBox1
+            // 
+            this.metroSetComboBox1.AllowDrop = true;
+            this.metroSetComboBox1.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.metroSetComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.metroSetComboBox1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.metroSetComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.metroSetComboBox1.CausesValidation = false;
+            this.metroSetComboBox1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.metroSetComboBox1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.metroSetComboBox1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.metroSetComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.metroSetComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.metroSetComboBox1.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroSetComboBox1.FormattingEnabled = true;
+            this.metroSetComboBox1.IsDerivedStyle = true;
+            this.metroSetComboBox1.ItemHeight = 20;
+            this.metroSetComboBox1.Items.AddRange(new object[] {
+            "الأول الإبتدائى",
+            "الثانى الإبتدائى",
+            "الثالث الإبتدائى",
+            "الرابع الإبتدائى ",
+            "الخامس الإبتدائى",
+            "السادس الإبتدائى ",
+            "الأول الإعدادى ",
+            "الثانى الإعدادى ",
+            "الثالث الإعدادى ",
+            "الأول الثانوى ",
+            "الثانى الثانوى ",
+            "الثالث الثانوى"});
+            this.metroSetComboBox1.Location = new System.Drawing.Point(683, 100);
+            this.metroSetComboBox1.Name = "metroSetComboBox1";
+            this.metroSetComboBox1.SelectedItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.metroSetComboBox1.SelectedItemForeColor = System.Drawing.Color.White;
+            this.metroSetComboBox1.Size = new System.Drawing.Size(199, 26);
+            this.metroSetComboBox1.Style = MetroSet_UI.Enums.Style.Light;
+            this.metroSetComboBox1.StyleManager = null;
+            this.metroSetComboBox1.TabIndex = 2;
+            this.metroSetComboBox1.ThemeAuthor = "Narwin";
+            this.metroSetComboBox1.ThemeName = "MetroLite";
             // 
             // materialButton3
             // 
@@ -280,47 +321,6 @@
             this.metroSetButton4.ThemeAuthor = "Narwin";
             this.metroSetButton4.ThemeName = "MetroLite";
             // 
-            // metroSetComboBox1
-            // 
-            this.metroSetComboBox1.AllowDrop = true;
-            this.metroSetComboBox1.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.metroSetComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.metroSetComboBox1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.metroSetComboBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.metroSetComboBox1.CausesValidation = false;
-            this.metroSetComboBox1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.metroSetComboBox1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSetComboBox1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.metroSetComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.metroSetComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.metroSetComboBox1.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroSetComboBox1.FormattingEnabled = true;
-            this.metroSetComboBox1.IsDerivedStyle = true;
-            this.metroSetComboBox1.ItemHeight = 20;
-            this.metroSetComboBox1.Items.AddRange(new object[] {
-            "الأول الإبتدائى",
-            "الثانى الإبتدائى",
-            "الثالث الإبتدائى",
-            "الرابع الإبتدائى ",
-            "الخامس الإبتدائى",
-            "السادس الإبتدائى ",
-            "الأول الإعدادى ",
-            "الثانى الإعدادى ",
-            "الثالث الإعدادى ",
-            "الأول الثانوى ",
-            "الثانى الثانوى ",
-            "الثالث الثانوى"});
-            this.metroSetComboBox1.Location = new System.Drawing.Point(683, 100);
-            this.metroSetComboBox1.Name = "metroSetComboBox1";
-            this.metroSetComboBox1.SelectedItemBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.metroSetComboBox1.SelectedItemForeColor = System.Drawing.Color.White;
-            this.metroSetComboBox1.Size = new System.Drawing.Size(199, 26);
-            this.metroSetComboBox1.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetComboBox1.StyleManager = null;
-            this.metroSetComboBox1.TabIndex = 2;
-            this.metroSetComboBox1.ThemeAuthor = "Narwin";
-            this.metroSetComboBox1.ThemeName = "MetroLite";
-            // 
             // addAcademicYear
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -337,6 +337,7 @@
             this.SmallLineColor1 = System.Drawing.Color.Transparent;
             this.SmallLineColor2 = System.Drawing.Color.Transparent;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.addAcademicYear_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
