@@ -1,60 +1,5 @@
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\bin\Debug\addStudentForm.exe.config
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\bin\Debug\addStudentForm.exe
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\bin\Debug\addStudentForm.pdb
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\bin\Debug\MaterialSkin.dll
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\bin\Debug\MetroSet UI.dll
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\trainingCenter.csproj.AssemblyReference.cache
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\trainingCenter.csproj.SuggestedBindingRedirects.cache
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.Properties.Resources.resources
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\trainingCenter.csproj.GenerateResource.cache
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\trainingCenter.csproj.CoreCompileInputs.cache
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\trainingCenter.csproj.CopyComplete
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.exe
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.pdb
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\trainingCenter.addUser.resources
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\trainingCenter.addStudent.resources
-F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\bin\Debug\Guna.UI2.dll
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\obj\Debug\trainingCenter.csproj.AssemblyReference.cache
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\obj\Debug\trainingCenter.csproj.SuggestedBindingRedirects.cache
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\obj\Debug\trainingCenter.addSubject.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\obj\Debug\trainingCenter.addUser.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\obj\Debug\trainingCenter.addStudent.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\obj\Debug\trainingCenter.csproj.GenerateResource.cache
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\obj\Debug\addStudentForm.exe
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\obj\Debug\addStudentForm.pdb
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\bin\Debug\addStudentForm.exe.config
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\bin\Debug\addStudentForm.exe
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\bin\Debug\MaterialSkin.dll
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\bin\Debug\MetroSet UI.dll
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\obj\Debug\addStudentForm.Properties.Resources.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\obj\Debug\trainingCenter.csproj.CoreCompileInputs.cache
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\obj\Debug\trainingCenter.csproj.CopyComplete
-F:\ITI-assignments\backend\LINQ\trainingCenter\addStudentForm\bin\Debug\addStudentForm.pdb
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\bin\Debug\trainingCenter.exe.config
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\bin\Debug\trainingCenter.exe
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\bin\Debug\trainingCenter.pdb
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\bin\Debug\MaterialSkin.dll
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\bin\Debug\MetroSet UI.dll
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.csproj.AssemblyReference.cache
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.csproj.SuggestedBindingRedirects.cache
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.addAcademicYear.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.addUser.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.WorkSpace.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.addRoom.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.addSubject.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.addGroup.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.addTeacher.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.addInstructor.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.addStudent.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.Properties.Resources.resources
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.csproj.GenerateResource.cache
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.csproj.CoreCompileInputs.cache
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.csproj.CopyComplete
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.exe
-F:\ITI-assignments\backend\LINQ\trainingCenter\trainingCenter\obj\Debug\trainingCenter.pdb
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.exe.config
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.exe
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.pdb
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\MaterialSkin.dll
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\MetroSet UI.dll
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.AssemblyReference.cache
@@ -74,3 +19,4 @@ F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCe
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CopyComplete
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.exe
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.pdb
+F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.pdb

@@ -5,26 +5,25 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace courseCenter.BL
+namespace trainingCenter.BL
 {
     internal class Validation
     {
-        public static bool validateName(string name)
+        public static bool validateNameInArabic(string name)
         {
-            if (name == null) { throw new ArgumentNullException("name is Empty"); }
+            if (string.IsNullOrEmpty(name)|| name=="")
+            {
+                return false;
+            }
+            else if (!Regex.IsMatch(name, @"^[\u0621-\u064A_ ]+$"))
 
-                else
-                {
-                    string pattern = "^[\u0621-\u064A]+$";
-                    Regex rg = new Regex(pattern);
-                if (rg.IsMatch(name)){
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-                }
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }
