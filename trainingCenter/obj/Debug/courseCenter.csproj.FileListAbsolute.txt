@@ -1,0 +1,9 @@
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\courseCenter.csproj.AssemblyReference.cache
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\courseCenter.csproj.SuggestedBindingRedirects.cache
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.addUser.resources
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.addStudent.resources
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.Properties.Resources.resources
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\courseCenter.csproj.GenerateResource.cache
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\courseCenter.csproj.CoreCompileInputs.cache
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.exe
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.pdb

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F451E85-F4FD-4593-B50C-D1052536E809}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>trainingCenter</RootNamespace>
+    <AssemblyName>trainingCenter</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>trainingCenter.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net48\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSet UI, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroSet_UI.2.0.0\lib\net45\MetroSet UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addAcademicYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addAcademicYear.Designer.cs">
+      <DependentUpon>addAcademicYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addGroup.Designer.cs">
+      <DependentUpon>addGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUser.Designer.cs">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkSpace.Designer.cs">
+      <DependentUpon>WorkSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addRoom.Designer.cs">
+      <DependentUpon>addRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSubject.Designer.cs">
+      <DependentUpon>addSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addTeacher.Designer.cs">
+      <DependentUpon>addTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addInsructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addInsructor.Designer.cs">
+      <DependentUpon>addInsructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addStudent.Designer.cs">
+      <DependentUpon>addStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BL\Validation.cs" />
+    <EmbeddedResource Include="addAcademicYear.resx">
+      <DependentUpon>addAcademicYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addGroup.resx">
+      <DependentUpon>addGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addUser.resx">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkSpace.resx">
+      <DependentUpon>WorkSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addRoom.resx">
+      <DependentUpon>addRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSubject.resx">
+      <DependentUpon>addSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addTeacher.resx">
+      <DependentUpon>addTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addInsructor.resx">
+      <DependentUpon>addInsructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addStudent.resx">
+      <DependentUpon>addStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,15 @@
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\bin\Debug\addStudentForm.exe.config
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\bin\Debug\addStudentForm.exe
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\bin\Debug\addStudentForm.pdb
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\bin\Debug\MetroSet UI.dll
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.csproj.AssemblyReference.cache
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.csproj.SuggestedBindingRedirects.cache
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.Properties.Resources.resources
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.csproj.GenerateResource.cache
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.csproj.CoreCompileInputs.cache
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.csproj.CopyComplete
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.exe
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.pdb
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.addStudent.resources
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\obj\Debug\addStudentForm.addUSer.resources
+F:\ITI-assignments\backend\LINQ\addStudentForm\addStudentForm\bin\Debug\MaterialSkin.dll
