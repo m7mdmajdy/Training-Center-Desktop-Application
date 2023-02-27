@@ -76,6 +76,7 @@
     <Compile Include="addUser.Designer.cs">
       <DependentUpon>addUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="test.cs" />
     <Compile Include="WorkSpace.cs">
       <SubType>Form</SubType>
     </Compile>
