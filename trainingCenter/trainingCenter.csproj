@@ -115,7 +115,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BL\Validation.cs" />
+    <Compile Include="BL\Utilities.cs" />
     <EmbeddedResource Include="addAcademicYear.resx">
       <DependentUpon>addAcademicYear.cs</DependentUpon>
     </EmbeddedResource>

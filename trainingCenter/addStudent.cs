@@ -20,7 +20,6 @@ namespace trainingCenter
            
             InitializeComponent();
 
-
         }
 
         private void addStudent_Load(object sender, EventArgs e)
@@ -35,22 +34,16 @@ namespace trainingCenter
 
         private void stuNameBox_TextChanged(object sender, EventArgs e)
         {
-
-            if (string.IsNullOrEmpty(stuNameBox.Text)|| stuNameBox.Text=="")
-            {
-                label12.Visible = true;
-            }
-            else if (!Regex.IsMatch(stuNameBox.Text, @"^[\u0621-\u064A_ ]+$"))
-
-            {
-                label12.Visible = true;
-            }
-            else
+            bool isValid;
+            isValid = Utilities.validateNameInArabic(stuNameBox.Text);
+            if (isValid)
             {
                 label12.Visible = false;
             }
-
-
+            else
+            {
+                label12.Visible = true;
+            }
         }
     }
 }
