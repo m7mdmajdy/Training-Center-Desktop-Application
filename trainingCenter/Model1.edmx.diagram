@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="245f23a047a942459d59e58c692433e5" Name="Diagram1">
+        <EntityTypeShape EntityType="EDPCenterModel.AcademicYear" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Attendence" Width="1.5" PointX="9.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.GroupName" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Guest_workspace" Width="1.5" PointX="0.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Instructor" Width="1.5" PointX="7.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Room" Width="1.5" PointX="7.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Schedule" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Student" Width="1.5" PointX="5.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Student_Group" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Subject" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Teacher" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.User" Width="1.5" PointX="7.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Student_Parents_Phones" Width="1.5" PointX="11.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Student_Phones" Width="1.5" PointX="11.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.User_Roles" Width="1.5" PointX="11.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Daily_Transaction" Width="1.5" PointX="12.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Guest_WorkSpace_Attend" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Instructor_Attendence" Width="1.5" PointX="9.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Total_Transaction" Width="1.5" PointX="12.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.User_Attend" Width="1.5" PointX="10" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Exam" Width="1.5" PointX="13.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Expens" Width="1.5" PointX="13.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EDPCenterModel.Student_Addresses" Width="1.5" PointX="5.75" PointY="14.75" IsExpanded="true" />
+        <AssociationConnector Association="EDPCenterModel.FK_Attendence_Student_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.FK_GroupName_Teacher" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.FK_Student_Group_GroupName" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.FK_Guest_WorkSpace_Attend_Guest_workspace" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.FK_Instructor_Attendence_Instructors" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.FK_Instructor_Attendence_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.FK_Student_Group_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.FK_User_Attend_User" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.Group_Room" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.Teacher_Subject" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.Teacher_Year" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
