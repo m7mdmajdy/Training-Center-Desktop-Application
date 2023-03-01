@@ -36,13 +36,15 @@
             this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.stuName = new System.Windows.Forms.TextBox();
+            this.subNameBox = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.subIdBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.metroSetButton4 = new MetroSet_UI.Controls.MetroSetButton();
+            this.subId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -81,10 +83,10 @@
             this.groupBox1.Controls.Add(this.materialButton5);
             this.groupBox1.Controls.Add(this.materialButton1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.stuName);
+            this.groupBox1.Controls.Add(this.subNameBox);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.subIdBox);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 78);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
@@ -95,7 +97,6 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "البيانات";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // materialButton3
             // 
@@ -117,6 +118,7 @@
             this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton3.UseAccentColor = true;
             this.materialButton3.UseVisualStyleBackColor = false;
+            this.materialButton3.Click += new System.EventHandler(this.materialButton3_Click);
             // 
             // materialButton2
             // 
@@ -137,6 +139,7 @@
             this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton2.UseAccentColor = false;
             this.materialButton2.UseVisualStyleBackColor = true;
+            this.materialButton2.Click += new System.EventHandler(this.materialButton2_Click);
             // 
             // materialButton6
             // 
@@ -157,6 +160,7 @@
             this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton6.UseAccentColor = false;
             this.materialButton6.UseVisualStyleBackColor = true;
+            this.materialButton6.Click += new System.EventHandler(this.materialButton6_Click);
             // 
             // materialButton5
             // 
@@ -177,6 +181,7 @@
             this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton5.UseAccentColor = false;
             this.materialButton5.UseVisualStyleBackColor = true;
+            this.materialButton5.Click += new System.EventHandler(this.materialButton5_Click);
             // 
             // materialButton1
             // 
@@ -197,6 +202,7 @@
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton1.UseAccentColor = false;
             this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
             // label2
             // 
@@ -204,24 +210,26 @@
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(875, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 20);
+            this.label2.Size = new System.Drawing.Size(59, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "إسم المادة";
             // 
-            // stuName
+            // subNameBox
             // 
-            this.stuName.Location = new System.Drawing.Point(661, 97);
-            this.stuName.Name = "stuName";
-            this.stuName.Size = new System.Drawing.Size(199, 27);
-            this.stuName.TabIndex = 2;
+            this.subNameBox.Location = new System.Drawing.Point(661, 97);
+            this.subNameBox.Name = "subNameBox";
+            this.subNameBox.Size = new System.Drawing.Size(199, 32);
+            this.subNameBox.TabIndex = 2;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(41, 50);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(238, 27);
+            this.textBox2.Size = new System.Drawing.Size(238, 32);
             this.textBox2.TabIndex = 3;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // label1
             // 
@@ -229,16 +237,18 @@
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(875, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 20);
+            this.label1.Size = new System.Drawing.Size(58, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "كود المادة";
             // 
-            // textBox1
+            // subIdBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(661, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 27);
-            this.textBox1.TabIndex = 1;
+            this.subIdBox.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.subIdBox.Enabled = false;
+            this.subIdBox.Location = new System.Drawing.Point(661, 44);
+            this.subIdBox.Name = "subIdBox";
+            this.subIdBox.Size = new System.Drawing.Size(199, 32);
+            this.subIdBox.TabIndex = 1;
             // 
             // label4
             // 
@@ -248,7 +258,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(878, 35);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 36);
+            this.label4.Size = new System.Drawing.Size(106, 45);
             this.label4.TabIndex = 1;
             this.label4.Text = "المــــــــواد";
             // 
@@ -256,11 +266,17 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(23)))), ((int)(((byte)(62)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.subId,
+            this.subName});
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(31)))), ((int)(((byte)(74)))));
             this.dataGridView1.Location = new System.Drawing.Point(12, 305);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(949, 249);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // metroSetButton4
             // 
@@ -288,9 +304,26 @@
             this.metroSetButton4.ThemeAuthor = "Narwin";
             this.metroSetButton4.ThemeName = "MetroLite";
             // 
+            // subId
+            // 
+            this.subId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.subId.HeaderText = "كود المادة";
+            this.subId.MinimumWidth = 6;
+            this.subId.Name = "subId";
+            this.subId.ReadOnly = true;
+            this.subId.Width = 110;
+            // 
+            // subName
+            // 
+            this.subName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.subName.HeaderText = "اسم المادة";
+            this.subName.MinimumWidth = 6;
+            this.subName.Name = "subName";
+            this.subName.ReadOnly = true;
+            // 
             // addSubject
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(23)))), ((int)(((byte)(62)))));
             this.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(54)))));
@@ -304,6 +337,7 @@
             this.SmallLineColor1 = System.Drawing.Color.Transparent;
             this.SmallLineColor2 = System.Drawing.Color.Transparent;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.addSubject_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -316,10 +350,10 @@
 
         private MetroSet_UI.Controls.MetroSetControlBox metroSetControlBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox subIdBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox stuName;
+        private System.Windows.Forms.TextBox subNameBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private MaterialSkin.Controls.MaterialButton materialButton1;
@@ -329,6 +363,8 @@
         private MaterialSkin.Controls.MaterialButton materialButton5;
         private System.Windows.Forms.TextBox textBox2;
         private MetroSet_UI.Controls.MetroSetButton metroSetButton4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn subName;
     }
 }
 

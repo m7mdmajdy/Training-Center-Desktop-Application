@@ -38,21 +38,7 @@ namespace trainingCenter
 
             EDPCenterEntities x = new EDPCenterEntities();
             List<Student> studs = x.Students.ToList();
-            foreach (Student stud in studs)
-            {
-                DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-                row.Cells[0].Value = stud.St_ID;
-                row.Cells[1].Value = stud.St_Name;
-                row.Cells[2].Value = stud.St_Phone;
-                row.Cells[3].Value = stud.St_Parent_Phone;
-                row.Cells[4].Value = stud.St_Gender;
-                row.Cells[5].Value = stud.St_Address;
-                row.Cells[6].Value = stud.St_Age;
-                row.Cells[7].Value = stud.St_Grade;
-                row.Cells[8].Value = stud.St_School_Name;
-                row.Cells[9].Value = stud.St_Language;
-                dataGridView1.Rows.Add(row);
-            }
+            NewDataGrid(studs);
 
         }
 
@@ -89,6 +75,8 @@ namespace trainingCenter
             eDPCenterEntities.Students.Add(student);
             eDPCenterEntities.SaveChanges();
             MessageBox.Show("تم اضافة الطالب");
+            List<Student> students = eDPCenterEntities.Students.ToList();
+            NewDataGrid(students);
 
         }
 
@@ -111,7 +99,7 @@ namespace trainingCenter
                 }
                 else
                 {
-                    students = eDPCenterEntities.Students.Where(a => a.St_Name == textBox2.Text).ToList();
+                    students = eDPCenterEntities.Students.Where(a => a.St_Name.Contains(textBox2.Text)).ToList();
                 }
                 if (students.Count > 0)
                     NewDataGrid(students);
@@ -156,13 +144,14 @@ namespace trainingCenter
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            // To determine row number
             int index = e.RowIndex;
             DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
 
             stu_IDBox.Text = row.Cells[0].Value.ToString();
             stuNameBox.Text = row.Cells[1].Value.ToString();
             phoneBox.Text = row.Cells[2].Value.ToString();
-            parentPhoneBox.Text = row.Cells[3].Value.ToString();
+            parentPhoneBox.Text = row.Cells[3].Value != null ? row.Cells[3].Value.ToString() : "";
             if (row.Cells[4].Value.ToString() == "أنثي")
             {
                 radioButton2.Checked = true;
@@ -171,35 +160,40 @@ namespace trainingCenter
             {
                 radioButton1.Checked = true;
             }
-            addressBox.Text = row.Cells[5].Value.ToString();
+            addressBox.Text = row.Cells[5].Value != null ? row.Cells[5].Value.ToString() : "";
             ageUpDownMenu.Text = row.Cells[6].Value.ToString();
             academicYearBox.Text = row.Cells[7].Value.ToString();
-            schoolNameBox.Text = row.Cells[8].Value.ToString();
+            schoolNameBox.Text = row.Cells[8].Value != null ? row.Cells[8].Value.ToString() : "";
             languageBox.Text = row.Cells[9].Value.ToString();
 
         }
 
         private void materialButton2_Click(object sender, EventArgs e)
         {
-            int studId = int.Parse(stu_IDBox.Text);
-            Student student = eDPCenterEntities.Students.Where(x => x.St_ID == studId).FirstOrDefault();
+            if (stu_IDBox.Text.Length == 0)
+                MessageBox.Show("الرجاء اختيار طالب من الجدول فى الاسفل");
+            else
+            {
+                int studId = int.Parse(stu_IDBox.Text);
+                Student student = eDPCenterEntities.Students.Where(x => x.St_ID == studId).FirstOrDefault();
 
-            string gender = radioButton2.Checked ? "أنثي" : "ذكر";
+                string gender = radioButton2.Checked ? "أنثي" : "ذكر";
 
-            student.St_Name = stuNameBox.Text;
-            student.St_Phone = phoneBox.Text;
-            student.St_Parent_Phone = parentPhoneBox.Text;
-            student.St_Gender = gender;
-            student.St_Address = addressBox.Text;
-            student.St_Age = int.Parse(ageUpDownMenu.Value.ToString());
-            student.St_Grade = academicYearBox.Text;
-            student.St_Language = languageBox.Text;
-            student.St_School_Name = schoolNameBox.Text;
+                student.St_Name = stuNameBox.Text;
+                student.St_Phone = phoneBox.Text;
+                student.St_Parent_Phone = parentPhoneBox.Text;
+                student.St_Gender = gender;
+                student.St_Address = addressBox.Text;
+                student.St_Age = int.Parse(ageUpDownMenu.Value.ToString());
+                student.St_Grade = academicYearBox.Text;
+                student.St_Language = languageBox.Text;
+                student.St_School_Name = schoolNameBox.Text;
 
-            eDPCenterEntities.SaveChanges();
+                eDPCenterEntities.SaveChanges();
 
-            NewDataGrid(eDPCenterEntities.Students.ToList());
-            MessageBox.Show("تم تعديل بيانات الطالب");
+                NewDataGrid(eDPCenterEntities.Students.ToList());
+                MessageBox.Show("تم تعديل بيانات الطالب");
+            }
 
         }
 
