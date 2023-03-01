@@ -5,7 +5,7 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="Teachers" Relationship="Self.Teacher_Year" FromRole="AcademicYear" ToRole="Teacher" />
   </EntityType>
   <EntityType Name="Attendence">
@@ -25,14 +25,14 @@
       <PropertyRef Name="G_ID" />
     </Key>
     <Property Name="G_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="G_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="G_Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
     <Property Name="G_NoOfSession" Type="Int32" />
     <Property Name="G_PriceOfSession" Type="Double" />
     <Property Name="G_Capacity" Type="Int32" />
     <Property Name="G_DateOFCreation" Type="DateTime" Precision="3" />
     <Property Name="G_Availability" Type="Boolean" />
     <Property Name="Teacher_ID" Type="Int32" />
-    <Property Name="Grade" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Grade" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
     <Property Name="AcademicYear_ID" Type="Int32" />
     <NavigationProperty Name="Teacher" Relationship="Self.FK_GroupName_Teacher" FromRole="GroupName" ToRole="Teacher" />
     <NavigationProperty Name="Student_Group" Relationship="Self.FK_Student_Group_GroupName" FromRole="GroupName" ToRole="Student_Group" />
@@ -43,8 +43,8 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-    <Property Name="Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Guest_WorkSpace_Attend" Relationship="Self.FK_Guest_WorkSpace_Attend_Guest_workspace" FromRole="Guest_workspace" ToRole="Guest_WorkSpace_Attend" />
   </EntityType>
   <EntityType Name="Instructor">
@@ -52,8 +52,8 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Instructor_Attendence" Relationship="Self.FK_Instructor_Attendence_Instructors" FromRole="Instructors" ToRole="Instructor_Attendence" />
   </EntityType>
   <EntityType Name="Room">
@@ -84,15 +84,15 @@
       <PropertyRef Name="St_ID" />
     </Key>
     <Property Name="St_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="St_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="St_Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
-    <Property Name="St_Parent_Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
-    <Property Name="St_Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="St_Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="St_Phone" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="St_Parent_Phone" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="St_Gender" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
     <Property Name="St_Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="St_Age" Type="Int32" />
-    <Property Name="St_Grade" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
-    <Property Name="St_School_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-    <Property Name="St_Language" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="St_Grade" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="St_School_Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="St_Language" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Student_Group" Relationship="Self.FK_Student_Group_Student" FromRole="Student" ToRole="Student_Group" />
   </EntityType>
   <EntityType Name="Student_Group">
@@ -102,7 +102,7 @@
     </Key>
     <Property Name="G_ID" Type="Int32" Nullable="false" />
     <Property Name="St_ID" Type="Int32" Nullable="false" />
-    <Property Name="Payment_Method" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Payment_Method" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="St_Balance" Type="Double" />
     <NavigationProperty Name="Attendences" Relationship="Self.FK_Attendence_Student_Group" FromRole="Student_Group" ToRole="Attendence" />
     <NavigationProperty Name="GroupName" Relationship="Self.FK_Student_Group_GroupName" FromRole="Student_Group" ToRole="GroupName" />
@@ -113,7 +113,7 @@
       <PropertyRef Name="Sub_ID" />
     </Key>
     <Property Name="Sub_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Sub_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sub_Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="Teachers" Relationship="Self.Teacher_Subject" FromRole="Subject" ToRole="Teacher" />
   </EntityType>
   <EntityType Name="Teacher">
@@ -121,7 +121,7 @@
       <PropertyRef Name="T_ID" />
     </Key>
     <Property Name="T_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="T_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="T_Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="T_Phone" Type="String" MaxLength="15" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="T_Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="T_Balance" Type="Double" Nullable="false" />
@@ -136,10 +136,10 @@
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Full_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Username" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Password" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Phone" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
-    <Property Name="Role" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Role" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Salary" Type="Double" />
     <NavigationProperty Name="User_Attend" Relationship="Self.FK_User_Attend_User" FromRole="User" ToRole="User_Attend" />
   </EntityType>
@@ -150,7 +150,7 @@
     </Key>
     <Property Name="ID_Stu" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="Stu_Parent_Phone" Type="String" MaxLength="16" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Stu_Parent_Relativity" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Stu_Parent_Relativity" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Student_Phones">
     <Key>
@@ -167,7 +167,7 @@
       <PropertyRef Name="Role_Code" />
     </Key>
     <Property Name="Role_Code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
-    <Property Name="Role_Title" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Role_Title" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
   </EntityType>
   <EntityType Name="Daily_Transaction">
     <Key>
@@ -175,9 +175,9 @@
       <PropertyRef Name="Transaction_Type" />
     </Key>
     <Property Name="Person_ID" Type="Int32" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
     <Property Name="Price" Type="Double" />
-    <Property Name="Transaction_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Transaction_Type" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Date" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="Guest_WorkSpace_Attend">
@@ -211,9 +211,9 @@
       <PropertyRef Name="Transaction_Type" />
     </Key>
     <Property Name="Person_ID" Type="Int32" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
     <Property Name="Price" Type="Double" />
-    <Property Name="Transaction_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Transaction_Type" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Date" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="User_Attend">
@@ -366,7 +366,7 @@
     <End Role="AcademicYear" Type="Self.AcademicYear" Multiplicity="*" />
     <End Role="Teacher" Type="Self.Teacher" Multiplicity="*" />
   </Association>
-  <EntityContainer Name="EDPCenterEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="EDPCenterEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="AcademicYears" EntityType="Self.AcademicYear" />
     <EntitySet Name="Attendences" EntityType="Self.Attendence" />
     <EntitySet Name="GroupNames" EntityType="Self.GroupName" />

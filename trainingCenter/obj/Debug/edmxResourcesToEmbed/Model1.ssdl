@@ -5,7 +5,7 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="120" Nullable="false" />
   </EntityType>
   <EntityType Name="Attendence">
     <Key>
@@ -26,9 +26,9 @@ warning 6002: The table/view 'EDPCenter.dbo.Daily_Transaction' does not have a p
       <PropertyRef Name="Transaction_Type" />
     </Key>
     <Property Name="Person_ID" Type="int" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="Name" Type="nvarchar" MaxLength="120" />
     <Property Name="Price" Type="float" />
-    <Property Name="Transaction_Type" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Transaction_Type" Type="nvarchar" MaxLength="120" Nullable="false" />
     <Property Name="Date" Type="datetime" />
   </EntityType>
   <EntityType Name="Group_Room">
@@ -44,14 +44,14 @@ warning 6002: The table/view 'EDPCenter.dbo.Daily_Transaction' does not have a p
       <PropertyRef Name="G_ID" />
     </Key>
     <Property Name="G_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="G_Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="G_Name" Type="nvarchar" MaxLength="120" />
     <Property Name="G_NoOfSession" Type="int" />
     <Property Name="G_PriceOfSession" Type="float" />
     <Property Name="G_Capacity" Type="int" />
     <Property Name="G_DateOFCreation" Type="datetime" />
     <Property Name="G_Availability" Type="bit" />
     <Property Name="Teacher_ID" Type="int" />
-    <Property Name="Grade" Type="nvarchar" MaxLength="20" />
+    <Property Name="Grade" Type="nvarchar" MaxLength="120" />
     <Property Name="AcademicYear_ID" Type="int" />
   </EntityType>
   <EntityType Name="Guest_workspace">
@@ -59,8 +59,8 @@ warning 6002: The table/view 'EDPCenter.dbo.Daily_Transaction' does not have a p
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="int" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="20" />
-    <Property Name="Phone" Type="nvarchar" MaxLength="15" />
+    <Property Name="Name" Type="nvarchar" MaxLength="120" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="120" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'EDPCenter.dbo.Guest_WorkSpace_Attend' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -93,8 +93,8 @@ warning 6002: The table/view 'EDPCenter.dbo.Instructor_Attendence' does not have
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="int" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="20" Nullable="false" />
-    <Property Name="Phone" Type="nvarchar" MaxLength="15" />
+    <Property Name="Name" Type="nvarchar" MaxLength="120" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="120" />
   </EntityType>
   <EntityType Name="Room">
     <Key>
@@ -122,15 +122,15 @@ warning 6002: The table/view 'EDPCenter.dbo.Instructor_Attendence' does not have
       <PropertyRef Name="St_ID" />
     </Key>
     <Property Name="St_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="St_Name" Type="nvarchar" MaxLength="20" Nullable="false" />
-    <Property Name="St_Phone" Type="nvarchar" MaxLength="15" />
-    <Property Name="St_Parent_Phone" Type="nvarchar" MaxLength="15" />
-    <Property Name="St_Gender" Type="nvarchar" MaxLength="10" />
+    <Property Name="St_Name" Type="nvarchar" MaxLength="120" Nullable="false" />
+    <Property Name="St_Phone" Type="nvarchar" MaxLength="120" />
+    <Property Name="St_Parent_Phone" Type="nvarchar" MaxLength="120" />
+    <Property Name="St_Gender" Type="nvarchar" MaxLength="120" />
     <Property Name="St_Address" Type="nvarchar" MaxLength="50" />
     <Property Name="St_Age" Type="int" />
-    <Property Name="St_Grade" Type="nvarchar" MaxLength="10" />
-    <Property Name="St_School_Name" Type="nvarchar" MaxLength="30" />
-    <Property Name="St_Language" Type="nvarchar" MaxLength="20" />
+    <Property Name="St_Grade" Type="nvarchar(max)" />
+    <Property Name="St_School_Name" Type="nvarchar" MaxLength="120" />
+    <Property Name="St_Language" Type="nvarchar" MaxLength="120" />
   </EntityType>
   <EntityType Name="Student_Group">
     <Key>
@@ -139,7 +139,7 @@ warning 6002: The table/view 'EDPCenter.dbo.Instructor_Attendence' does not have
     </Key>
     <Property Name="G_ID" Type="int" Nullable="false" />
     <Property Name="St_ID" Type="int" Nullable="false" />
-    <Property Name="Payment_Method" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Payment_Method" Type="nvarchar" MaxLength="120" Nullable="false" />
     <Property Name="St_Balance" Type="float" />
   </EntityType>
   <EntityType Name="Subject">
@@ -147,14 +147,14 @@ warning 6002: The table/view 'EDPCenter.dbo.Instructor_Attendence' does not have
       <PropertyRef Name="Sub_ID" />
     </Key>
     <Property Name="Sub_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Sub_Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Sub_Name" Type="nvarchar" MaxLength="120" Nullable="false" />
   </EntityType>
   <EntityType Name="Teacher">
     <Key>
       <PropertyRef Name="T_ID" />
     </Key>
     <Property Name="T_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="T_Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="T_Name" Type="nvarchar" MaxLength="120" Nullable="false" />
     <Property Name="T_Phone" Type="nchar" MaxLength="15" Nullable="false" />
     <Property Name="T_Address" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="T_Balance" Type="float" Nullable="false" />
@@ -184,9 +184,9 @@ warning 6002: The table/view 'EDPCenter.dbo.Total_Transaction' does not have a p
       <PropertyRef Name="Transaction_Type" />
     </Key>
     <Property Name="Person_ID" Type="int" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="Name" Type="nvarchar" MaxLength="120" />
     <Property Name="Price" Type="float" />
-    <Property Name="Transaction_Type" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Transaction_Type" Type="nvarchar" MaxLength="120" Nullable="false" />
     <Property Name="Date" Type="datetime" />
   </EntityType>
   <EntityType Name="User">
@@ -195,10 +195,10 @@ warning 6002: The table/view 'EDPCenter.dbo.Total_Transaction' does not have a p
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Full_Name" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Username" Type="nvarchar" MaxLength="30" Nullable="false" />
-    <Property Name="Password" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="120" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="120" Nullable="false" />
     <Property Name="Phone" Type="nvarchar" MaxLength="16" />
-    <Property Name="Role" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Role" Type="nvarchar" MaxLength="120" Nullable="false" />
     <Property Name="Salary" Type="float" />
   </EntityType>
   <!--Errors Found During Generation:
@@ -249,7 +249,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
     </Key>
     <Property Name="ID_Stu" Type="nchar" MaxLength="10" Nullable="false" />
     <Property Name="Stu_Parent_Phone" Type="nvarchar" MaxLength="16" Nullable="false" />
-    <Property Name="Stu_Parent_Relativity" Type="nvarchar" MaxLength="10" />
+    <Property Name="Stu_Parent_Relativity" Type="nvarchar" MaxLength="120" />
   </EntityType>
   <EntityType Name="Student_Phones">
     <Key>
@@ -266,7 +266,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       <PropertyRef Name="Role_Code" />
     </Key>
     <Property Name="Role_Code" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="Role_Title" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Role_Title" Type="nvarchar" MaxLength="120" Nullable="false" />
   </EntityType>
   <Association Name="FK_Attendence_Student_Group">
     <End Role="Student_Group" Type="Self.Student_Group" Multiplicity="1" />

@@ -336,6 +336,7 @@
             this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton3.UseAccentColor = true;
             this.materialButton3.UseVisualStyleBackColor = false;
+            this.materialButton3.Click += new System.EventHandler(this.materialButton3_Click);
             // 
             // materialButton2
             // 
@@ -356,6 +357,7 @@
             this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton2.UseAccentColor = false;
             this.materialButton2.UseVisualStyleBackColor = true;
+            this.materialButton2.Click += new System.EventHandler(this.materialButton2_Click);
             // 
             // materialButton6
             // 
@@ -376,6 +378,7 @@
             this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton6.UseAccentColor = false;
             this.materialButton6.UseVisualStyleBackColor = true;
+            this.materialButton6.Click += new System.EventHandler(this.materialButton6_Click);
             // 
             // materialButton5
             // 
@@ -396,6 +399,7 @@
             this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton5.UseAccentColor = false;
             this.materialButton5.UseVisualStyleBackColor = true;
+            this.materialButton5.Click += new System.EventHandler(this.materialButton5_Click);
             // 
             // materialButton1
             // 
@@ -536,11 +540,14 @@
             // 
             // textBox2
             // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(41, 50);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(238, 32);
+            this.textBox2.Size = new System.Drawing.Size(238, 27);
             this.textBox2.TabIndex = 10;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // label5
             // 
@@ -632,6 +639,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1362, 390);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // St_ID
             // 
@@ -778,8 +786,6 @@
         private System.Windows.Forms.TextBox stuNameBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private MaterialSkin.Controls.MaterialButton materialButton3;
@@ -797,7 +803,6 @@
         private System.Windows.Forms.TextBox addressBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox parentPhoneBox;
-        private System.Windows.Forms.ComboBox academicYearBox;
         private System.Windows.Forms.ComboBox languageBox;
         private System.Windows.Forms.NumericUpDown ageUpDownMenu;
         private System.Windows.Forms.Label label14;
@@ -819,6 +824,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn St_Grade;
         private System.Windows.Forms.DataGridViewTextBoxColumn St_School_Name;
         private System.Windows.Forms.DataGridViewTextBoxColumn St_Language;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.ComboBox academicYearBox;
     }
 }
 

@@ -16,7 +16,7 @@ namespace trainingCenter
     public partial class EDPCenterEntities : DbContext
     {
         public EDPCenterEntities()
-            : base("name=EDPCenterEntities")
+            : base("name=EDPCenterEntities1")
         {
         }
     
