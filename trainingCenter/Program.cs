@@ -16,7 +16,7 @@ namespace trainingCenter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new addStudent());
+            Application.Run(new addAcademicYear());
         }
     }
 }

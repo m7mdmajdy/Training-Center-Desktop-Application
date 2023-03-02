@@ -26,7 +26,7 @@ namespace trainingCenter.BL
         public static bool ValidatPhoneNumber(string phoneNumber)
         {
 
-            if (string.IsNullOrEmpty(phoneNumber) || !Regex.IsMatch(phoneNumber, @"^01[0125][0-9]{8}$"))
+            if (string.IsNullOrEmpty(phoneNumber) || (!Regex.IsMatch(phoneNumber, @"^01[0125][0-9]{8}$")))
             {
                 return false;
             }
@@ -47,7 +47,7 @@ namespace trainingCenter.BL
                 return false;
             }
         }
-
+        
     }
 
 }
