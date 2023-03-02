@@ -86,6 +86,12 @@
     <Compile Include="addGroup.Designer.cs">
       <DependentUpon>addGroup.cs</DependentUpon>
     </Compile>
+    <Compile Include="addOutcomes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addOutcomes.Designer.cs">
+      <DependentUpon>addOutcomes.cs</DependentUpon>
+    </Compile>
     <Compile Include="addUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addGroup.resx">
       <DependentUpon>addGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addOutcomes.resx">
+      <DependentUpon>addOutcomes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addUser.resx">
       <DependentUpon>addUser.cs</DependentUpon>

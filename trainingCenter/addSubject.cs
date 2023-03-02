@@ -8,11 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using trainingCenter.BL;
 
 namespace trainingCenter
 {
     public partial class addSubject : MetroSetForm
     {
+        bool isValidSubject;
+
         EDPCenterEntities eDPCenterEntities;
         public addSubject()
         {
@@ -20,7 +23,20 @@ namespace trainingCenter
             eDPCenterEntities = new EDPCenterEntities();
 
         }
-
+        public bool checkValidation()
+        {
+            isValidSubject= Utilities.validateNameInArabic(subNameBox.Text);
+            if (!isValidSubject)
+            {
+                label12.Visible= true;
+                return false;
+            }
+            else
+            {
+                label12.Visible= false;
+                return true;
+            }
+        }
         
         private void addSubject_Load(object sender, EventArgs e)
         {
@@ -59,21 +75,36 @@ namespace trainingCenter
         {
             if (subNameBox.Text.Length > 0)
             {
-                eDPCenterEntities.Subjects.Add(new Subject { Sub_Name = subNameBox.Text });
-                eDPCenterEntities.SaveChanges();
-                List<Subject> subjects= eDPCenterEntities.Subjects.ToList();
-                NewDataGrid(subjects);
-                MessageBox.Show("تم اضافة المادة");
+                if (checkValidation())
+                {
+                    var query = eDPCenterEntities.Subjects.Where(x => x.Sub_Name == subNameBox.Text).FirstOrDefault();
+                    if (query!=null)
+                    {
+                        MessageBox.Show("المادة موجود بالفعل");
+                    }
+                    else
+                    {
+                        eDPCenterEntities.Subjects.Add(new Subject { Sub_Name = subNameBox.Text });
+                        eDPCenterEntities.SaveChanges();
+                        List<Subject> subjects = eDPCenterEntities.Subjects.ToList();
+                        NewDataGrid(subjects);
+                        MessageBox.Show("تم اضافة المادة");
+                    }
+                   
+                }
             }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int index = e.RowIndex;
-            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
+            
+                int index = e.RowIndex;
+                DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
 
-            subIdBox.Text = row.Cells[0].Value.ToString();
-            subNameBox.Text = row.Cells[1].Value.ToString();
+                subIdBox.Text = row.Cells[0].Value.ToString();
+                subNameBox.Text = row.Cells[1].Value.ToString();
+           
+           
             
         }
 
@@ -84,14 +115,18 @@ namespace trainingCenter
                 MessageBox.Show("الرجاء اختيار المادة من الجدول فى الاسفل");
             else
             {
-                int subId = int.Parse(subIdBox.Text);
-                Subject subject = eDPCenterEntities.Subjects.Where(x => x.Sub_ID == subId).FirstOrDefault();
+                if (checkValidation())
+                {
+                    int subId = int.Parse(subIdBox.Text);
+                    Subject subject = eDPCenterEntities.Subjects.Where(x => x.Sub_ID == subId).FirstOrDefault();
 
-                subject.Sub_Name = subNameBox.Text;
-                eDPCenterEntities.SaveChanges();
+                    subject.Sub_Name = subNameBox.Text;
+                    eDPCenterEntities.SaveChanges();
 
-                NewDataGrid(eDPCenterEntities.Subjects.ToList());
-                MessageBox.Show("تم تعديل بيانات المادة");
+                    NewDataGrid(eDPCenterEntities.Subjects.ToList());
+                    MessageBox.Show("تم تعديل بيانات المادة");
+                }
+               
             }
 
             
@@ -157,6 +192,16 @@ namespace trainingCenter
         {
             if (textBox2.Text.Length == 0)
                 textBox2.Text = "ادخل الكود او الاسم";
+        }
+
+        private void subNameBox_Leave(object sender, EventArgs e)
+        {
+            isValidSubject= Utilities.validateNameInArabic(subNameBox.Text);
+            if (isValidSubject)
+            {
+                label12.Visible= false;
+              
+            }
         }
     }
 

@@ -8,11 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using trainingCenter.BL;
 
 namespace trainingCenter
 {
     public partial class addAcademicYear : MetroSetForm
     {
+        bool isValidYear;
+
         EDPCenterEntities eDPCenterEntities;
         public addAcademicYear()
         {
@@ -20,10 +23,24 @@ namespace trainingCenter
             eDPCenterEntities = new EDPCenterEntities();
 
         }
-        private void NewDataGrid(List<AcademicYear> academicYears)
+
+        public bool checkValidation()
+        {
+            isValidYear = Utilities.checkDropDownList(academicYearBox.SelectedItem);
+            if (!isValidYear)
+            {
+                label15.Visible = true;
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+            private void NewDataGrid(List<AcademicYear> academicYears)
         {
             yearIdBox.Text = "";
-            yearNameComboBox.SelectionStart = yearNameComboBox.Text.Length;
+            academicYearBox.SelectionStart = academicYearBox.Text.Length;
             textBox2.Text = "";
 
             dataGridView1.Rows.Clear();
@@ -51,13 +68,23 @@ namespace trainingCenter
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            if (yearNameComboBox.Text.Length > 0)
+            if (checkValidation())
             {
-                eDPCenterEntities.AcademicYears.Add(new AcademicYear { Name = yearNameComboBox.Text });
-                eDPCenterEntities.SaveChanges();
-                List<AcademicYear> academicYears = eDPCenterEntities.AcademicYears.ToList();
-                NewDataGrid(academicYears);
-                MessageBox.Show("تم اضافة الصف الدراسي");
+                // check if the year already exsist in database
+                var query = eDPCenterEntities.AcademicYears.Where(x => x.Name == academicYearBox.Text).FirstOrDefault();
+                if (query!=null)
+                {
+                    MessageBox.Show("الصف الدراسى موجود بالفعل");
+                }
+                else
+                {
+                    
+                    eDPCenterEntities.AcademicYears.Add(new AcademicYear { Name = academicYearBox.Text });
+                    eDPCenterEntities.SaveChanges();
+                    List<AcademicYear> academicYears = eDPCenterEntities.AcademicYears.ToList();
+                    NewDataGrid(academicYears);
+                    MessageBox.Show("تم اضافة الصف الدراسي");
+                }
             }
         }
 
@@ -68,14 +95,27 @@ namespace trainingCenter
                 MessageBox.Show("الرجاء اختيار الصف الدراسي من الجدول فى الاسفل");
             else
             {
-                int yearId = int.Parse(yearIdBox.Text);
-                AcademicYear academicYear = eDPCenterEntities.AcademicYears.Where(x => x.ID == yearId).FirstOrDefault();
+                if (checkValidation())
+                {
+                    var query = eDPCenterEntities.AcademicYears.Where(x => x.Name == academicYearBox.Text).FirstOrDefault();
+                    if (query!=null)
+                    {
+                        MessageBox.Show("الصف الدراسى موجود بالفعل");
+                    }
+                    else
+                    {
+                        int yearId = int.Parse(yearIdBox.Text);
+                        AcademicYear academicYear = eDPCenterEntities.AcademicYears.Where(x => x.ID == yearId).FirstOrDefault();
 
-                academicYear.Name = yearNameComboBox.Text;
-                eDPCenterEntities.SaveChanges();
+                        academicYear.Name = academicYearBox.Text;
+                        eDPCenterEntities.SaveChanges();
 
-                NewDataGrid(eDPCenterEntities.AcademicYears.ToList());
-                MessageBox.Show("تم تعديل بيانات الصف الدراسي");
+                        NewDataGrid(eDPCenterEntities.AcademicYears.ToList());
+                        MessageBox.Show("تم تعديل بيانات الصف الدراسي");
+                    }
+                    
+                }
+                
             }
         }
 
@@ -133,7 +173,7 @@ namespace trainingCenter
             DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
 
             yearIdBox.Text = row.Cells[0].Value.ToString();
-            yearNameComboBox.Text = row.Cells[1].Value.ToString();
+            academicYearBox.Text = row.Cells[1].Value.ToString();
         }
     }
 }

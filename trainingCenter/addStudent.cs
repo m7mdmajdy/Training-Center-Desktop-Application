@@ -16,6 +16,15 @@ namespace trainingCenter
 {
     public partial class addStudent : MetroSetForm
     {
+        bool isValidName;
+        bool isValidPhone;
+        //bool isValidSchoolName;
+        //bool isValidAge;
+        bool isValidParentPhone;
+        //bool isValidAddress;
+        bool isValidLanguage;
+        bool isValidYear;
+
         EDPCenterEntities eDPCenterEntities;
         public addStudent()
         {
@@ -24,7 +33,57 @@ namespace trainingCenter
             eDPCenterEntities = new EDPCenterEntities();
 
         }
+        public bool checkValidation()
+        {
+            //checked validation
+            isValidName = Utilities.validateNameInArabic(stuNameBox.Text);
+            isValidPhone = Utilities.ValidatPhoneNumber(phoneBox.Text);
+            //isValidSchoolName = Utilities.validateNameInArabic(schoolNameBox.Text);
+            //isValidAge = ageUpDownMenu.Value >5 && ageUpDownMenu.Value <25;
+            isValidParentPhone = Utilities.ValidatPhoneNumber(parentPhoneBox.Text);
+            //isValidAddress = Utilities.validateNameInArabic(addressBox.Text);
+            isValidLanguage =Utilities.checkDropDownList(languageBox.SelectedItem);
+            isValidYear = Utilities.checkDropDownList(academicYearBox.SelectedItem);
 
+            if (!isValidName)
+            {
+                label12.Visible = true;
+                return false;
+            }
+             if(!isValidPhone)
+            {
+                label13.Visible = true;
+                return false;
+            }
+            if (!isValidYear)
+            {
+                label15.Visible = true;
+                return false;
+            }
+
+            if (!isValidParentPhone)
+            {
+                label14.Visible = true;
+                return false;
+            }
+            
+             if(!isValidLanguage)
+            {
+                label16.Visible = true;
+                return false;
+            }
+            else
+            {
+                label12.Visible = false;
+                label13.Visible = false;
+                label15.Visible = false;
+                label14.Visible = false;
+                label16.Visible = false;
+                return true;
+            }
+            
+
+        }
         private void addStudent_Load(object sender, EventArgs e)
         {
             /*this.TopMost = true;
@@ -42,46 +101,38 @@ namespace trainingCenter
 
         }
 
-        private void stuNameBox_TextChanged(object sender, EventArgs e)
-        {
-
-            bool isValid;
-            isValid = Utilities.validateNameInArabic(stuNameBox.Text);
-            if (isValid)
-            {
-                label12.Visible = false;
-            }
-            else
-            {
-                label12.Visible = true;
-            }
-        }
+      
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            string gender = radioButton2.Checked ? "أنثي" : "ذكر";
-            Student student = new Student()
+            if (checkValidation())
             {
-                St_Name = stuNameBox.Text,
-                St_Phone = phoneBox.Text,
-                St_Parent_Phone = parentPhoneBox.Text,
-                St_Gender = gender,
-                St_Address = addressBox.Text,
-                St_Age = Convert.ToInt32(ageUpDownMenu.Value),
-                St_Grade = academicYearBox.Text,
-                St_Language = languageBox.Text,
-                St_School_Name = schoolNameBox.Text,
-            };
-            eDPCenterEntities.Students.Add(student);
-            eDPCenterEntities.SaveChanges();
-            MessageBox.Show("تم اضافة الطالب");
-            List<Student> students = eDPCenterEntities.Students.ToList();
-            NewDataGrid(students);
+                string gender = radioButton2.Checked ? "أنثي" : "ذكر";
+                Student student = new Student()
+                {
+                    St_Name = stuNameBox.Text,
+                    St_Phone = phoneBox.Text,
+                    St_Parent_Phone = parentPhoneBox.Text,
+                    St_Gender = gender,
+                    St_Address = addressBox.Text,
+                    St_Age = Convert.ToInt32(ageUpDownMenu.Value),
+                    St_Grade = academicYearBox.Text,
+                    St_Language = languageBox.Text,
+                    St_School_Name = schoolNameBox.Text,
+                };
+                eDPCenterEntities.Students.Add(student);
+                eDPCenterEntities.SaveChanges();
+                MessageBox.Show("تم اضافة الطالب");
+                List<Student> students = eDPCenterEntities.Students.ToList();
+                NewDataGrid(students);
+            }
+
 
         }
 
         private void materialButton5_Click(object sender, EventArgs e)
         {
+            // check if search field is empty
             if (textBox2.Text.Length == 0)
                 MessageBox.Show("ادخل قيمة في البحث");
             else if(textBox2.Text == "ادخل الكود او الاسم")
@@ -107,6 +158,8 @@ namespace trainingCenter
                     MessageBox.Show("لا توجد نتائج");
             }
         }
+
+       
         private void NewDataGrid(List<Student> students)
         {
             stu_IDBox.Text = "";
@@ -174,25 +227,29 @@ namespace trainingCenter
                 MessageBox.Show("الرجاء اختيار طالب من الجدول فى الاسفل");
             else
             {
-                int studId = int.Parse(stu_IDBox.Text);
-                Student student = eDPCenterEntities.Students.Where(x => x.St_ID == studId).FirstOrDefault();
+                if (checkValidation())
+                {
+                    int studId = int.Parse(stu_IDBox.Text);
+                    Student student = eDPCenterEntities.Students.Where(x => x.St_ID == studId).FirstOrDefault();
 
-                string gender = radioButton2.Checked ? "أنثي" : "ذكر";
+                    string gender = radioButton2.Checked ? "أنثي" : "ذكر";
 
-                student.St_Name = stuNameBox.Text;
-                student.St_Phone = phoneBox.Text;
-                student.St_Parent_Phone = parentPhoneBox.Text;
-                student.St_Gender = gender;
-                student.St_Address = addressBox.Text;
-                student.St_Age = int.Parse(ageUpDownMenu.Value.ToString());
-                student.St_Grade = academicYearBox.Text;
-                student.St_Language = languageBox.Text;
-                student.St_School_Name = schoolNameBox.Text;
+                    student.St_Name = stuNameBox.Text;
+                    student.St_Phone = phoneBox.Text;
+                    student.St_Parent_Phone = parentPhoneBox.Text;
+                    student.St_Gender = gender;
+                    student.St_Address = addressBox.Text;
+                    student.St_Age = int.Parse(ageUpDownMenu.Value.ToString());
+                    student.St_Grade = academicYearBox.Text;
+                    student.St_Language = languageBox.Text;
+                    student.St_School_Name = schoolNameBox.Text;
 
-                eDPCenterEntities.SaveChanges();
+                    eDPCenterEntities.SaveChanges();
 
-                NewDataGrid(eDPCenterEntities.Students.ToList());
-                MessageBox.Show("تم تعديل بيانات الطالب");
+                    NewDataGrid(eDPCenterEntities.Students.ToList());
+                    MessageBox.Show("تم تعديل بيانات الطالب");
+                }
+                
             }
 
         }
@@ -230,6 +287,54 @@ namespace trainingCenter
         {
             if(textBox2.Text.Length == 0 )
                 textBox2.Text = "ادخل الكود او الاسم";
+        }
+
+
+        // validate when leaving dield 
+        private void stuNameBox_Leave(object sender, EventArgs e)
+        {
+            isValidName = Utilities.validateNameInArabic(stuNameBox.Text);
+            if (isValidName)
+            {
+                label12.Visible = false;
+
+            }
+            
+        }
+
+        private void phoneBox_Leave(object sender, EventArgs e)
+        {
+            isValidPhone = Utilities.ValidatPhoneNumber(phoneBox.Text);
+            if (isValidPhone)
+            {
+                label13.Visible = false;
+            }
+        }
+
+        private void academicYearBox_Leave(object sender, EventArgs e)
+        {
+            isValidYear = Utilities.checkDropDownList(academicYearBox.SelectedItem);
+            if (isValidYear)
+            {
+                label15.Visible = false;
+            }
+        }
+
+        private void parentPhoneBox_Leave(object sender, EventArgs e)
+        {
+            if (isValidParentPhone)
+            {
+                label14.Visible = false;
+            }
+        }
+
+        private void languageBox_Leave(object sender, EventArgs e)
+        {
+            isValidLanguage =Utilities.checkDropDownList(languageBox.SelectedItem);
+            if (isValidLanguage)
+            {
+                label16.Visible = false;
+            }
         }
     }
 }

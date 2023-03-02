@@ -30,6 +30,7 @@
         {
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
@@ -39,12 +40,12 @@
             this.subNameBox = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.subIdBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.metroSetButton4 = new MetroSet_UI.Controls.MetroSetButton();
-            this.subId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subIdBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -77,6 +78,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.materialButton3);
             this.groupBox1.Controls.Add(this.materialButton2);
             this.groupBox1.Controls.Add(this.materialButton6);
@@ -98,6 +100,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "البيانات";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label12.Location = new System.Drawing.Point(682, 84);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(161, 20);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "ادخل إسم صحيح باللغة العربية";
+            this.label12.Visible = false;
+            // 
             // materialButton3
             // 
             this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -107,7 +122,7 @@
             this.materialButton3.Depth = 0;
             this.materialButton3.HighEmphasis = true;
             this.materialButton3.Icon = null;
-            this.materialButton3.Location = new System.Drawing.Point(29, 144);
+            this.materialButton3.Location = new System.Drawing.Point(46, 144);
             this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton3.Name = "materialButton3";
@@ -128,7 +143,7 @@
             this.materialButton2.Depth = 0;
             this.materialButton2.HighEmphasis = true;
             this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(122, 144);
+            this.materialButton2.Location = new System.Drawing.Point(129, 144);
             this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton2.Name = "materialButton2";
@@ -149,7 +164,7 @@
             this.materialButton6.Depth = 0;
             this.materialButton6.HighEmphasis = true;
             this.materialButton6.Icon = null;
-            this.materialButton6.Location = new System.Drawing.Point(71, 84);
+            this.materialButton6.Location = new System.Drawing.Point(44, 84);
             this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton6.Name = "materialButton6";
@@ -170,7 +185,7 @@
             this.materialButton5.Depth = 0;
             this.materialButton5.HighEmphasis = true;
             this.materialButton5.Icon = null;
-            this.materialButton5.Location = new System.Drawing.Point(180, 84);
+            this.materialButton5.Location = new System.Drawing.Point(211, 84);
             this.materialButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton5.Name = "materialButton5";
@@ -208,24 +223,25 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(875, 100);
+            this.label2.Location = new System.Drawing.Point(875, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 24);
+            this.label2.Size = new System.Drawing.Size(57, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "إسم المادة";
             // 
             // subNameBox
             // 
-            this.subNameBox.Location = new System.Drawing.Point(661, 97);
+            this.subNameBox.Location = new System.Drawing.Point(661, 110);
             this.subNameBox.Name = "subNameBox";
-            this.subNameBox.Size = new System.Drawing.Size(199, 32);
+            this.subNameBox.Size = new System.Drawing.Size(199, 27);
             this.subNameBox.TabIndex = 2;
+            this.subNameBox.Leave += new System.EventHandler(this.subNameBox_Leave);
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(41, 50);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(238, 32);
+            this.textBox2.Size = new System.Drawing.Size(238, 27);
             this.textBox2.TabIndex = 3;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
@@ -237,18 +253,9 @@
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(875, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 24);
+            this.label1.Size = new System.Drawing.Size(57, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "كود المادة";
-            // 
-            // subIdBox
-            // 
-            this.subIdBox.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.subIdBox.Enabled = false;
-            this.subIdBox.Location = new System.Drawing.Point(661, 44);
-            this.subIdBox.Name = "subIdBox";
-            this.subIdBox.Size = new System.Drawing.Size(199, 32);
-            this.subIdBox.TabIndex = 1;
             // 
             // label4
             // 
@@ -258,7 +265,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(878, 35);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 45);
+            this.label4.Size = new System.Drawing.Size(80, 36);
             this.label4.TabIndex = 1;
             this.label4.Text = "المــــــــواد";
             // 
@@ -304,15 +311,6 @@
             this.metroSetButton4.ThemeAuthor = "Narwin";
             this.metroSetButton4.ThemeName = "MetroLite";
             // 
-            // subId
-            // 
-            this.subId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.subId.HeaderText = "كود المادة";
-            this.subId.MinimumWidth = 6;
-            this.subId.Name = "subId";
-            this.subId.ReadOnly = true;
-            this.subId.Width = 110;
-            // 
             // subName
             // 
             this.subName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -321,9 +319,27 @@
             this.subName.Name = "subName";
             this.subName.ReadOnly = true;
             // 
+            // subId
+            // 
+            this.subId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.subId.HeaderText = "كود المادة";
+            this.subId.MinimumWidth = 6;
+            this.subId.Name = "subId";
+            this.subId.ReadOnly = true;
+            this.subId.Width = 92;
+            // 
+            // subIdBox
+            // 
+            this.subIdBox.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.subIdBox.Enabled = false;
+            this.subIdBox.Location = new System.Drawing.Point(661, 44);
+            this.subIdBox.Name = "subIdBox";
+            this.subIdBox.Size = new System.Drawing.Size(199, 27);
+            this.subIdBox.TabIndex = 1;
+            // 
             // addSubject
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(23)))), ((int)(((byte)(62)))));
             this.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(54)))));
@@ -350,7 +366,6 @@
 
         private MetroSet_UI.Controls.MetroSetControlBox metroSetControlBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox subIdBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox subNameBox;
@@ -363,6 +378,8 @@
         private MaterialSkin.Controls.MaterialButton materialButton5;
         private System.Windows.Forms.TextBox textBox2;
         private MetroSet_UI.Controls.MetroSetButton metroSetButton4;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox subIdBox;
         private System.Windows.Forms.DataGridViewTextBoxColumn subId;
         private System.Windows.Forms.DataGridViewTextBoxColumn subName;
     }

@@ -46,3 +46,8 @@ E:\tessssssssssssssssst\Training-Center-Desktop-Application\trainingCenter\bin\D
 E:\tessssssssssssssssst\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.dll
 E:\tessssssssssssssssst\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.xml
 E:\tessssssssssssssssst\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.xml
+F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.dll
+F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.dll
+F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.xml
+F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.xml
+F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addoutcomes.resources
