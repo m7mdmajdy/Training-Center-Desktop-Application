@@ -80,28 +80,9 @@
     <Compile Include="addAcademicYear.Designer.cs">
       <DependentUpon>addAcademicYear.cs</DependentUpon>
     </Compile>
-    <Compile Include="addGroup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addGroup.Designer.cs">
-      <DependentUpon>addGroup.cs</DependentUpon>
-    </Compile>
-    <Compile Include="addOutcomes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addOutcomes.Designer.cs">
-      <DependentUpon>addOutcomes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="addUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addUser.Designer.cs">
-      <DependentUpon>addUser.cs</DependentUpon>
-    </Compile>
     <Compile Include="Attendence.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="BL\ApplicationDbContext.cs" />
     <Compile Include="Daily_Transaction.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -168,6 +149,34 @@
     <Compile Include="Teacher.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="totalIncomes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="totalIncomes.Designer.cs">
+      <DependentUpon>totalIncomes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addOutcomes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addOutcomes.Designer.cs">
+      <DependentUpon>addOutcomes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BL\ApplicationDbContext.cs" />
+    <Compile Include="addSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSubject.Designer.cs">
+      <DependentUpon>addSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addStudent.Designer.cs">
+      <DependentUpon>addStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BL\Utilities.cs" />
     <Compile Include="Total_Transaction.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -180,71 +189,17 @@
     <Compile Include="User_Roles.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="WorkSpace.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="WorkSpace.Designer.cs">
-      <DependentUpon>WorkSpace.cs</DependentUpon>
-    </Compile>
-    <Compile Include="addRoom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addRoom.Designer.cs">
-      <DependentUpon>addRoom.cs</DependentUpon>
-    </Compile>
-    <Compile Include="addSubject.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addSubject.Designer.cs">
-      <DependentUpon>addSubject.cs</DependentUpon>
-    </Compile>
-    <Compile Include="addTeacher.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addTeacher.Designer.cs">
-      <DependentUpon>addTeacher.cs</DependentUpon>
-    </Compile>
-    <Compile Include="addInsructor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addInsructor.Designer.cs">
-      <DependentUpon>addInsructor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="addStudent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addStudent.Designer.cs">
-      <DependentUpon>addStudent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BL\Utilities.cs" />
     <EmbeddedResource Include="addAcademicYear.resx">
       <DependentUpon>addAcademicYear.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="addGroup.resx">
-      <DependentUpon>addGroup.cs</DependentUpon>
+    <EmbeddedResource Include="totalIncomes.resx">
+      <DependentUpon>totalIncomes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addOutcomes.resx">
       <DependentUpon>addOutcomes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="addUser.resx">
-      <DependentUpon>addUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WorkSpace.resx">
-      <DependentUpon>WorkSpace.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="addRoom.resx">
-      <DependentUpon>addRoom.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="addSubject.resx">
       <DependentUpon>addSubject.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="addTeacher.resx">
-      <DependentUpon>addTeacher.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="addInsructor.resx">
-      <DependentUpon>addInsructor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addStudent.resx">
       <DependentUpon>addStudent.cs</DependentUpon>

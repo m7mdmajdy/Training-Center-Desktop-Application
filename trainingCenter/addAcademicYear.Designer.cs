@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.academicYearBox = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
@@ -44,8 +47,6 @@
             this.yearID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroSetButton4 = new MetroSet_UI.Controls.MetroSetButton();
-            this.label15 = new System.Windows.Forms.Label();
-            this.academicYearBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -99,6 +100,44 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "البيانات";
+            // 
+            // academicYearBox
+            // 
+            this.academicYearBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.academicYearBox.Font = new System.Drawing.Font("Arial Narrow", 12F);
+            this.academicYearBox.FormattingEnabled = true;
+            this.academicYearBox.ItemHeight = 20;
+            this.academicYearBox.Items.AddRange(new object[] {
+            "الأول الإبتدائى",
+            "الثانى الإبتدائى",
+            "الثالث الإبتدائى",
+            "الرابع الإبتدائى ",
+            "الخامس الإبتدائى",
+            "السادس الإبتدائى ",
+            "الأول الإعدادى ",
+            "الثانى الإعدادى ",
+            "الثالث الإعدادى ",
+            "الأول الثانوى ",
+            "الثانى الثانوى ",
+            "الثالث الثانوى"});
+            this.academicYearBox.Location = new System.Drawing.Point(683, 114);
+            this.academicYearBox.Name = "academicYearBox";
+            this.academicYearBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.academicYearBox.Size = new System.Drawing.Size(199, 28);
+            this.academicYearBox.TabIndex = 11;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
+            this.label15.ForeColor = System.Drawing.Color.Red;
+            this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label15.Location = new System.Drawing.Point(743, 84);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(99, 20);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "اختر صف دراسى";
+            this.label15.Visible = false;
             // 
             // materialButton3
             // 
@@ -258,6 +297,14 @@
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(23)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.yearID,
@@ -313,44 +360,6 @@
             this.metroSetButton4.Text = "ï";
             this.metroSetButton4.ThemeAuthor = "Narwin";
             this.metroSetButton4.ThemeName = "MetroLite";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
-            this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label15.Location = new System.Drawing.Point(743, 84);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(99, 20);
-            this.label15.TabIndex = 10;
-            this.label15.Text = "اختر صف دراسى";
-            this.label15.Visible = false;
-            // 
-            // academicYearBox
-            // 
-            this.academicYearBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.academicYearBox.Font = new System.Drawing.Font("Arial Narrow", 12F);
-            this.academicYearBox.FormattingEnabled = true;
-            this.academicYearBox.ItemHeight = 20;
-            this.academicYearBox.Items.AddRange(new object[] {
-            "الأول الإبتدائى",
-            "الثانى الإبتدائى",
-            "الثالث الإبتدائى",
-            "الرابع الإبتدائى ",
-            "الخامس الإبتدائى",
-            "السادس الإبتدائى ",
-            "الأول الإعدادى ",
-            "الثانى الإعدادى ",
-            "الثالث الإعدادى ",
-            "الأول الثانوى ",
-            "الثانى الثانوى ",
-            "الثالث الثانوى"});
-            this.academicYearBox.Location = new System.Drawing.Point(683, 114);
-            this.academicYearBox.Name = "academicYearBox";
-            this.academicYearBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.academicYearBox.Size = new System.Drawing.Size(199, 28);
-            this.academicYearBox.TabIndex = 11;
             // 
             // addAcademicYear
             // 

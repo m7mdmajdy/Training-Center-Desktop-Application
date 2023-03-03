@@ -20,6 +20,17 @@
     <Property Name="Payment_State" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="Student_Group" Relationship="Self.FK_Attendence_Student_Group" FromRole="Attendence" ToRole="Student_Group" />
   </EntityType>
+  <EntityType Name="Daily_Transaction">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Person_ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="Transaction_Type" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+  </EntityType>
   <EntityType Name="GroupName">
     <Key>
       <PropertyRef Name="G_ID" />
@@ -168,17 +179,6 @@
     </Key>
     <Property Name="Role_Code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="Role_Title" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
-  </EntityType>
-  <EntityType Name="Daily_Transaction">
-    <Key>
-      <PropertyRef Name="Person_ID" />
-      <PropertyRef Name="Transaction_Type" />
-    </Key>
-    <Property Name="Person_ID" Type="Int32" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
-    <Property Name="Price" Type="Double" />
-    <Property Name="Transaction_Type" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Date" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="Guest_WorkSpace_Attend">
     <Key>
@@ -366,9 +366,10 @@
     <End Role="AcademicYear" Type="Self.AcademicYear" Multiplicity="*" />
     <End Role="Teacher" Type="Self.Teacher" Multiplicity="*" />
   </Association>
-  <EntityContainer Name="EDPCenterEntities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="EDPCenterEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="AcademicYears" EntityType="Self.AcademicYear" />
     <EntitySet Name="Attendences" EntityType="Self.Attendence" />
+    <EntitySet Name="Daily_Transaction" EntityType="Self.Daily_Transaction" />
     <EntitySet Name="GroupNames" EntityType="Self.GroupName" />
     <EntitySet Name="Guest_workspace" EntityType="Self.Guest_workspace" />
     <EntitySet Name="Instructors" EntityType="Self.Instructor" />
@@ -382,7 +383,6 @@
     <EntitySet Name="Student_Parents_Phones" EntityType="Self.Student_Parents_Phones" />
     <EntitySet Name="Student_Phones" EntityType="Self.Student_Phones" />
     <EntitySet Name="User_Roles" EntityType="Self.User_Roles" />
-    <EntitySet Name="Daily_Transaction" EntityType="Self.Daily_Transaction" />
     <EntitySet Name="Guest_WorkSpace_Attend" EntityType="Self.Guest_WorkSpace_Attend" />
     <EntitySet Name="Instructor_Attendence" EntityType="Self.Instructor_Attendence" />
     <EntitySet Name="Total_Transaction" EntityType="Self.Total_Transaction" />

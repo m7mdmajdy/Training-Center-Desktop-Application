@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -40,12 +41,12 @@
             this.subNameBox = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.subIdBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.metroSetButton4 = new MetroSet_UI.Controls.MetroSetButton();
-            this.subName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subIdBox = new System.Windows.Forms.TextBox();
+            this.subName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.metroSetButton4 = new MetroSet_UI.Controls.MetroSetButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -257,6 +258,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "كود المادة";
             // 
+            // subIdBox
+            // 
+            this.subIdBox.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.subIdBox.Enabled = false;
+            this.subIdBox.Location = new System.Drawing.Point(661, 44);
+            this.subIdBox.Name = "subIdBox";
+            this.subIdBox.Size = new System.Drawing.Size(199, 27);
+            this.subIdBox.TabIndex = 1;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -272,6 +282,14 @@
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(23)))), ((int)(((byte)(62)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.subId,
@@ -284,6 +302,23 @@
             this.dataGridView1.Size = new System.Drawing.Size(949, 249);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // subId
+            // 
+            this.subId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.subId.HeaderText = "كود المادة";
+            this.subId.MinimumWidth = 6;
+            this.subId.Name = "subId";
+            this.subId.ReadOnly = true;
+            this.subId.Width = 92;
+            // 
+            // subName
+            // 
+            this.subName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.subName.HeaderText = "اسم المادة";
+            this.subName.MinimumWidth = 6;
+            this.subName.Name = "subName";
+            this.subName.ReadOnly = true;
             // 
             // metroSetButton4
             // 
@@ -310,32 +345,6 @@
             this.metroSetButton4.Text = "ï";
             this.metroSetButton4.ThemeAuthor = "Narwin";
             this.metroSetButton4.ThemeName = "MetroLite";
-            // 
-            // subName
-            // 
-            this.subName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.subName.HeaderText = "اسم المادة";
-            this.subName.MinimumWidth = 6;
-            this.subName.Name = "subName";
-            this.subName.ReadOnly = true;
-            // 
-            // subId
-            // 
-            this.subId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.subId.HeaderText = "كود المادة";
-            this.subId.MinimumWidth = 6;
-            this.subId.Name = "subId";
-            this.subId.ReadOnly = true;
-            this.subId.Width = 92;
-            // 
-            // subIdBox
-            // 
-            this.subIdBox.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.subIdBox.Enabled = false;
-            this.subIdBox.Location = new System.Drawing.Point(661, 44);
-            this.subIdBox.Name = "subIdBox";
-            this.subIdBox.Size = new System.Drawing.Size(199, 27);
-            this.subIdBox.TabIndex = 1;
             // 
             // addSubject
             // 

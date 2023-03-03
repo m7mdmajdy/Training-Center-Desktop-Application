@@ -1,6 +1,6 @@
 ﻿namespace trainingCenter
 {
-    partial class addoutcomes
+    partial class totalIncomes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -84,9 +83,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label12);
@@ -114,7 +110,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dateTimePicker1.Location = new System.Drawing.Point(372, 45);
             this.dateTimePicker1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
@@ -313,26 +309,15 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(834, 35);
+            this.label4.Location = new System.Drawing.Point(661, 35);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 36);
+            this.label4.Size = new System.Drawing.Size(297, 36);
             this.label4.TabIndex = 1;
-            this.label4.Text = "المصروفات";
+            this.label4.Text = "إجمالى الإيرادات والمصروفات";
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(23)))), ((int)(((byte)(62)))));
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.subId,
@@ -349,7 +334,7 @@
             // subId
             // 
             this.subId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.subId.HeaderText = "إسم البند";
+            this.subId.HeaderText = "كود المادة";
             this.subId.MinimumWidth = 6;
             this.subId.Name = "subId";
             this.subId.ReadOnly = true;
@@ -357,7 +342,7 @@
             // subName
             // 
             this.subName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.subName.HeaderText = "المبلغ";
+            this.subName.HeaderText = "اسم المادة";
             this.subName.MinimumWidth = 6;
             this.subName.Name = "subName";
             this.subName.ReadOnly = true;
@@ -415,7 +400,7 @@
             this.materialButton4.UseVisualStyleBackColor = true;
             this.materialButton4.Click += new System.EventHandler(this.materialButton2_Click);
             // 
-            // addoutcomes
+            // totalIncomes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -428,7 +413,7 @@
             this.Controls.Add(this.metroSetControlBox1);
             this.Controls.Add(this.materialButton4);
             this.Controls.Add(this.label4);
-            this.Name = "addoutcomes";
+            this.Name = "totalIncomes";
             this.SmallLineColor1 = System.Drawing.Color.Transparent;
             this.SmallLineColor2 = System.Drawing.Color.Transparent;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -462,10 +447,10 @@
         private System.Windows.Forms.TextBox nameBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private MaterialSkin.Controls.MaterialButton materialButton4;
         private System.Windows.Forms.DataGridViewTextBoxColumn subId;
         private System.Windows.Forms.DataGridViewTextBoxColumn subName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private MaterialSkin.Controls.MaterialButton materialButton4;
     }
 }
 

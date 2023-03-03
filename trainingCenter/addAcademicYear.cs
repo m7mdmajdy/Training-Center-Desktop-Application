@@ -24,7 +24,7 @@ namespace trainingCenter
 
         }
 
-        public bool checkValidation()
+        private bool checkValidation()
         {
             isValidYear = Utilities.checkDropDownList(academicYearBox.SelectedItem);
             if (!isValidYear)

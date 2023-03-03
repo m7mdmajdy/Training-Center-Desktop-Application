@@ -48,6 +48,17 @@ namespace trainingCenter.BL
             }
         }
         
+        public static bool checkDoubleNumber(string s)
+        {
+            if (double.TryParse(s,out double x))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 
 }

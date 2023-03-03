@@ -23,13 +23,11 @@
           <Property Name="Att_Date" Type="datetime" Nullable="false" />
           <Property Name="Payment_State" Type="bit" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'EDPCenter.dbo.Daily_Transaction' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Daily_Transaction">
           <Key>
-            <PropertyRef Name="Person_ID" />
-            <PropertyRef Name="Transaction_Type" />
+            <PropertyRef Name="ID" />
           </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Person_ID" Type="int" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="120" />
           <Property Name="Price" Type="float" />
@@ -456,6 +454,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
         <EntityContainer Name="EDPCenterModelStoreContainer">
           <EntitySet Name="AcademicYear" EntityType="Self.AcademicYear" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Attendence" EntityType="Self.Attendence" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Daily_Transaction" EntityType="Self.Daily_Transaction" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Group_Room" EntityType="Self.Group_Room" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="GroupName" EntityType="Self.GroupName" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Guest_workspace" EntityType="Self.Guest_workspace" Schema="dbo" store:Type="Tables" />
@@ -472,15 +471,6 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
           <EntitySet Name="Student_Parents_Phones" EntityType="Self.Student_Parents_Phones" Schema="NewSchema" store:Type="Tables" />
           <EntitySet Name="Student_Phones" EntityType="Self.Student_Phones" Schema="NewSchema" store:Type="Tables" />
           <EntitySet Name="User_Roles" EntityType="Self.User_Roles" Schema="NewSchema" store:Type="Tables" />
-          <EntitySet Name="Daily_Transaction" EntityType="Self.Daily_Transaction" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Daily_Transaction].[Person_ID] AS [Person_ID], 
-    [Daily_Transaction].[Name] AS [Name], 
-    [Daily_Transaction].[Price] AS [Price], 
-    [Daily_Transaction].[Transaction_Type] AS [Transaction_Type], 
-    [Daily_Transaction].[Date] AS [Date]
-    FROM [dbo].[Daily_Transaction] AS [Daily_Transaction]</DefiningQuery>
-          </EntitySet>
           <EntitySet Name="Guest_WorkSpace_Attend" EntityType="Self.Guest_WorkSpace_Attend" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [Guest_WorkSpace_Attend].[Guest_ID] AS [Guest_ID], 
@@ -617,6 +607,17 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
           <Property Name="Att_Date" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Payment_State" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="Student_Group" Relationship="Self.FK_Attendence_Student_Group" FromRole="Attendence" ToRole="Student_Group" />
+        </EntityType>
+        <EntityType Name="Daily_Transaction">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Person_ID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+          <Property Name="Price" Type="Double" />
+          <Property Name="Transaction_Type" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="GroupName">
           <Key>
@@ -766,17 +767,6 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
           </Key>
           <Property Name="Role_Code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="Role_Title" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
-        </EntityType>
-        <EntityType Name="Daily_Transaction">
-          <Key>
-            <PropertyRef Name="Person_ID" />
-            <PropertyRef Name="Transaction_Type" />
-          </Key>
-          <Property Name="Person_ID" Type="Int32" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
-          <Property Name="Price" Type="Double" />
-          <Property Name="Transaction_Type" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Date" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="Guest_WorkSpace_Attend">
           <Key>
@@ -964,9 +954,10 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
           <End Role="AcademicYear" Type="Self.AcademicYear" Multiplicity="*" />
           <End Role="Teacher" Type="Self.Teacher" Multiplicity="*" />
         </Association>
-        <EntityContainer Name="EDPCenterEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="EDPCenterEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="AcademicYears" EntityType="Self.AcademicYear" />
           <EntitySet Name="Attendences" EntityType="Self.Attendence" />
+          <EntitySet Name="Daily_Transaction" EntityType="Self.Daily_Transaction" />
           <EntitySet Name="GroupNames" EntityType="Self.GroupName" />
           <EntitySet Name="Guest_workspace" EntityType="Self.Guest_workspace" />
           <EntitySet Name="Instructors" EntityType="Self.Instructor" />
@@ -980,7 +971,6 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
           <EntitySet Name="Student_Parents_Phones" EntityType="Self.Student_Parents_Phones" />
           <EntitySet Name="Student_Phones" EntityType="Self.Student_Phones" />
           <EntitySet Name="User_Roles" EntityType="Self.User_Roles" />
-          <EntitySet Name="Daily_Transaction" EntityType="Self.Daily_Transaction" />
           <EntitySet Name="Guest_WorkSpace_Attend" EntityType="Self.Guest_WorkSpace_Attend" />
           <EntitySet Name="Instructor_Attendence" EntityType="Self.Instructor_Attendence" />
           <EntitySet Name="Total_Transaction" EntityType="Self.Total_Transaction" />
@@ -1038,7 +1028,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="EDPCenterModelStoreContainer" CdmEntityContainer="EDPCenterEntities1">
+        <EntityContainerMapping StorageEntityContainer="EDPCenterModelStoreContainer" CdmEntityContainer="EDPCenterEntities">
           <EntitySetMapping Name="AcademicYears">
             <EntityTypeMapping TypeName="EDPCenterModel.AcademicYear">
               <MappingFragment StoreEntitySet="AcademicYear">
@@ -1054,6 +1044,18 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
                 <ScalarProperty Name="G_ID" ColumnName="G_ID" />
                 <ScalarProperty Name="Att_Date" ColumnName="Att_Date" />
                 <ScalarProperty Name="Payment_State" ColumnName="Payment_State" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Daily_Transaction">
+            <EntityTypeMapping TypeName="EDPCenterModel.Daily_Transaction">
+              <MappingFragment StoreEntitySet="Daily_Transaction">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Person_ID" ColumnName="Person_ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Transaction_Type" ColumnName="Transaction_Type" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1193,17 +1195,6 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
               <MappingFragment StoreEntitySet="User_Roles">
                 <ScalarProperty Name="Role_Code" ColumnName="Role_Code" />
                 <ScalarProperty Name="Role_Title" ColumnName="Role_Title" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Daily_Transaction">
-            <EntityTypeMapping TypeName="EDPCenterModel.Daily_Transaction">
-              <MappingFragment StoreEntitySet="Daily_Transaction">
-                <ScalarProperty Name="Person_ID" ColumnName="Person_ID" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Price" ColumnName="Price" />
-                <ScalarProperty Name="Transaction_Type" ColumnName="Transaction_Type" />
-                <ScalarProperty Name="Date" ColumnName="Date" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

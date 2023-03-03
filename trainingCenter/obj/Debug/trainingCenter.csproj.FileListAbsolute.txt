@@ -5,13 +5,7 @@ F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCe
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.AssemblyReference.cache
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.SuggestedBindingRedirects.cache
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addAcademicYear.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addGroup.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addUser.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.WorkSpace.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addRoom.resources
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addSubject.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addTeacher.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addInstructor.resources
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addStudent.resources
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.Properties.Resources.resources
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.GenerateResource.cache
@@ -51,3 +45,4 @@ F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCe
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.xml
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.xml
 F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addoutcomes.resources
+F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.totalIncomes.resources

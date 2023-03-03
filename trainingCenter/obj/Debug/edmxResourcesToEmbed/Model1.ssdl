@@ -18,13 +18,11 @@
     <Property Name="Att_Date" Type="datetime" Nullable="false" />
     <Property Name="Payment_State" Type="bit" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'EDPCenter.dbo.Daily_Transaction' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="Daily_Transaction">
     <Key>
-      <PropertyRef Name="Person_ID" />
-      <PropertyRef Name="Transaction_Type" />
+      <PropertyRef Name="ID" />
     </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Person_ID" Type="int" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="120" />
     <Property Name="Price" Type="float" />
@@ -451,6 +449,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
   <EntityContainer Name="EDPCenterModelStoreContainer">
     <EntitySet Name="AcademicYear" EntityType="Self.AcademicYear" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Attendence" EntityType="Self.Attendence" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Daily_Transaction" EntityType="Self.Daily_Transaction" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Group_Room" EntityType="Self.Group_Room" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GroupName" EntityType="Self.GroupName" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Guest_workspace" EntityType="Self.Guest_workspace" Schema="dbo" store:Type="Tables" />
@@ -467,15 +466,6 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
     <EntitySet Name="Student_Parents_Phones" EntityType="Self.Student_Parents_Phones" Schema="NewSchema" store:Type="Tables" />
     <EntitySet Name="Student_Phones" EntityType="Self.Student_Phones" Schema="NewSchema" store:Type="Tables" />
     <EntitySet Name="User_Roles" EntityType="Self.User_Roles" Schema="NewSchema" store:Type="Tables" />
-    <EntitySet Name="Daily_Transaction" EntityType="Self.Daily_Transaction" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [Daily_Transaction].[Person_ID] AS [Person_ID], 
-    [Daily_Transaction].[Name] AS [Name], 
-    [Daily_Transaction].[Price] AS [Price], 
-    [Daily_Transaction].[Transaction_Type] AS [Transaction_Type], 
-    [Daily_Transaction].[Date] AS [Date]
-    FROM [dbo].[Daily_Transaction] AS [Daily_Transaction]</DefiningQuery>
-    </EntitySet>
     <EntitySet Name="Guest_WorkSpace_Attend" EntityType="Self.Guest_WorkSpace_Attend" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [Guest_WorkSpace_Attend].[Guest_ID] AS [Guest_ID], 

@@ -14,6 +14,7 @@ namespace trainingCenter
     
     public partial class Daily_Transaction
     {
+        public int ID { get; set; }
         public int Person_ID { get; set; }
         public string Name { get; set; }
         public Nullable<double> Price { get; set; }

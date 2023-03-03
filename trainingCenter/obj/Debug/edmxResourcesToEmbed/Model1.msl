@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="EDPCenterModelStoreContainer" CdmEntityContainer="EDPCenterEntities1">
+  <EntityContainerMapping StorageEntityContainer="EDPCenterModelStoreContainer" CdmEntityContainer="EDPCenterEntities">
     <EntitySetMapping Name="AcademicYears">
       <EntityTypeMapping TypeName="EDPCenterModel.AcademicYear">
         <MappingFragment StoreEntitySet="AcademicYear">
@@ -16,6 +16,18 @@
           <ScalarProperty Name="G_ID" ColumnName="G_ID" />
           <ScalarProperty Name="Att_Date" ColumnName="Att_Date" />
           <ScalarProperty Name="Payment_State" ColumnName="Payment_State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Daily_Transaction">
+      <EntityTypeMapping TypeName="EDPCenterModel.Daily_Transaction">
+        <MappingFragment StoreEntitySet="Daily_Transaction">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Person_ID" ColumnName="Person_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Transaction_Type" ColumnName="Transaction_Type" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -155,17 +167,6 @@
         <MappingFragment StoreEntitySet="User_Roles">
           <ScalarProperty Name="Role_Code" ColumnName="Role_Code" />
           <ScalarProperty Name="Role_Title" ColumnName="Role_Title" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Daily_Transaction">
-      <EntityTypeMapping TypeName="EDPCenterModel.Daily_Transaction">
-        <MappingFragment StoreEntitySet="Daily_Transaction">
-          <ScalarProperty Name="Person_ID" ColumnName="Person_ID" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Price" ColumnName="Price" />
-          <ScalarProperty Name="Transaction_Type" ColumnName="Transaction_Type" />
-          <ScalarProperty Name="Date" ColumnName="Date" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

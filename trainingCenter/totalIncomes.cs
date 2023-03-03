@@ -13,14 +13,14 @@ using trainingCenter.BL;
 
 namespace trainingCenter
 {
-    public partial class addoutcomes : MetroSetForm
+    public partial class totalIncomes : MetroSetForm
     {
         bool isValidName;
         bool isValidNumber;
         string transactionType = "مصروفات";
 
         EDPCenterEntities eDPCenterEntities;
-        public addoutcomes()
+        public totalIncomes()
         {
             InitializeComponent();
             eDPCenterEntities = new EDPCenterEntities();
@@ -100,21 +100,18 @@ namespace trainingCenter
                     Price = price,
                     Date= Convert.ToDateTime(dateTimePicker1.Text),
                     Transaction_Type = transactionType
-
+                };
+                Total_Transaction total_Transaction = new Total_Transaction()
+                {
+                    Name = nameBox.Text,
+                    Price = price,
+                    Date= Convert.ToDateTime(dateTimePicker1.Text),
+                    Transaction_Type = transactionType
                 };
                 eDPCenterEntities.Daily_Transaction.Add(daily_Transaction);
+                eDPCenterEntities.Total_Transaction.Add(total_Transaction);
                 eDPCenterEntities.SaveChanges();
                 MessageBox.Show("تم اضافة البند");
-                //Total_Transaction total_Transaction = new Total_Transaction()
-                //{
-                //    Name = nameBox.Text,
-                //    Price = price,
-                //    Date= Convert.ToDateTime(dateTimePicker1.Text),
-                //    Transaction_Type = transactionType
-                //};
-
-                //eDPCenterEntities.Total_Transaction.Add(total_Transaction);
-
 
             }
         }
@@ -136,16 +133,16 @@ namespace trainingCenter
 
                     MessageBox.Show("تم تعديل البند");
                 };
-                //Total_Transaction total_Transaction = eDPCenterEntities.Total_Transaction.Where(x => x.Name== nameBox.Text && x.Date == date).FirstOrDefault();
-                //if (daily_Transaction != null)
-                //{
-                //    total_Transaction.Name = nameBox.Text;
-                //    total_Transaction.Price = price;
-                //    total_Transaction.Date= date;
-                //    eDPCenterEntities.SaveChanges();
+                Total_Transaction total_Transaction = eDPCenterEntities.Total_Transaction.Where(x => x.Name== nameBox.Text && x.Date == date).FirstOrDefault();
+                if (daily_Transaction != null)
+                {
+                    total_Transaction.Name = nameBox.Text;
+                    total_Transaction.Price = price;
+                    total_Transaction.Date= date;
+                    eDPCenterEntities.SaveChanges();
 
                    
-                //};
+                };
             }
         }
 

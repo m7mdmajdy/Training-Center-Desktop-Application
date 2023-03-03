@@ -23,7 +23,7 @@ namespace trainingCenter
             eDPCenterEntities = new EDPCenterEntities();
 
         }
-        public bool checkValidation()
+        private bool checkValidation()
         {
             isValidSubject= Utilities.validateNameInArabic(subNameBox.Text);
             if (!isValidSubject)
