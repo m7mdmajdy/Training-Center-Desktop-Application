@@ -130,6 +130,18 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Total_Transaction">
+      <EntityTypeMapping TypeName="EDPCenterModel.Total_Transaction">
+        <MappingFragment StoreEntitySet="Total_Transaction">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Person_ID" ColumnName="Person_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Transaction_Type" ColumnName="Transaction_Type" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="EDPCenterModel.User">
         <MappingFragment StoreEntitySet="User">
@@ -190,17 +202,6 @@
           <ScalarProperty Name="Room_ID" ColumnName="Room_ID" />
           <ScalarProperty Name="Cost" ColumnName="Cost" />
           <ScalarProperty Name="Discount" ColumnName="Discount" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Total_Transaction">
-      <EntityTypeMapping TypeName="EDPCenterModel.Total_Transaction">
-        <MappingFragment StoreEntitySet="Total_Transaction">
-          <ScalarProperty Name="Person_ID" ColumnName="Person_ID" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Price" ColumnName="Price" />
-          <ScalarProperty Name="Transaction_Type" ColumnName="Transaction_Type" />
-          <ScalarProperty Name="Date" ColumnName="Date" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

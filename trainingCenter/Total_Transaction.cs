@@ -14,7 +14,8 @@ namespace trainingCenter
     
     public partial class Total_Transaction
     {
-        public int Person_ID { get; set; }
+        public int ID { get; set; }
+        public Nullable<int> Person_ID { get; set; }
         public string Name { get; set; }
         public Nullable<double> Price { get; set; }
         public string Transaction_Type { get; set; }

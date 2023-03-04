@@ -37,13 +37,13 @@ namespace trainingCenter
         public virtual DbSet<Student_Group> Student_Group { get; set; }
         public virtual DbSet<Subject> Subjects { get; set; }
         public virtual DbSet<Teacher> Teachers { get; set; }
+        public virtual DbSet<Total_Transaction> Total_Transaction { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Student_Parents_Phones> Student_Parents_Phones { get; set; }
         public virtual DbSet<Student_Phones> Student_Phones { get; set; }
         public virtual DbSet<User_Roles> User_Roles { get; set; }
         public virtual DbSet<Guest_WorkSpace_Attend> Guest_WorkSpace_Attend { get; set; }
         public virtual DbSet<Instructor_Attendence> Instructor_Attendence { get; set; }
-        public virtual DbSet<Total_Transaction> Total_Transaction { get; set; }
         public virtual DbSet<User_Attend> User_Attend { get; set; }
         public virtual DbSet<Exam> Exams { get; set; }
         public virtual DbSet<Expens> Expenses { get; set; }

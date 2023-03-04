@@ -25,7 +25,7 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Person_ID" Type="Int32" Nullable="false" />
+    <Property Name="Person_ID" Type="Int32" />
     <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
     <Property Name="Price" Type="Double" />
     <Property Name="Transaction_Type" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
@@ -141,6 +141,17 @@
     <NavigationProperty Name="Subjects" Relationship="Self.Teacher_Subject" FromRole="Teacher" ToRole="Subject" />
     <NavigationProperty Name="AcademicYears" Relationship="Self.Teacher_Year" FromRole="Teacher" ToRole="AcademicYear" />
   </EntityType>
+  <EntityType Name="Total_Transaction">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Person_ID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="Transaction_Type" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+  </EntityType>
   <EntityType Name="User">
     <Key>
       <PropertyRef Name="ID" />
@@ -204,17 +215,6 @@
     <Property Name="Discount" Type="Double" />
     <NavigationProperty Name="Instructor" Relationship="Self.FK_Instructor_Attendence_Instructors" FromRole="Instructor_Attendence" ToRole="Instructors" />
     <NavigationProperty Name="Room" Relationship="Self.FK_Instructor_Attendence_Room" FromRole="Instructor_Attendence" ToRole="Room" />
-  </EntityType>
-  <EntityType Name="Total_Transaction">
-    <Key>
-      <PropertyRef Name="Person_ID" />
-      <PropertyRef Name="Transaction_Type" />
-    </Key>
-    <Property Name="Person_ID" Type="Int32" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
-    <Property Name="Price" Type="Double" />
-    <Property Name="Transaction_Type" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Date" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="User_Attend">
     <Key>
@@ -379,13 +379,13 @@
     <EntitySet Name="Student_Group" EntityType="Self.Student_Group" />
     <EntitySet Name="Subjects" EntityType="Self.Subject" />
     <EntitySet Name="Teachers" EntityType="Self.Teacher" />
+    <EntitySet Name="Total_Transaction" EntityType="Self.Total_Transaction" />
     <EntitySet Name="Users" EntityType="Self.User" />
     <EntitySet Name="Student_Parents_Phones" EntityType="Self.Student_Parents_Phones" />
     <EntitySet Name="Student_Phones" EntityType="Self.Student_Phones" />
     <EntitySet Name="User_Roles" EntityType="Self.User_Roles" />
     <EntitySet Name="Guest_WorkSpace_Attend" EntityType="Self.Guest_WorkSpace_Attend" />
     <EntitySet Name="Instructor_Attendence" EntityType="Self.Instructor_Attendence" />
-    <EntitySet Name="Total_Transaction" EntityType="Self.Total_Transaction" />
     <EntitySet Name="User_Attend" EntityType="Self.User_Attend" />
     <EntitySet Name="Exams" EntityType="Self.Exam" />
     <EntitySet Name="Expenses" EntityType="Self.Expens" />

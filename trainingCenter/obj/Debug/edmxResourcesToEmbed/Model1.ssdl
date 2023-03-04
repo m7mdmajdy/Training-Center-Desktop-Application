@@ -23,7 +23,7 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Person_ID" Type="int" Nullable="false" />
+    <Property Name="Person_ID" Type="int" />
     <Property Name="Name" Type="nvarchar" MaxLength="120" />
     <Property Name="Price" Type="float" />
     <Property Name="Transaction_Type" Type="nvarchar" MaxLength="120" Nullable="false" />
@@ -174,14 +174,12 @@ warning 6002: The table/view 'EDPCenter.dbo.Instructor_Attendence' does not have
     <Property Name="Teacher_ID" Type="int" Nullable="false" />
     <Property Name="AcademicYear_ID" Type="int" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'EDPCenter.dbo.Total_Transaction' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="Total_Transaction">
     <Key>
-      <PropertyRef Name="Person_ID" />
-      <PropertyRef Name="Transaction_Type" />
+      <PropertyRef Name="ID" />
     </Key>
-    <Property Name="Person_ID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Person_ID" Type="int" />
     <Property Name="Name" Type="nvarchar" MaxLength="120" />
     <Property Name="Price" Type="float" />
     <Property Name="Transaction_Type" Type="nvarchar" MaxLength="120" Nullable="false" />
@@ -462,6 +460,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
     <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Teacher_Subject" EntityType="Self.Teacher_Subject" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Teacher_Year" EntityType="Self.Teacher_Year" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Total_Transaction" EntityType="Self.Total_Transaction" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Student_Parents_Phones" EntityType="Self.Student_Parents_Phones" Schema="NewSchema" store:Type="Tables" />
     <EntitySet Name="Student_Phones" EntityType="Self.Student_Phones" Schema="NewSchema" store:Type="Tables" />
@@ -484,15 +483,6 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
     [Instructor_Attendence].[Cost] AS [Cost], 
     [Instructor_Attendence].[Discount] AS [Discount]
     FROM [dbo].[Instructor_Attendence] AS [Instructor_Attendence]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="Total_Transaction" EntityType="Self.Total_Transaction" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [Total_Transaction].[Person_ID] AS [Person_ID], 
-    [Total_Transaction].[Name] AS [Name], 
-    [Total_Transaction].[Price] AS [Price], 
-    [Total_Transaction].[Transaction_Type] AS [Transaction_Type], 
-    [Total_Transaction].[Date] AS [Date]
-    FROM [dbo].[Total_Transaction] AS [Total_Transaction]</DefiningQuery>
     </EntitySet>
     <EntitySet Name="User_Attend" EntityType="Self.User_Attend" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
