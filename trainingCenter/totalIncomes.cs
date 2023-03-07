@@ -239,6 +239,13 @@ namespace trainingCenter
             if (textBox2.Text.Length == 0)
                 textBox2.Text = "ادخل اسم البند";
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 
 }

@@ -336,5 +336,20 @@ namespace trainingCenter
                 label16.Visible = false;
             }
         }
+
+        private void ageUpDownMenu_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

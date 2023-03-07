@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.academicYearBox = new System.Windows.Forms.ComboBox();
@@ -59,7 +59,7 @@
             this.metroSetControlBox1.CloseNormalForeColor = System.Drawing.Color.Gray;
             this.metroSetControlBox1.DisabledForeColor = System.Drawing.Color.Silver;
             this.metroSetControlBox1.IsDerivedStyle = true;
-            this.metroSetControlBox1.Location = new System.Drawing.Point(876, 2);
+            this.metroSetControlBox1.Location = new System.Drawing.Point(1183, 2);
             this.metroSetControlBox1.MaximizeBox = false;
             this.metroSetControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.metroSetControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
@@ -90,13 +90,14 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.yearIdBox);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(12, 78);
+            this.groupBox1.Location = new System.Drawing.Point(18, 78);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(0);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(949, 203);
+            this.groupBox1.Size = new System.Drawing.Size(1225, 245);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "البيانات";
@@ -120,11 +121,11 @@
             "الأول الثانوى ",
             "الثانى الثانوى ",
             "الثالث الثانوى"});
-            this.academicYearBox.Location = new System.Drawing.Point(683, 114);
+            this.academicYearBox.Location = new System.Drawing.Point(910, 132);
             this.academicYearBox.Name = "academicYearBox";
             this.academicYearBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.academicYearBox.Size = new System.Drawing.Size(199, 28);
-            this.academicYearBox.TabIndex = 11;
+            this.academicYearBox.TabIndex = 2;
             // 
             // label15
             // 
@@ -132,7 +133,7 @@
             this.label15.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
             this.label15.ForeColor = System.Drawing.Color.Red;
             this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label15.Location = new System.Drawing.Point(743, 84);
+            this.label15.Location = new System.Drawing.Point(970, 102);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(99, 20);
             this.label15.TabIndex = 10;
@@ -148,7 +149,7 @@
             this.materialButton3.Depth = 0;
             this.materialButton3.HighEmphasis = true;
             this.materialButton3.Icon = null;
-            this.materialButton3.Location = new System.Drawing.Point(29, 144);
+            this.materialButton3.Location = new System.Drawing.Point(41, 160);
             this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton3.Name = "materialButton3";
@@ -169,7 +170,7 @@
             this.materialButton2.Depth = 0;
             this.materialButton2.HighEmphasis = true;
             this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(122, 144);
+            this.materialButton2.Location = new System.Drawing.Point(125, 160);
             this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton2.Name = "materialButton2";
@@ -190,7 +191,7 @@
             this.materialButton6.Depth = 0;
             this.materialButton6.HighEmphasis = true;
             this.materialButton6.Icon = null;
-            this.materialButton6.Location = new System.Drawing.Point(71, 84);
+            this.materialButton6.Location = new System.Drawing.Point(41, 84);
             this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton6.Name = "materialButton6";
@@ -211,7 +212,7 @@
             this.materialButton5.Depth = 0;
             this.materialButton5.HighEmphasis = true;
             this.materialButton5.Icon = null;
-            this.materialButton5.Location = new System.Drawing.Point(180, 84);
+            this.materialButton5.Location = new System.Drawing.Point(215, 84);
             this.materialButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton5.Name = "materialButton5";
@@ -232,7 +233,7 @@
             this.materialButton1.Depth = 0;
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(215, 144);
+            this.materialButton1.Location = new System.Drawing.Point(215, 160);
             this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
@@ -248,28 +249,28 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(893, 114);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1141, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 20);
+            this.label2.Size = new System.Drawing.Size(45, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "الصف";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(41, 50);
+            this.textBox2.Location = new System.Drawing.Point(41, 37);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(238, 27);
+            this.textBox2.Size = new System.Drawing.Size(238, 29);
             this.textBox2.TabIndex = 3;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(897, 47);
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1141, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 20);
+            this.label1.Size = new System.Drawing.Size(42, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "الكـود";
             // 
@@ -277,9 +278,9 @@
             // 
             this.yearIdBox.BackColor = System.Drawing.SystemColors.ControlDark;
             this.yearIdBox.Enabled = false;
-            this.yearIdBox.Location = new System.Drawing.Point(683, 44);
+            this.yearIdBox.Location = new System.Drawing.Point(910, 40);
             this.yearIdBox.Name = "yearIdBox";
-            this.yearIdBox.Size = new System.Drawing.Size(199, 27);
+            this.yearIdBox.Size = new System.Drawing.Size(199, 29);
             this.yearIdBox.TabIndex = 1;
             // 
             // label4
@@ -288,7 +289,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(772, 35);
+            this.label4.Location = new System.Drawing.Point(1054, 35);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(188, 36);
             this.label4.TabIndex = 1;
@@ -297,24 +298,24 @@
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(23)))), ((int)(((byte)(62)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.yearID,
             this.yearName});
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(31)))), ((int)(((byte)(74)))));
-            this.dataGridView1.Location = new System.Drawing.Point(12, 305);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 372);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(949, 249);
+            this.dataGridView1.Size = new System.Drawing.Size(1233, 322);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -345,7 +346,7 @@
             this.metroSetButton4.HoverColor = System.Drawing.Color.Transparent;
             this.metroSetButton4.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.metroSetButton4.IsDerivedStyle = false;
-            this.metroSetButton4.Location = new System.Drawing.Point(30, 25);
+            this.metroSetButton4.Location = new System.Drawing.Point(33, 31);
             this.metroSetButton4.Name = "metroSetButton4";
             this.metroSetButton4.NormalBorderColor = System.Drawing.Color.Transparent;
             this.metroSetButton4.NormalColor = System.Drawing.Color.Transparent;
@@ -353,7 +354,7 @@
             this.metroSetButton4.PressBorderColor = System.Drawing.Color.Transparent;
             this.metroSetButton4.PressColor = System.Drawing.Color.Transparent;
             this.metroSetButton4.PressTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.metroSetButton4.Size = new System.Drawing.Size(75, 53);
+            this.metroSetButton4.Size = new System.Drawing.Size(45, 55);
             this.metroSetButton4.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetButton4.StyleManager = null;
             this.metroSetButton4.TabIndex = 4;
@@ -363,11 +364,12 @@
             // 
             // addAcademicYear
             // 
+            this.AllowResize = false;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(23)))), ((int)(((byte)(62)))));
             this.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(54)))));
-            this.ClientSize = new System.Drawing.Size(973, 569);
+            this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.metroSetButton4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);

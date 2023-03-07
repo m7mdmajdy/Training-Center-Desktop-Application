@@ -40,11 +40,12 @@ namespace trainingCenter
         
         private void addSubject_Load(object sender, EventArgs e)
         {
-            this.TopMost = true;
+            //this.TopMost = true;
 
-            this.FormBorderStyle = FormBorderStyle.None;
+            //this.FormBorderStyle = FormBorderStyle.None;
 
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
+
             List<Subject> subjects = eDPCenterEntities.Subjects.ToList();
             NewDataGrid(subjects);
             if (textBox2.Text.Length == 0)
@@ -203,6 +204,8 @@ namespace trainingCenter
               
             }
         }
+
+       
     }
 
 }
