@@ -267,6 +267,14 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\money-bag.png" />
+    <None Include="Resources\wallet.png" />
+    <None Include="Resources\attendance.png" />
+    <None Include="Resources\class.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\profile.png" />
+    <None Include="Resources\teacher.png" />
+    <None Include="Resources\book-stack.png" />
     <None Include="Resources\stu.png" />
   </ItemGroup>
   <ItemGroup />
