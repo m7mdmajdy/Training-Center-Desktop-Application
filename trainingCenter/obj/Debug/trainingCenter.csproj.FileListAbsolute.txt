@@ -161,3 +161,23 @@ D:\Programing\ITI 3M\courses\03_BackEnd\A_DesktopAppProject\MyPart\Training-Cent
 D:\Programing\ITI 3M\courses\03_BackEnd\A_DesktopAppProject\MyPart\Training-Center-Desktop-Application-master.V5\trainingCenter\bin\Debug\EntityFramework.xml
 D:\Programing\ITI 3M\courses\03_BackEnd\A_DesktopAppProject\MyPart\Training-Center-Desktop-Application-master.V5\trainingCenter\bin\Debug\EntityFramework.SqlServer.xml
 D:\Programing\ITI 3M\courses\03_BackEnd\A_DesktopAppProject\MyPart\Training-Center-Desktop-Application-master.V5\trainingCenter\obj\Debug\trainingCenter.csproj.CopyComplete
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.exe.config
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.exe
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.pdb
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\bin\Debug\MaterialSkin.dll
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\bin\Debug\MetroSet UI.dll
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.AttendenceInstructers.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.AddCostes.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addInstructor.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.Properties.Resources.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.GenerateResource.cache
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CopyComplete
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.exe
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.pdb
