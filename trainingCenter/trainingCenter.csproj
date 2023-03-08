@@ -74,6 +74,42 @@
     <Compile Include="AcademicYear.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="AddCostes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCostes.Designer.cs">
+      <DependentUpon>AddCostes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addGestWorkSpace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addGestWorkSpace.Designer.cs">
+      <DependentUpon>addGestWorkSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addGroup.Designer.cs">
+      <DependentUpon>addGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addInsructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addInsructor.Designer.cs">
+      <DependentUpon>addInsructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addOutcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addOutcome.Designer.cs">
+      <DependentUpon>addOutcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addRoom.Designer.cs">
+      <DependentUpon>addRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="addSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +124,12 @@
     </Compile>
     <Compile Include="Attendence.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AttendenceInstructers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendenceInstructers.Designer.cs">
+      <DependentUpon>AttendenceInstructers.cs</DependentUpon>
     </Compile>
     <Compile Include="Cost.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -112,6 +154,12 @@
     </Compile>
     <Compile Include="Expens.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GestWorkSpaceAttend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestWorkSpaceAttend.Designer.cs">
+      <DependentUpon>GestWorkSpaceAttend.cs</DependentUpon>
     </Compile>
     <Compile Include="GroupName.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -227,17 +275,43 @@
     <Compile Include="User_Roles.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCostes.resx">
+      <DependentUpon>AddCostes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addGestWorkSpace.resx">
+      <DependentUpon>addGestWorkSpace.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addGroup.resx">
+      <DependentUpon>addGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addInsructor.resx">
+      <DependentUpon>addInsructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addOutcome.resx">
+      <DependentUpon>addOutcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addRoom.resx">
+      <DependentUpon>addRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addSchedule.resx">
       <DependentUpon>addSchedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addStudentGroup.resx">
       <DependentUpon>addStudentGroup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AttendenceInstructers.resx">
+      <DependentUpon>AttendenceInstructers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashoard.resx">
       <DependentUpon>Dashoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addAcademicYear.resx">
       <DependentUpon>addAcademicYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestWorkSpaceAttend.resx">
+      <DependentUpon>GestWorkSpaceAttend.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentAttendance.resx">
       <DependentUpon>StudentAttendance.cs</DependentUpon>

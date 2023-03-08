@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
-using System.Windows.Controls;
 using System.Windows.Forms;
 using trainingCenter.BL;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
