@@ -40,11 +40,12 @@ namespace trainingCenter
         
         private void addSubject_Load(object sender, EventArgs e)
         {
-            /*this.TopMost = true;
+            //this.TopMost = true;
 
-            this.FormBorderStyle = FormBorderStyle.None;
+            //this.FormBorderStyle = FormBorderStyle.None;
 
-            this.WindowState = FormWindowState.Maximized;*/
+            //this.WindowState = FormWindowState.Maximized;
+
             List<Subject> subjects = eDPCenterEntities.Subjects.ToList();
             NewDataGrid(subjects);
             if (textBox2.Text.Length == 0)
@@ -98,22 +99,14 @@ namespace trainingCenter
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             
-            int index = e.RowIndex;
-            if (index >= 0)
-            {
+                int index = e.RowIndex;
                 DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
-                if (row.Cells[0].Value !=null)
-                {
-                    subIdBox.Text = row.Cells[0].Value.ToString();
-                    subNameBox.Text = row.Cells[1].Value.ToString();
-                }
-                else
-                {
-                    MessageBox.Show("لا توجد قيمة");
-                }
-            }
-            
 
+                subIdBox.Text = row.Cells[0].Value.ToString();
+                subNameBox.Text = row.Cells[1].Value.ToString();
+           
+           
+            
         }
 
         private void materialButton2_Click(object sender, EventArgs e)
@@ -211,6 +204,8 @@ namespace trainingCenter
               
             }
         }
+
+       
     }
 
 }

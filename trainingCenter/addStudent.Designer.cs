@@ -30,6 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addStudent));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.ageUpDownMenu = new System.Windows.Forms.NumericUpDown();
@@ -109,6 +119,7 @@
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.ageUpDownMenu);
             this.groupBox1.Controls.Add(this.label20);
             this.groupBox1.Controls.Add(this.label14);
@@ -145,7 +156,6 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.stu_IDBox);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -153,12 +163,14 @@
             // 
             resources.ApplyResources(this.ageUpDownMenu, "ageUpDownMenu");
             this.ageUpDownMenu.Name = "ageUpDownMenu";
+            this.ageUpDownMenu.ValueChanged += new System.EventHandler(this.ageUpDownMenu_ValueChanged);
             // 
             // label20
             // 
             resources.ApplyResources(this.label20, "label20");
             this.label20.ForeColor = System.Drawing.Color.Red;
             this.label20.Name = "label20";
+            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // label14
             // 
@@ -171,6 +183,7 @@
             resources.ApplyResources(this.label16, "label16");
             this.label16.ForeColor = System.Drawing.Color.Red;
             this.label16.Name = "label16";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label15
             // 
@@ -204,8 +217,8 @@
             // 
             // languageBox
             // 
-            this.languageBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.languageBox, "languageBox");
+            this.languageBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.languageBox.FormattingEnabled = true;
             this.languageBox.Items.AddRange(new object[] {
             resources.GetString("languageBox.Items"),
@@ -215,8 +228,8 @@
             // 
             // academicYearBox
             // 
-            this.academicYearBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.academicYearBox, "academicYearBox");
+            this.academicYearBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.academicYearBox.FormattingEnabled = true;
             this.academicYearBox.Items.AddRange(new object[] {
             resources.GetString("academicYearBox.Items"),
@@ -416,8 +429,8 @@
             // 
             // stu_IDBox
             // 
-            this.stu_IDBox.BackColor = System.Drawing.Color.Silver;
             resources.ApplyResources(this.stu_IDBox, "stu_IDBox");
+            this.stu_IDBox.BackColor = System.Drawing.Color.Silver;
             this.stu_IDBox.Name = "stu_IDBox";
             // 
             // label4
@@ -433,7 +446,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(23)))), ((int)(((byte)(62)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -457,6 +470,8 @@
             // 
             // St_ID
             // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.St_ID.DefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this.St_ID, "St_ID");
             this.St_ID.Name = "St_ID";
             this.St_ID.ReadOnly = true;
@@ -464,54 +479,72 @@
             // St_Name
             // 
             this.St_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.St_Name.DefaultCellStyle = dataGridViewCellStyle3;
             resources.ApplyResources(this.St_Name, "St_Name");
             this.St_Name.Name = "St_Name";
             this.St_Name.ReadOnly = true;
             // 
             // St_Phone
             // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.St_Phone.DefaultCellStyle = dataGridViewCellStyle4;
             resources.ApplyResources(this.St_Phone, "St_Phone");
             this.St_Phone.Name = "St_Phone";
             this.St_Phone.ReadOnly = true;
             // 
             // St_Parent_Phone
             // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.St_Parent_Phone.DefaultCellStyle = dataGridViewCellStyle5;
             resources.ApplyResources(this.St_Parent_Phone, "St_Parent_Phone");
             this.St_Parent_Phone.Name = "St_Parent_Phone";
             this.St_Parent_Phone.ReadOnly = true;
             // 
             // St_Gender
             // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.St_Gender.DefaultCellStyle = dataGridViewCellStyle6;
             resources.ApplyResources(this.St_Gender, "St_Gender");
             this.St_Gender.Name = "St_Gender";
             this.St_Gender.ReadOnly = true;
             // 
             // St_Address
             // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.St_Address.DefaultCellStyle = dataGridViewCellStyle7;
             resources.ApplyResources(this.St_Address, "St_Address");
             this.St_Address.Name = "St_Address";
             this.St_Address.ReadOnly = true;
             // 
             // St_Age
             // 
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.St_Age.DefaultCellStyle = dataGridViewCellStyle8;
             resources.ApplyResources(this.St_Age, "St_Age");
             this.St_Age.Name = "St_Age";
             this.St_Age.ReadOnly = true;
             // 
             // St_Grade
             // 
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.St_Grade.DefaultCellStyle = dataGridViewCellStyle9;
             resources.ApplyResources(this.St_Grade, "St_Grade");
             this.St_Grade.Name = "St_Grade";
             this.St_Grade.ReadOnly = true;
             // 
             // St_School_Name
             // 
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.St_School_Name.DefaultCellStyle = dataGridViewCellStyle10;
             resources.ApplyResources(this.St_School_Name, "St_School_Name");
             this.St_School_Name.Name = "St_School_Name";
             this.St_School_Name.ReadOnly = true;
             // 
             // St_Language
             // 
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.St_Language.DefaultCellStyle = dataGridViewCellStyle11;
             resources.ApplyResources(this.St_Language, "St_Language");
             this.St_Language.Name = "St_Language";
             this.St_Language.ReadOnly = true;
@@ -540,6 +573,7 @@
             // 
             // addStudent
             // 
+            this.AllowResize = false;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(23)))), ((int)(((byte)(62)))));
@@ -552,7 +586,6 @@
             this.Name = "addStudent";
             this.SmallLineColor1 = System.Drawing.Color.Transparent;
             this.SmallLineColor2 = System.Drawing.Color.Transparent;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.addStudent_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

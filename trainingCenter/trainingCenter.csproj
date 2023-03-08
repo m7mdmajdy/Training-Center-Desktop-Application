@@ -74,18 +74,6 @@
     <Compile Include="AcademicYear.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="addAcademicYear.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addAcademicYear.Designer.cs">
-      <DependentUpon>addAcademicYear.cs</DependentUpon>
-    </Compile>
-    <Compile Include="addSchedule.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addSchedule.Designer.cs">
-      <DependentUpon>addSchedule.cs</DependentUpon>
-    </Compile>
     <Compile Include="Attendence.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -94,6 +82,18 @@
     </Compile>
     <Compile Include="Daily_Transaction.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dashoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashoard.Designer.cs">
+      <DependentUpon>Dashoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addAcademicYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addAcademicYear.Designer.cs">
+      <DependentUpon>addAcademicYear.cs</DependentUpon>
     </Compile>
     <Compile Include="Exam.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -131,6 +131,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Room.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -140,11 +145,11 @@
     <Compile Include="Student.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="StudentAttendance.cs">
+    <Compile Include="studentPayment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentAttendance.Designer.cs">
-      <DependentUpon>StudentAttendance.cs</DependentUpon>
+    <Compile Include="studentPayment.Designer.cs">
+      <DependentUpon>studentPayment.cs</DependentUpon>
     </Compile>
     <Compile Include="Student_Addresses.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -204,14 +209,14 @@
     <Compile Include="User_Roles.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dashoard.resx">
+      <DependentUpon>Dashoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addAcademicYear.resx">
       <DependentUpon>addAcademicYear.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="addSchedule.resx">
-      <DependentUpon>addSchedule.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentAttendance.resx">
-      <DependentUpon>StudentAttendance.cs</DependentUpon>
+    <EmbeddedResource Include="studentPayment.resx">
+      <DependentUpon>studentPayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="totalIncomes.resx">
       <DependentUpon>totalIncomes.cs</DependentUpon>
@@ -242,11 +247,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -258,6 +258,18 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.png" />
+    <None Include="Resources\money-bag.png" />
+    <None Include="Resources\wallet.png" />
+    <None Include="Resources\attendance.png" />
+    <None Include="Resources\class.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\profile.png" />
+    <None Include="Resources\teacher.png" />
+    <None Include="Resources\book-stack.png" />
+    <None Include="Resources\stu.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Model1.Context.tt">

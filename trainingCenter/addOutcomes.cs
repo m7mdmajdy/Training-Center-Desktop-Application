@@ -249,22 +249,12 @@ namespace trainingCenter
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = e.RowIndex;
-            if (index >= 0)
-            {
-                DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
-                if (row.Cells[0].Value != null)
-                {
-                    nameBox.Text = row.Cells[1].Value.ToString();
-                    DateTime tempDate = Convert.ToDateTime(row.Cells[3].Value.ToString());
-                    numberBox.Text = row.Cells[5].Value.ToString();
-                    productBox.Text = row.Cells[0].Value.ToString();
-                }
-                else
-                {
-                    MessageBox.Show("لا توجد قيمة");
-                }
-            }
+            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
 
+            nameBox.Text = row.Cells[1].Value.ToString();
+            DateTime tempDate = Convert.ToDateTime(row.Cells[3].Value.ToString());
+            numberBox.Text = row.Cells[5].Value.ToString();
+            productBox.Text = row.Cells[0].Value.ToString();
         }
 
         private void materialButton3_Click(object sender, EventArgs e)
