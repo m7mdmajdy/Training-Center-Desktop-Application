@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EDPCenterModelStoreContainer" CdmEntityContainer="EDPCenterEntities">
+    <EntitySetMapping Name="AcademicYears">
+      <EntityTypeMapping TypeName="EDPCenterModel.AcademicYear">
+        <MappingFragment StoreEntitySet="AcademicYear">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Attendences">
+      <EntityTypeMapping TypeName="EDPCenterModel.Attendence">
+        <MappingFragment StoreEntitySet="Attendence">
+          <ScalarProperty Name="St_ID" ColumnName="St_ID" />
+          <ScalarProperty Name="G_ID" ColumnName="G_ID" />
+          <ScalarProperty Name="Att_Date" ColumnName="Att_Date" />
+          <ScalarProperty Name="Payment_State" ColumnName="Payment_State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupNames">
+      <EntityTypeMapping TypeName="EDPCenterModel.GroupName">
+        <MappingFragment StoreEntitySet="GroupName">
+          <ScalarProperty Name="G_TotalPrice" ColumnName="G_TotalPrice" />
+          <ScalarProperty Name="G_ID" ColumnName="G_ID" />
+          <ScalarProperty Name="G_Name" ColumnName="G_Name" />
+          <ScalarProperty Name="G_NoOfSession" ColumnName="G_NoOfSession" />
+          <ScalarProperty Name="G_PriceOfSession" ColumnName="G_PriceOfSession" />
+          <ScalarProperty Name="G_Capacity" ColumnName="G_Capacity" />
+          <ScalarProperty Name="G_DateOFCreation" ColumnName="G_DateOFCreation" />
+          <ScalarProperty Name="G_Availability" ColumnName="G_Availability" />
+          <ScalarProperty Name="Teacher_ID" ColumnName="Teacher_ID" />
+          <ScalarProperty Name="Grade" ColumnName="Grade" />
+          <ScalarProperty Name="AcademicYear_ID" ColumnName="AcademicYear_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Guest_workspace">
+      <EntityTypeMapping TypeName="EDPCenterModel.Guest_workspace">
+        <MappingFragment StoreEntitySet="Guest_workspace">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Instructors">
+      <EntityTypeMapping TypeName="EDPCenterModel.Instructor">
+        <MappingFragment StoreEntitySet="Instructors">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rooms">
+      <EntityTypeMapping TypeName="EDPCenterModel.Room">
+        <MappingFragment StoreEntitySet="Room">
+          <ScalarProperty Name="Room_Name" ColumnName="Room_Name" />
+          <ScalarProperty Name="Room_ID" ColumnName="Room_ID" />
+          <ScalarProperty Name="Room_Capacity" ColumnName="Room_Capacity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Schedules">
+      <EntityTypeMapping TypeName="EDPCenterModel.Schedule">
+        <MappingFragment StoreEntitySet="Schedule">
+          <ScalarProperty Name="Teacher_ID" ColumnName="Teacher_ID" />
+          <ScalarProperty Name="Group_ID" ColumnName="Group_ID" />
+          <ScalarProperty Name="Subject_ID" ColumnName="Subject_ID" />
+          <ScalarProperty Name="Room_ID" ColumnName="Room_ID" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="EDPCenterModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="St_ID" ColumnName="St_ID" />
+          <ScalarProperty Name="St_Name" ColumnName="St_Name" />
+          <ScalarProperty Name="St_Phone" ColumnName="St_Phone" />
+          <ScalarProperty Name="St_Parent_Phone" ColumnName="St_Parent_Phone" />
+          <ScalarProperty Name="St_Gender" ColumnName="St_Gender" />
+          <ScalarProperty Name="St_Address" ColumnName="St_Address" />
+          <ScalarProperty Name="St_Age" ColumnName="St_Age" />
+          <ScalarProperty Name="St_Grade" ColumnName="St_Grade" />
+          <ScalarProperty Name="St_School_Name" ColumnName="St_School_Name" />
+          <ScalarProperty Name="St_Language" ColumnName="St_Language" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Student_Group">
+      <EntityTypeMapping TypeName="EDPCenterModel.Student_Group">
+        <MappingFragment StoreEntitySet="Student_Group">
+          <ScalarProperty Name="G_ID" ColumnName="G_ID" />
+          <ScalarProperty Name="St_ID" ColumnName="St_ID" />
+          <ScalarProperty Name="Payment_Method" ColumnName="Payment_Method" />
+          <ScalarProperty Name="St_Balance" ColumnName="St_Balance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="EDPCenterModel.Subject">
+        <MappingFragment StoreEntitySet="Subject">
+          <ScalarProperty Name="Sub_ID" ColumnName="Sub_ID" />
+          <ScalarProperty Name="Sub_Name" ColumnName="Sub_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="EDPCenterModel.Teacher">
+        <MappingFragment StoreEntitySet="Teacher">
+          <ScalarProperty Name="T_ID" ColumnName="T_ID" />
+          <ScalarProperty Name="T_Name" ColumnName="T_Name" />
+          <ScalarProperty Name="T_Phone" ColumnName="T_Phone" />
+          <ScalarProperty Name="T_Address" ColumnName="T_Address" />
+          <ScalarProperty Name="T_Balance" ColumnName="T_Balance" />
+          <ScalarProperty Name="T_Income_Percent" ColumnName="T_Income_Percent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="EDPCenterModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Full_Name" ColumnName="Full_Name" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Daily_Transaction">
+      <EntityTypeMapping TypeName="EDPCenterModel.Daily_Transaction">
+        <MappingFragment StoreEntitySet="Daily_Transaction">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Person_ID" ColumnName="Person_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Transaction_Type" ColumnName="Transaction_Type" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Guest_WorkSpace_Attend">
+      <EntityTypeMapping TypeName="EDPCenterModel.Guest_WorkSpace_Attend">
+        <MappingFragment StoreEntitySet="Guest_WorkSpace_Attend">
+          <ScalarProperty Name="Payment" ColumnName="Payment" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="Guest_ID" ColumnName="Guest_ID" />
+          <ScalarProperty Name="Start_Time" ColumnName="Start_Time" />
+          <ScalarProperty Name="End_Time" ColumnName="End_Time" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Instructor_Attendence">
+      <EntityTypeMapping TypeName="EDPCenterModel.Instructor_Attendence">
+        <MappingFragment StoreEntitySet="Instructor_Attendence">
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="Instructor_ID" ColumnName="Instructor_ID" />
+          <ScalarProperty Name="Start_Time" ColumnName="Start_Time" />
+          <ScalarProperty Name="End_Time" ColumnName="End_Time" />
+          <ScalarProperty Name="Room_ID" ColumnName="Room_ID" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Total_Transaction">
+      <EntityTypeMapping TypeName="EDPCenterModel.Total_Transaction">
+        <MappingFragment StoreEntitySet="Total_Transaction">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Person_ID" ColumnName="Person_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Transaction_Type" ColumnName="Transaction_Type" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_Attend">
+      <EntityTypeMapping TypeName="EDPCenterModel.User_Attend">
+        <MappingFragment StoreEntitySet="User_Attend">
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Attend_Time" ColumnName="Attend_Time" />
+          <ScalarProperty Name="Leave_Time" ColumnName="Leave_Time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Group_Room" TypeName="EDPCenterModel.Group_Room" StoreEntitySet="Group_Room">
+      <EndProperty Name="GroupName">
+        <ScalarProperty Name="G_ID" ColumnName="G_ID" />
+      </EndProperty>
+      <EndProperty Name="Room">
+        <ScalarProperty Name="Room_ID" ColumnName="Room_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Teacher_Subject" TypeName="EDPCenterModel.Teacher_Subject" StoreEntitySet="Teacher_Subject">
+      <EndProperty Name="Subject">
+        <ScalarProperty Name="Sub_ID" ColumnName="Subject_ID" />
+      </EndProperty>
+      <EndProperty Name="Teacher">
+        <ScalarProperty Name="T_ID" ColumnName="Teacher_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Teacher_Year" TypeName="EDPCenterModel.Teacher_Year" StoreEntitySet="Teacher_Year">
+      <EndProperty Name="AcademicYear">
+        <ScalarProperty Name="ID" ColumnName="AcademicYear_ID" />
+      </EndProperty>
+      <EndProperty Name="Teacher">
+        <ScalarProperty Name="T_ID" ColumnName="Teacher_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

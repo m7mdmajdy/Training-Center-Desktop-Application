@@ -1,22 +1,23 @@
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.exe.config
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.exe
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\MaterialSkin.dll
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\MetroSet UI.dll
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.AssemblyReference.cache
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.SuggestedBindingRedirects.cache
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addAcademicYear.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addGroup.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addUser.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.WorkSpace.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addRoom.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addSubject.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addTeacher.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addInstructor.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addStudent.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.Properties.Resources.resources
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.GenerateResource.cache
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CoreCompileInputs.cache
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CopyComplete
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.exe
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.pdb
-F:\ITI-assignments\desktopProject\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.pdb
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.exe.config
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.exe
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.dll
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\bin\Debug\MaterialSkin.dll
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\bin\Debug\MetroSet UI.dll
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.xml
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.AssemblyReference.cache
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.SuggestedBindingRedirects.cache
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addGroup.resources
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addRoom.resources
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.Properties.Resources.resources
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.GenerateResource.cache
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CoreCompileInputs.cache
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CopyComplete
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.exe
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.pdb
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.pdb
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addGestWorkSpace.resources
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addStudentGroup.resources
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addOutcome.resources
+C:\Users\UNITED PC\source\repos\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.GestWorkSpaceAttend.resources

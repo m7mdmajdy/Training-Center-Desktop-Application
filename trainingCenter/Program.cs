@@ -16,7 +16,10 @@ namespace trainingCenter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new addStudent());
+            EDPCenterEntities context = new EDPCenterEntities();
+            Student student = context.Students.Where(s => s.St_ID == 2).FirstOrDefault();
+            Application.Run(new addStudentGroup());
+
         }
     }
 }
