@@ -118,12 +118,12 @@
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
             this.button12.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.Location = new System.Drawing.Point(24, 506);
+            this.button12.Image = global::trainingCenter.Properties.Resources.schedule;
+            this.button12.Location = new System.Drawing.Point(1021, 506);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(226, 199);
             this.button12.TabIndex = 5;
-            this.button12.Text = "\r\n\r\n\r\n\r\n\r\n\r\nإجمالى التعاملات المالية";
+            this.button12.Text = "\r\n\r\n\r\n\r\n\r\n\r\nالجدول اليومى";
             this.button12.UseVisualStyleBackColor = false;
             // 
             // button11
@@ -132,7 +132,7 @@
             this.button11.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.Location = new System.Drawing.Point(274, 506);
+            this.button11.Location = new System.Drawing.Point(291, 506);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(226, 199);
             this.button11.TabIndex = 5;
@@ -145,7 +145,7 @@
             this.button10.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.White;
             this.button10.Image = global::trainingCenter.Properties.Resources.money_bag;
-            this.button10.Location = new System.Drawing.Point(524, 506);
+            this.button10.Location = new System.Drawing.Point(45, 506);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(226, 199);
             this.button10.TabIndex = 5;
@@ -158,7 +158,7 @@
             this.button6.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = global::trainingCenter.Properties.Resources.wallet;
-            this.button6.Location = new System.Drawing.Point(774, 506);
+            this.button6.Location = new System.Drawing.Point(778, 506);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(226, 199);
             this.button6.TabIndex = 5;
@@ -171,7 +171,7 @@
             this.button8.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Image = global::trainingCenter.Properties.Resources.wallet;
-            this.button8.Location = new System.Drawing.Point(1021, 506);
+            this.button8.Location = new System.Drawing.Point(534, 506);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(226, 199);
             this.button8.TabIndex = 5;
@@ -181,14 +181,14 @@
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
-            this.button15.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.Color.White;
             this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(454, 289);
+            this.button15.Location = new System.Drawing.Point(656, 289);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(186, 199);
             this.button15.TabIndex = 5;
-            this.button15.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسجيل الحضور";
+            this.button15.Text = "\r\n\r\n\r\n\r\n\r\n\r\n\r\nتسجيل حضور قاعة العمل";
             this.button15.UseVisualStyleBackColor = false;
             // 
             // button14
@@ -197,7 +197,7 @@
             this.button14.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
-            this.button14.Location = new System.Drawing.Point(656, 289);
+            this.button14.Location = new System.Drawing.Point(248, 289);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(186, 199);
             this.button14.TabIndex = 5;
@@ -210,11 +210,11 @@
             this.button13.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.Location = new System.Drawing.Point(860, 289);
+            this.button13.Location = new System.Drawing.Point(855, 289);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(186, 199);
+            this.button13.Size = new System.Drawing.Size(191, 199);
             this.button13.TabIndex = 5;
-            this.button13.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسجيل الحضور";
+            this.button13.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسجيل حضور الطلبة";
             this.button13.UseVisualStyleBackColor = false;
             // 
             // button9
@@ -223,7 +223,7 @@
             this.button9.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Image = global::trainingCenter.Properties.Resources.attendance;
-            this.button9.Location = new System.Drawing.Point(1061, 289);
+            this.button9.Location = new System.Drawing.Point(455, 289);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(186, 199);
             this.button9.TabIndex = 5;
@@ -236,9 +236,9 @@
             this.button4.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::trainingCenter.Properties.Resources._class;
-            this.button4.Location = new System.Drawing.Point(42, 75);
+            this.button4.Location = new System.Drawing.Point(656, 77);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(186, 199);
+            this.button4.Size = new System.Drawing.Size(390, 199);
             this.button4.TabIndex = 5;
             this.button4.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسجيل مجموعة";
             this.button4.UseVisualStyleBackColor = false;
@@ -249,7 +249,7 @@
             this.button7.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Image = global::trainingCenter.Properties.Resources.calendar;
-            this.button7.Location = new System.Drawing.Point(250, 75);
+            this.button7.Location = new System.Drawing.Point(45, 77);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(186, 199);
             this.button7.TabIndex = 5;
@@ -262,11 +262,11 @@
             this.button5.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::trainingCenter.Properties.Resources.profile;
-            this.button5.Location = new System.Drawing.Point(454, 75);
+            this.button5.Location = new System.Drawing.Point(45, 289);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(186, 199);
             this.button5.TabIndex = 5;
-            this.button5.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسجيل مستخدم";
+            this.button5.Text = "\r\n\r\n\r\n\r\n\r\n\r\nإضافة مستخدم";
             this.button5.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -275,7 +275,7 @@
             this.button3.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::trainingCenter.Properties.Resources.teacher;
-            this.button3.Location = new System.Drawing.Point(656, 75);
+            this.button3.Location = new System.Drawing.Point(455, 77);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(186, 199);
             this.button3.TabIndex = 5;
@@ -288,9 +288,9 @@
             this.button2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::trainingCenter.Properties.Resources.book_stack;
-            this.button2.Location = new System.Drawing.Point(860, 75);
+            this.button2.Location = new System.Drawing.Point(248, 77);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(186, 199);
+            this.button2.Size = new System.Drawing.Size(191, 199);
             this.button2.TabIndex = 5;
             this.button2.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسجيل مادة";
             this.button2.UseVisualStyleBackColor = false;
@@ -304,10 +304,13 @@
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(1061, 75);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 199);
+            this.button1.Size = new System.Drawing.Size(186, 413);
             this.button1.TabIndex = 5;
             this.button1.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسجيل الطلاب\r\n";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
             // Dashboard
             // 

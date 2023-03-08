@@ -24,6 +24,19 @@ namespace trainingCenter
 
         }
 
-        
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.FromArgb(25, 90, 200);
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.FromArgb(13,71, 161);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //button1.Size = new Size(this.Width,this.Height);
+        }
     }
 }
