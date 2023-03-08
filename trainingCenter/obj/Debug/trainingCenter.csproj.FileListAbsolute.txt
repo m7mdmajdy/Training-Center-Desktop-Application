@@ -175,3 +175,6 @@ C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCente
 C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.exe
 C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.pdb
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addSchedule.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addStudentGroup.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.StudentAttendance.resources
