@@ -207,7 +207,7 @@
             this.label12.TabIndex = 10;
             this.label12.Text = "ادخل مبلغ صحيح بالجنيه";
             this.label12.Visible = false;
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            //this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // materialButton3
             // 

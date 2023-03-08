@@ -177,12 +177,14 @@ namespace trainingCenter
                     NewDataGrid(subjects);
                 else
                     MessageBox.Show("لا توجد نتائج");
+                    textBox2.Text = "ادخل الكود او الاسم";
             }
         }
 
         private void materialButton6_Click(object sender, EventArgs e)
         {
             NewDataGrid(eDPCenterEntities.Subjects.ToList());
+            textBox2.Text = "ادخل الكود او الاسم";
         }
 
         private void textBox2_Enter(object sender, EventArgs e)

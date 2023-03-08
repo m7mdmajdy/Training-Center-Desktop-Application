@@ -46,6 +46,7 @@ namespace trainingCenter
             //dataGridView1.Columns[6].DefaultCellStyle.ForeColor = Color.Black;
            // dataGridView1.Columns[7].DefaultCellStyle.ForeColor = Color.Black;
 
+
         }
 
 
@@ -256,13 +257,11 @@ namespace trainingCenter
             dataGridView1.Rows.Clear();
             foreach (Attendence attendence in attendences)
             {
-                
                 string studName = eDPCenterEntities.Students.Where(x => x.St_ID == attendence.St_ID).FirstOrDefault().St_Name;
                 GroupName groupName = eDPCenterEntities.GroupNames.Where(x=>x.G_ID == attendence.G_ID).FirstOrDefault();
                 Teacher teacherName = eDPCenterEntities.Teachers.Where(x => x.T_ID == groupName.Teacher_ID).FirstOrDefault();
 
                 DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-
                 row.Cells[0].Value = attendence.St_ID;
                 row.Cells[1].Value = studName;
                 row.Cells[2].Value = teacherName.T_Name;
@@ -285,6 +284,34 @@ namespace trainingCenter
 
 
 
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = e.RowIndex;
+            if (index >= 0)
+            {
+                DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
+                if (row.Cells[0].Value != null)
+                {
+                    
+                    int studId=Convert.ToInt32(row.Cells[0].Value);
+                    string attDate=row.Cells[4].Value.ToString();
+
+                    Attendence attendence = 
+                        eDPCenterEntities
+                        .Attendences.ToList()
+                        .Where(a=>a.Att_Date.ToString() ==attDate && a.St_ID == studId)
+                        .FirstOrDefault();
+                    studentPayment stPayment = new studentPayment(attendence);
+                    stPayment.Show();
+
+                }
+                else
+                {
+                    MessageBox.Show("لا توجد قيمة");
+                }
             }
         }
     }

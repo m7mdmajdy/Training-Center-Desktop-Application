@@ -21,11 +21,12 @@ namespace trainingCenter
         string transactionType = "مصروفات";
 
         EDPCenterEntities eDPCenterEntities;
+        List<Daily_Transaction> AllData;
         public addoutcomes()
         {
             InitializeComponent();
             eDPCenterEntities = new EDPCenterEntities();
-
+            AllData = eDPCenterEntities.Daily_Transaction.ToList();
             // set date to current date
             dateTimePicker1.Text = DateTime.Now.ToString();
         }
@@ -227,7 +228,7 @@ namespace trainingCenter
             {
                 List<Daily_Transaction> daily_Transactions;
                 string theDate = dateTimePicker2.Value.ToString("M/d/yyyy");
-                daily_Transactions = eDPCenterEntities.Daily_Transaction.ToList().Where(a=>a.Date.ToString().Contains(theDate)).ToList();
+                daily_Transactions = AllData.Where(a=>a.Date.ToString().Contains(theDate)).ToList();
                 if (daily_Transactions.Count > 0)
                     NewDataGrid(daily_Transactions);
                 else

@@ -98,6 +98,8 @@ namespace trainingCenter
             EDPCenterEntities x = new EDPCenterEntities();
             List<Student> studs = x.Students.ToList();
             NewDataGrid(studs);
+            dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
+            
 
         }
 

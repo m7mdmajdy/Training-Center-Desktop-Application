@@ -161,3 +161,29 @@ E:\tessssssssssssssssst\v6\Training-Center-Desktop-Application\trainingCenter\bi
 E:\tessssssssssssssssst\v6\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.xml
 E:\tessssssssssssssssst\v6\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CopyComplete
 E:\tessssssssssssssssst\v6\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addSchedule.resources
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.AssemblyReference.cache
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.SuggestedBindingRedirects.cache
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addSchedule.resources
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.Dashboard.resources
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addAcademicYear.resources
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.StudentAttendance.resources
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.studentPayment.resources
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.totalIncomes.resources
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addoutcomes.resources
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addSubject.resources
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addStudent.resources
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.Properties.Resources.resources
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.GenerateResource.cache
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CoreCompileInputs.cache
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.exe
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.pdb
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.exe.config
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.exe
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\bin\Debug\trainingCenter.pdb
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.dll
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.dll
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\bin\Debug\MaterialSkin.dll
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\bin\Debug\MetroSet UI.dll
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.xml
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.xml
+E:\tessssssssssssssssst\v github test\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CopyComplete

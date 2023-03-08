@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -61,8 +61,8 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.money = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.money = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -133,7 +133,7 @@
             this.label6.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(817, 132);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 23);
+            this.label6.Size = new System.Drawing.Size(49, 29);
             this.label6.TabIndex = 14;
             this.label6.Text = "الرقم";
             this.label6.Visible = false;
@@ -142,7 +142,7 @@
             // 
             this.productBox.Location = new System.Drawing.Point(579, 132);
             this.productBox.Name = "productBox";
-            this.productBox.Size = new System.Drawing.Size(199, 27);
+            this.productBox.Size = new System.Drawing.Size(199, 32);
             this.productBox.TabIndex = 4;
             this.productBox.Visible = false;
             // 
@@ -175,7 +175,7 @@
             this.dateTimePicker2.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dateTimePicker2.Size = new System.Drawing.Size(270, 27);
+            this.dateTimePicker2.Size = new System.Drawing.Size(270, 32);
             this.dateTimePicker2.TabIndex = 11;
             this.dateTimePicker2.Visible = false;
             // 
@@ -187,7 +187,7 @@
             this.dateTimePicker1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 32);
             this.dateTimePicker1.TabIndex = 3;
             // 
             // label3
@@ -198,7 +198,7 @@
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(945, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 20);
+            this.label3.Size = new System.Drawing.Size(179, 23);
             this.label3.TabIndex = 10;
             this.label3.Text = "ادخل إسم صحيح باللغة العربية";
             this.label3.Visible = false;
@@ -211,7 +211,7 @@
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label12.Location = new System.Drawing.Point(960, 106);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(132, 20);
+            this.label12.Size = new System.Drawing.Size(147, 23);
             this.label12.TabIndex = 10;
             this.label12.Text = "ادخل مبلغ صحيح بالجنيه";
             this.label12.Visible = false;
@@ -329,7 +329,7 @@
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(1141, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 23);
+            this.label2.Size = new System.Drawing.Size(74, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "المبلــــغ";
             // 
@@ -337,7 +337,7 @@
             // 
             this.nameBox.Location = new System.Drawing.Point(924, 43);
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(199, 27);
+            this.nameBox.Size = new System.Drawing.Size(199, 32);
             this.nameBox.TabIndex = 1;
             this.nameBox.Leave += new System.EventHandler(this.nameBox_Leave);
             // 
@@ -345,7 +345,7 @@
             // 
             this.numberBox.Location = new System.Drawing.Point(924, 132);
             this.numberBox.Name = "numberBox";
-            this.numberBox.Size = new System.Drawing.Size(199, 27);
+            this.numberBox.Size = new System.Drawing.Size(199, 32);
             this.numberBox.TabIndex = 2;
             this.numberBox.Leave += new System.EventHandler(this.numberBox_Leave);
             // 
@@ -355,7 +355,7 @@
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(799, 43);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 23);
+            this.label5.Size = new System.Drawing.Size(76, 29);
             this.label5.TabIndex = 1;
             this.label5.Text = "التاريــخ";
             // 
@@ -364,7 +364,7 @@
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(41, 37);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(270, 26);
+            this.textBox2.Size = new System.Drawing.Size(270, 30);
             this.textBox2.TabIndex = 3;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
@@ -376,7 +376,7 @@
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(1141, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 23);
+            this.label1.Size = new System.Drawing.Size(75, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "إسم البند";
             // 
@@ -388,7 +388,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(936, 35);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(302, 36);
+            this.label4.Size = new System.Drawing.Size(378, 45);
             this.label4.TabIndex = 1;
             this.label4.Text = "المصروفات والإيرادات اليومية";
             // 
@@ -448,8 +448,8 @@
             this.Column1,
             this.subName,
             this.date,
-            this.money,
-            this.type});
+            this.type,
+            this.money});
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(31)))), ((int)(((byte)(74)))));
             this.dataGridView1.Location = new System.Drawing.Point(18, 372);
             this.dataGridView1.Name = "dataGridView1";
@@ -466,13 +466,13 @@
             this.subId.MinimumWidth = 6;
             this.subId.Name = "subId";
             this.subId.ReadOnly = true;
-            this.subId.Width = 41;
+            this.subId.Width = 48;
             // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column1.HeaderText = "اسم البند";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
@@ -481,18 +481,18 @@
             // subName
             // 
             this.subName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.subName.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.subName.DefaultCellStyle = dataGridViewCellStyle2;
             this.subName.HeaderText = "كود العميل";
             this.subName.MinimumWidth = 6;
             this.subName.Name = "subName";
             this.subName.ReadOnly = true;
-            this.subName.Width = 96;
+            this.subName.Width = 116;
             // 
             // date
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.date.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.date.DefaultCellStyle = dataGridViewCellStyle3;
             this.date.FillWeight = 150F;
             this.date.HeaderText = "تاريخ المعاملة";
             this.date.MinimumWidth = 150;
@@ -500,29 +500,29 @@
             this.date.ReadOnly = true;
             this.date.Width = 150;
             // 
-            // money
-            // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.money.DefaultCellStyle = dataGridViewCellStyle14;
-            this.money.HeaderText = "المبلغ";
-            this.money.MinimumWidth = 6;
-            this.money.Name = "money";
-            this.money.ReadOnly = true;
-            this.money.Width = 125;
-            // 
             // type
             // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.type.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.type.DefaultCellStyle = dataGridViewCellStyle4;
             this.type.HeaderText = "نوع البند";
             this.type.MinimumWidth = 6;
             this.type.Name = "type";
             this.type.ReadOnly = true;
             this.type.Width = 125;
             // 
+            // money
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.money.DefaultCellStyle = dataGridViewCellStyle5;
+            this.money.HeaderText = "المبلغ";
+            this.money.MinimumWidth = 6;
+            this.money.Name = "money";
+            this.money.ReadOnly = true;
+            this.money.Width = 125;
+            // 
             // addoutcomes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(23)))), ((int)(((byte)(62)))));
             this.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(54)))));
@@ -576,8 +576,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn subName;
         private System.Windows.Forms.DataGridViewTextBoxColumn date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn money;
         private System.Windows.Forms.DataGridViewTextBoxColumn type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn money;
     }
 }
 
