@@ -170,10 +170,23 @@ namespace trainingCenter
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = e.RowIndex;
-            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
+            
 
-            yearIdBox.Text = row.Cells[0].Value.ToString();
-            academicYearBox.Text = row.Cells[1].Value.ToString();
+            if (index >= 0)
+            {
+                DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
+                if (row.Cells[0].Value != null)
+                {
+                    yearIdBox.Text = row.Cells[0].Value.ToString();
+                    academicYearBox.Text = row.Cells[1].Value.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("لا توجد قيمة");
+                }
+            }
+
+
         }
     }
 }

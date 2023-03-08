@@ -141,13 +141,24 @@ namespace trainingCenter
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = e.RowIndex;
-            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
 
-            nameBox.Text = row.Cells[1].Value.ToString();
-            numberBox.Text = row.Cells[5].Value.ToString();
-            productBox.Text = row.Cells[0].Value.ToString();
-            DateTime tempDate = Convert.ToDateTime(row.Cells[3].Value.ToString());
-            dateTimePicker1.Value = tempDate;
+            if (index >= 0)
+            {
+                DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
+                if (row.Cells[0].Value != null)
+                {
+                    nameBox.Text = row.Cells[1].Value.ToString();
+                    numberBox.Text = row.Cells[5].Value.ToString();
+                    productBox.Text = row.Cells[0].Value.ToString();
+                    DateTime tempDate = Convert.ToDateTime(row.Cells[3].Value.ToString());
+                    dateTimePicker1.Value = tempDate;
+                }
+                else
+                {
+                    MessageBox.Show("لا توجد قيمة");
+                }
+            }
+
         }
 
         private void materialButton3_Click(object sender, EventArgs e)
@@ -239,13 +250,6 @@ namespace trainingCenter
             if (textBox2.Text.Length == 0)
                 textBox2.Text = "ادخل اسم البند";
         }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       
     }
 
 }

@@ -197,27 +197,39 @@ namespace trainingCenter
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // To determine row number
-            int index = e.RowIndex;
-            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
+            // To determine row number         
 
-            stu_IDBox.Text = row.Cells[0].Value.ToString();
-            stuNameBox.Text = row.Cells[1].Value.ToString();
-            phoneBox.Text = row.Cells[2].Value.ToString();
-            parentPhoneBox.Text = row.Cells[3].Value != null ? row.Cells[3].Value.ToString() : "";
-            if (row.Cells[4].Value.ToString() == "أنثي")
+            int index = e.RowIndex;
+            if (index >= 0)
             {
-                radioButton2.Checked = true;
+                DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
+                if (row.Cells[0].Value != null)
+                {
+                    stu_IDBox.Text = row.Cells[0].Value.ToString();
+                    stuNameBox.Text = row.Cells[1].Value.ToString();
+                    phoneBox.Text = row.Cells[2].Value.ToString();
+                    parentPhoneBox.Text = row.Cells[3].Value != null ? row.Cells[3].Value.ToString() : "";
+                    if (row.Cells[4].Value.ToString() == "أنثي")
+                    {
+                        radioButton2.Checked = true;
+                    }
+                    else
+                    {
+                        radioButton1.Checked = true;
+                    }
+                    addressBox.Text = row.Cells[5].Value != null ? row.Cells[5].Value.ToString() : "";
+                    ageUpDownMenu.Text = row.Cells[6].Value.ToString();
+                    academicYearBox.Text = row.Cells[7].Value.ToString();
+                    schoolNameBox.Text = row.Cells[8].Value != null ? row.Cells[8].Value.ToString() : "";
+                    languageBox.Text = row.Cells[9].Value.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("لا توجد قيمة");
+                }
             }
-            else
-            {
-                radioButton1.Checked = true;
-            }
-            addressBox.Text = row.Cells[5].Value != null ? row.Cells[5].Value.ToString() : "";
-            ageUpDownMenu.Text = row.Cells[6].Value.ToString();
-            academicYearBox.Text = row.Cells[7].Value.ToString();
-            schoolNameBox.Text = row.Cells[8].Value != null ? row.Cells[8].Value.ToString() : "";
-            languageBox.Text = row.Cells[9].Value.ToString();
+
+
 
         }
 

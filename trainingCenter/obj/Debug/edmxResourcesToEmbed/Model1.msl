@@ -19,6 +19,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Costs">
+      <EntityTypeMapping TypeName="EDPCenterModel.Cost">
+        <MappingFragment StoreEntitySet="Costs">
+          <ScalarProperty Name="Cost_ID" ColumnName="Cost_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Payment" ColumnName="Payment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Daily_Transaction">
       <EntityTypeMapping TypeName="EDPCenterModel.Daily_Transaction">
         <MappingFragment StoreEntitySet="Daily_Transaction">
@@ -42,6 +51,7 @@
           <ScalarProperty Name="G_DateOFCreation" ColumnName="G_DateOFCreation" />
           <ScalarProperty Name="G_Availability" ColumnName="G_Availability" />
           <ScalarProperty Name="Teacher_ID" ColumnName="Teacher_ID" />
+          <ScalarProperty Name="G_TotalPrice" ColumnName="G_TotalPrice" />
           <ScalarProperty Name="Grade" ColumnName="Grade" />
           <ScalarProperty Name="AcademicYear_ID" ColumnName="AcademicYear_ID" />
         </MappingFragment>
@@ -53,6 +63,33 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Guest_WorkSpace_Attend">
+      <EntityTypeMapping TypeName="EDPCenterModel.Guest_WorkSpace_Attend">
+        <MappingFragment StoreEntitySet="Guest_WorkSpace_Attend">
+          <ScalarProperty Name="Guest_ID" ColumnName="Guest_ID" />
+          <ScalarProperty Name="Start_Time" ColumnName="Start_Time" />
+          <ScalarProperty Name="End_Time" ColumnName="End_Time" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="Payment" ColumnName="Payment" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Instructor_Attendence">
+      <EntityTypeMapping TypeName="EDPCenterModel.Instructor_Attendence">
+        <MappingFragment StoreEntitySet="Instructor_Attendence">
+          <ScalarProperty Name="Instructor_Attendance_ID" ColumnName="Instructor_Attendance_ID" />
+          <ScalarProperty Name="Instructor_ID" ColumnName="Instructor_ID" />
+          <ScalarProperty Name="Start_Time" ColumnName="Start_Time" />
+          <ScalarProperty Name="End_Time" ColumnName="End_Time" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="Room_ID" ColumnName="Room_ID" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -69,6 +106,7 @@
       <EntityTypeMapping TypeName="EDPCenterModel.Room">
         <MappingFragment StoreEntitySet="Room">
           <ScalarProperty Name="Room_ID" ColumnName="Room_ID" />
+          <ScalarProperty Name="Room_Name" ColumnName="Room_Name" />
           <ScalarProperty Name="Room_Capacity" ColumnName="Room_Capacity" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -76,6 +114,7 @@
     <EntitySetMapping Name="Schedules">
       <EntityTypeMapping TypeName="EDPCenterModel.Schedule">
         <MappingFragment StoreEntitySet="Schedule">
+          <ScalarProperty Name="Schedule_ID" ColumnName="Schedule_ID" />
           <ScalarProperty Name="Teacher_ID" ColumnName="Teacher_ID" />
           <ScalarProperty Name="Group_ID" ColumnName="Group_ID" />
           <ScalarProperty Name="Subject_ID" ColumnName="Subject_ID" />
@@ -103,6 +142,7 @@
     <EntitySetMapping Name="Student_Group">
       <EntityTypeMapping TypeName="EDPCenterModel.Student_Group">
         <MappingFragment StoreEntitySet="Student_Group">
+          <ScalarProperty Name="StID_GID_ID" ColumnName="StID_GID_ID" />
           <ScalarProperty Name="G_ID" ColumnName="G_ID" />
           <ScalarProperty Name="St_ID" ColumnName="St_ID" />
           <ScalarProperty Name="Payment_Method" ColumnName="Payment_Method" />
@@ -179,29 +219,6 @@
         <MappingFragment StoreEntitySet="User_Roles">
           <ScalarProperty Name="Role_Code" ColumnName="Role_Code" />
           <ScalarProperty Name="Role_Title" ColumnName="Role_Title" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Guest_WorkSpace_Attend">
-      <EntityTypeMapping TypeName="EDPCenterModel.Guest_WorkSpace_Attend">
-        <MappingFragment StoreEntitySet="Guest_WorkSpace_Attend">
-          <ScalarProperty Name="Guest_ID" ColumnName="Guest_ID" />
-          <ScalarProperty Name="Start_Time" ColumnName="Start_Time" />
-          <ScalarProperty Name="End_Time" ColumnName="End_Time" />
-          <ScalarProperty Name="Cost" ColumnName="Cost" />
-          <ScalarProperty Name="Discount" ColumnName="Discount" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Instructor_Attendence">
-      <EntityTypeMapping TypeName="EDPCenterModel.Instructor_Attendence">
-        <MappingFragment StoreEntitySet="Instructor_Attendence">
-          <ScalarProperty Name="Instructor_ID" ColumnName="Instructor_ID" />
-          <ScalarProperty Name="Start_Time" ColumnName="Start_Time" />
-          <ScalarProperty Name="End_Time" ColumnName="End_Time" />
-          <ScalarProperty Name="Room_ID" ColumnName="Room_ID" />
-          <ScalarProperty Name="Cost" ColumnName="Cost" />
-          <ScalarProperty Name="Discount" ColumnName="Discount" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -10,13 +10,20 @@
   <EntityType Name="Attendence">
     <Key>
       <PropertyRef Name="St_ID" />
-      <PropertyRef Name="G_ID" />
       <PropertyRef Name="Att_Date" />
     </Key>
     <Property Name="St_ID" Type="int" Nullable="false" />
     <Property Name="G_ID" Type="int" Nullable="false" />
     <Property Name="Att_Date" Type="datetime" Nullable="false" />
     <Property Name="Payment_State" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Costs">
+    <Key>
+      <PropertyRef Name="Cost_ID" />
+    </Key>
+    <Property Name="Cost_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="120" />
+    <Property Name="Payment" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="Daily_Transaction">
     <Key>
@@ -49,6 +56,7 @@
     <Property Name="G_DateOFCreation" Type="datetime" />
     <Property Name="G_Availability" Type="bit" />
     <Property Name="Teacher_ID" Type="int" />
+    <Property Name="G_TotalPrice" Type="float" Nullable="false" />
     <Property Name="Grade" Type="nvarchar" MaxLength="120" />
     <Property Name="AcademicYear_ID" Type="int" />
   </EntityType>
@@ -56,32 +64,32 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="120" />
-    <Property Name="Phone" Type="nvarchar" MaxLength="120" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="11" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'EDPCenter.dbo.Guest_WorkSpace_Attend' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="Guest_WorkSpace_Attend">
     <Key>
       <PropertyRef Name="Guest_ID" />
+      <PropertyRef Name="Day" />
     </Key>
     <Property Name="Guest_ID" Type="int" Nullable="false" />
-    <Property Name="Start_Time" Type="datetime" />
-    <Property Name="End_Time" Type="datetime" />
+    <Property Name="Start_Time" Type="time" Precision="7" />
+    <Property Name="End_Time" Type="time" Precision="7" />
+    <Property Name="Day" Type="date" Nullable="false" />
+    <Property Name="Payment" Type="float" />
     <Property Name="Cost" Type="float" />
     <Property Name="Discount" Type="float" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'EDPCenter.dbo.Instructor_Attendence' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="Instructor_Attendence">
     <Key>
-      <PropertyRef Name="Instructor_ID" />
-      <PropertyRef Name="Room_ID" />
+      <PropertyRef Name="Instructor_Attendance_ID" />
     </Key>
+    <Property Name="Instructor_Attendance_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Instructor_ID" Type="int" Nullable="false" />
     <Property Name="Start_Time" Type="datetime" />
     <Property Name="End_Time" Type="datetime" />
+    <Property Name="Day" Type="datetime" Nullable="false" />
     <Property Name="Room_ID" Type="int" Nullable="false" />
     <Property Name="Cost" Type="float" />
     <Property Name="Discount" Type="float" />
@@ -90,25 +98,23 @@ warning 6002: The table/view 'EDPCenter.dbo.Instructor_Attendence' does not have
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="120" Nullable="false" />
-    <Property Name="Phone" Type="nvarchar" MaxLength="120" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="11" />
   </EntityType>
   <EntityType Name="Room">
     <Key>
       <PropertyRef Name="Room_ID" />
     </Key>
     <Property Name="Room_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Room_Name" Type="nvarchar" MaxLength="30" Nullable="false" />
     <Property Name="Room_Capacity" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Schedule">
     <Key>
-      <PropertyRef Name="Teacher_ID" />
-      <PropertyRef Name="Group_ID" />
-      <PropertyRef Name="Subject_ID" />
-      <PropertyRef Name="Room_ID" />
-      <PropertyRef Name="date" />
+      <PropertyRef Name="Schedule_ID" />
     </Key>
+    <Property Name="Schedule_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Teacher_ID" Type="int" Nullable="false" />
     <Property Name="Group_ID" Type="int" Nullable="false" />
     <Property Name="Subject_ID" Type="int" Nullable="false" />
@@ -132,9 +138,9 @@ warning 6002: The table/view 'EDPCenter.dbo.Instructor_Attendence' does not have
   </EntityType>
   <EntityType Name="Student_Group">
     <Key>
-      <PropertyRef Name="G_ID" />
-      <PropertyRef Name="St_ID" />
+      <PropertyRef Name="StID_GID_ID" />
     </Key>
+    <Property Name="StID_GID_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="G_ID" Type="int" Nullable="false" />
     <Property Name="St_ID" Type="int" Nullable="false" />
     <Property Name="Payment_Method" Type="nvarchar" MaxLength="120" Nullable="false" />
@@ -264,17 +270,87 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
     <Property Name="Role_Code" Type="nchar" MaxLength="10" Nullable="false" />
     <Property Name="Role_Title" Type="nvarchar" MaxLength="120" Nullable="false" />
   </EntityType>
-  <Association Name="FK_Attendence_Student_Group">
-    <End Role="Student_Group" Type="Self.Student_Group" Multiplicity="1" />
-    <End Role="Attendence" Type="Self.Attendence" Multiplicity="*" />
+  <Association Name="FK__Instructo__Instr__68487DD7">
+    <End Role="Instructors" Type="Self.Instructors" Multiplicity="1" />
+    <End Role="Instructor_Attendence" Type="Self.Instructor_Attendence" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Student_Group">
+      <Principal Role="Instructors">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Instructor_Attendence">
+        <PropertyRef Name="Instructor_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Schedule__Group___74AE54BC">
+    <End Role="GroupName" Type="Self.GroupName" Multiplicity="1" />
+    <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GroupName">
         <PropertyRef Name="G_ID" />
+      </Principal>
+      <Dependent Role="Schedule">
+        <PropertyRef Name="Group_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Schedule__Room_I__76969D2E">
+    <End Role="Room" Type="Self.Room" Multiplicity="1" />
+    <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Room">
+        <PropertyRef Name="Room_ID" />
+      </Principal>
+      <Dependent Role="Schedule">
+        <PropertyRef Name="Room_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Schedule__Subjec__75A278F5">
+    <End Role="Subject" Type="Self.Subject" Multiplicity="1" />
+    <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject">
+        <PropertyRef Name="Sub_ID" />
+      </Principal>
+      <Dependent Role="Schedule">
+        <PropertyRef Name="Subject_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Schedule__Teache__73BA3083">
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="1" />
+    <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teacher">
+        <PropertyRef Name="T_ID" />
+      </Principal>
+      <Dependent Role="Schedule">
+        <PropertyRef Name="Teacher_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student_G__St_ID__693CA210">
+    <End Role="Student" Type="Self.Student" Multiplicity="1" />
+    <End Role="Student_Group" Type="Self.Student_Group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
         <PropertyRef Name="St_ID" />
       </Principal>
-      <Dependent Role="Attendence">
-        <PropertyRef Name="G_ID" />
+      <Dependent Role="Student_Group">
         <PropertyRef Name="St_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Student_Gr__G_ID__6A30C649">
+    <End Role="GroupName" Type="Self.GroupName" Multiplicity="1" />
+    <End Role="Student_Group" Type="Self.Student_Group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GroupName">
+        <PropertyRef Name="G_ID" />
+      </Principal>
+      <Dependent Role="Student_Group">
+        <PropertyRef Name="G_ID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -304,6 +380,18 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_GroupName_AcademicYear">
+    <End Role="AcademicYear" Type="Self.AcademicYear" Multiplicity="0..1" />
+    <End Role="GroupName" Type="Self.GroupName" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AcademicYear">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GroupName">
+        <PropertyRef Name="AcademicYear_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_GroupName_Teacher">
     <End Role="Teacher" Type="Self.Teacher" Multiplicity="0..1">
       <OnDelete Action="Cascade" />
@@ -315,42 +403,6 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Principal>
       <Dependent Role="GroupName">
         <PropertyRef Name="Teacher_ID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Guest_WorkSpace_Attend_Guest_workspace">
-    <End Role="Guest_workspace" Type="Self.Guest_workspace" Multiplicity="1" />
-    <End Role="Guest_WorkSpace_Attend" Type="Self.Guest_WorkSpace_Attend" Multiplicity="0..1" />
-    <ReferentialConstraint>
-      <Principal Role="Guest_workspace">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="Guest_WorkSpace_Attend">
-        <PropertyRef Name="Guest_ID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Instructor_Attendence_Instructors">
-    <End Role="Instructors" Type="Self.Instructors" Multiplicity="1" />
-    <End Role="Instructor_Attendence" Type="Self.Instructor_Attendence" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Instructors">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="Instructor_Attendence">
-        <PropertyRef Name="Instructor_ID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_Instructor_Attendence_Room">
-    <End Role="Room" Type="Self.Room" Multiplicity="1" />
-    <End Role="Instructor_Attendence" Type="Self.Instructor_Attendence" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Room">
-        <PropertyRef Name="Room_ID" />
-      </Principal>
-      <Dependent Role="Instructor_Attendence">
-        <PropertyRef Name="Room_ID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -447,10 +499,13 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
   <EntityContainer Name="EDPCenterModelStoreContainer">
     <EntitySet Name="AcademicYear" EntityType="Self.AcademicYear" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Attendence" EntityType="Self.Attendence" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Costs" EntityType="Self.Costs" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Daily_Transaction" EntityType="Self.Daily_Transaction" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Group_Room" EntityType="Self.Group_Room" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GroupName" EntityType="Self.GroupName" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Guest_workspace" EntityType="Self.Guest_workspace" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Guest_WorkSpace_Attend" EntityType="Self.Guest_WorkSpace_Attend" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Instructor_Attendence" EntityType="Self.Instructor_Attendence" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Instructors" EntityType="Self.Instructors" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Room" EntityType="Self.Room" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Schedule" EntityType="Self.Schedule" Schema="dbo" store:Type="Tables" />
@@ -465,25 +520,6 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
     <EntitySet Name="Student_Parents_Phones" EntityType="Self.Student_Parents_Phones" Schema="NewSchema" store:Type="Tables" />
     <EntitySet Name="Student_Phones" EntityType="Self.Student_Phones" Schema="NewSchema" store:Type="Tables" />
     <EntitySet Name="User_Roles" EntityType="Self.User_Roles" Schema="NewSchema" store:Type="Tables" />
-    <EntitySet Name="Guest_WorkSpace_Attend" EntityType="Self.Guest_WorkSpace_Attend" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [Guest_WorkSpace_Attend].[Guest_ID] AS [Guest_ID], 
-    [Guest_WorkSpace_Attend].[Start_Time] AS [Start_Time], 
-    [Guest_WorkSpace_Attend].[End_Time] AS [End_Time], 
-    [Guest_WorkSpace_Attend].[Cost] AS [Cost], 
-    [Guest_WorkSpace_Attend].[Discount] AS [Discount]
-    FROM [dbo].[Guest_WorkSpace_Attend] AS [Guest_WorkSpace_Attend]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="Instructor_Attendence" EntityType="Self.Instructor_Attendence" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [Instructor_Attendence].[Instructor_ID] AS [Instructor_ID], 
-    [Instructor_Attendence].[Start_Time] AS [Start_Time], 
-    [Instructor_Attendence].[End_Time] AS [End_Time], 
-    [Instructor_Attendence].[Room_ID] AS [Room_ID], 
-    [Instructor_Attendence].[Cost] AS [Cost], 
-    [Instructor_Attendence].[Discount] AS [Discount]
-    FROM [dbo].[Instructor_Attendence] AS [Instructor_Attendence]</DefiningQuery>
-    </EntitySet>
     <EntitySet Name="User_Attend" EntityType="Self.User_Attend" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [User_Attend].[User_ID] AS [User_ID], 
@@ -511,9 +547,33 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
     [Student_Addresses].[Address3_Stu] AS [Address3_Stu]
     FROM [NewSchema].[Student_Addresses] AS [Student_Addresses]</DefiningQuery>
     </EntitySet>
-    <AssociationSet Name="FK_Attendence_Student_Group" Association="Self.FK_Attendence_Student_Group">
+    <AssociationSet Name="FK__Instructo__Instr__68487DD7" Association="Self.FK__Instructo__Instr__68487DD7">
+      <End Role="Instructors" EntitySet="Instructors" />
+      <End Role="Instructor_Attendence" EntitySet="Instructor_Attendence" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Schedule__Group___74AE54BC" Association="Self.FK__Schedule__Group___74AE54BC">
+      <End Role="GroupName" EntitySet="GroupName" />
+      <End Role="Schedule" EntitySet="Schedule" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Schedule__Room_I__76969D2E" Association="Self.FK__Schedule__Room_I__76969D2E">
+      <End Role="Room" EntitySet="Room" />
+      <End Role="Schedule" EntitySet="Schedule" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Schedule__Subjec__75A278F5" Association="Self.FK__Schedule__Subjec__75A278F5">
+      <End Role="Subject" EntitySet="Subject" />
+      <End Role="Schedule" EntitySet="Schedule" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Schedule__Teache__73BA3083" Association="Self.FK__Schedule__Teache__73BA3083">
+      <End Role="Teacher" EntitySet="Teacher" />
+      <End Role="Schedule" EntitySet="Schedule" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student_G__St_ID__693CA210" Association="Self.FK__Student_G__St_ID__693CA210">
+      <End Role="Student" EntitySet="Student" />
       <End Role="Student_Group" EntitySet="Student_Group" />
-      <End Role="Attendence" EntitySet="Attendence" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Student_Gr__G_ID__6A30C649" Association="Self.FK__Student_Gr__G_ID__6A30C649">
+      <End Role="GroupName" EntitySet="GroupName" />
+      <End Role="Student_Group" EntitySet="Student_Group" />
     </AssociationSet>
     <AssociationSet Name="FK_Group_Room_GroupName" Association="Self.FK_Group_Room_GroupName">
       <End Role="GroupName" EntitySet="GroupName" />
@@ -523,21 +583,13 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       <End Role="Room" EntitySet="Room" />
       <End Role="Group_Room" EntitySet="Group_Room" />
     </AssociationSet>
+    <AssociationSet Name="FK_GroupName_AcademicYear" Association="Self.FK_GroupName_AcademicYear">
+      <End Role="AcademicYear" EntitySet="AcademicYear" />
+      <End Role="GroupName" EntitySet="GroupName" />
+    </AssociationSet>
     <AssociationSet Name="FK_GroupName_Teacher" Association="Self.FK_GroupName_Teacher">
       <End Role="Teacher" EntitySet="Teacher" />
       <End Role="GroupName" EntitySet="GroupName" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Guest_WorkSpace_Attend_Guest_workspace" Association="Self.FK_Guest_WorkSpace_Attend_Guest_workspace">
-      <End Role="Guest_workspace" EntitySet="Guest_workspace" />
-      <End Role="Guest_WorkSpace_Attend" EntitySet="Guest_WorkSpace_Attend" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Instructor_Attendence_Instructors" Association="Self.FK_Instructor_Attendence_Instructors">
-      <End Role="Instructors" EntitySet="Instructors" />
-      <End Role="Instructor_Attendence" EntitySet="Instructor_Attendence" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Instructor_Attendence_Room" Association="Self.FK_Instructor_Attendence_Room">
-      <End Role="Room" EntitySet="Room" />
-      <End Role="Instructor_Attendence" EntitySet="Instructor_Attendence" />
     </AssociationSet>
     <AssociationSet Name="FK_Student_Group_GroupName" Association="Self.FK_Student_Group_GroupName">
       <End Role="GroupName" EntitySet="GroupName" />

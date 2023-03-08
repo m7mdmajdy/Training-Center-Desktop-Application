@@ -16,10 +16,7 @@ namespace trainingCenter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Dashboard());
-
-            //Application.Run(new studentPayment(new Student { St_ID = 1, St_Name = "mouaz & kareem & fatma" },
-            //    new Student_Group {G_ID = 1,St_Balance=50 }));
+            Application.Run(new addSchedule());
         }
     }
 }
