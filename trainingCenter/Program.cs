@@ -18,7 +18,7 @@ namespace trainingCenter
             Application.SetCompatibleTextRenderingDefault(false);
             EDPCenterEntities context = new EDPCenterEntities();
             Student student = context.Students.Where(s => s.St_ID == 2).FirstOrDefault();
-            Application.Run(new addStudentGroup());
+            Application.Run(new addRoom());
 
         }
     }
