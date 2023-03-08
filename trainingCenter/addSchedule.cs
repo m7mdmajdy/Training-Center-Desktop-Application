@@ -93,6 +93,7 @@ namespace trainingCenter
             List<string> dates = AllSchedules.Select(x => x.date.ToString()).ToList();
             List<Schedule> schedules = AllSchedules.Where(x => x.date.ToString().Contains(theDate)).ToList();
             NewDataGrid(schedules);
+            nameBox.Text = "";
 
 
 
@@ -209,6 +210,7 @@ namespace trainingCenter
         {
             NewDataGrid(eDPCenterEntities.Schedules.ToList());
             dateTimePicker1.Value= DateTime.Now;
+            nameBox.Text = "";
         }
 
         private void materialButton6_Click_1(object sender, EventArgs e)

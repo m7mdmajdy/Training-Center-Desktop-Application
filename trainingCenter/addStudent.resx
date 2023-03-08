@@ -123,7 +123,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="metroSetControlBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1289, 2</value>
+    <value>1183, 2</value>
+  </data>
+  <data name="metroSetControlBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="metroSetControlBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 25</value>
@@ -147,11 +150,20 @@
   <data name="&gt;&gt;metroSetControlBox1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="ageUpDownMenu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="ageUpDownMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 111</value>
+    <value>576, 112</value>
+  </data>
+  <data name="ageUpDownMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="ageUpDownMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 27</value>
+    <value>221, 29</value>
   </data>
   <data name="ageUpDownMenu.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -174,6 +186,9 @@
   <data name="&gt;&gt;ageUpDownMenu.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="label20.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="label20.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -181,7 +196,10 @@
     <value>Arial Narrow, 11.25pt</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 87</value>
+    <value>300, 87</value>
+  </data>
+  <data name="label20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 20</value>
@@ -207,6 +225,9 @@
   <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="label14.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -214,7 +235,10 @@
     <value>Arial Narrow, 11.25pt</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>385, 21</value>
+    <value>283, 17</value>
+  </data>
+  <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 20</value>
@@ -240,6 +264,9 @@
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="label16.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -247,7 +274,10 @@
     <value>Arial Narrow, 11.25pt</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 153</value>
+    <value>323, 152</value>
+  </data>
+  <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 20</value>
@@ -273,6 +303,9 @@
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="label15.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="label15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -280,7 +313,10 @@
     <value>Arial Narrow, 11.25pt</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>724, 155</value>
+    <value>616, 152</value>
+  </data>
+  <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 20</value>
@@ -306,6 +342,9 @@
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="label13.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -313,7 +352,10 @@
     <value>Arial Narrow, 11.25pt</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1038, 156</value>
+    <value>976, 156</value>
+  </data>
+  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 20</value>
@@ -339,6 +381,9 @@
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="label18.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="label18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -346,7 +391,10 @@
     <value>Arial Narrow, 11.25pt</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>723, 87</value>
+    <value>617, 87</value>
+  </data>
+  <data name="label18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 20</value>
@@ -372,6 +420,9 @@
   <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="label17.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -379,7 +430,10 @@
     <value>Arial Narrow, 11.25pt</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>723, 21</value>
+    <value>604, 17</value>
+  </data>
+  <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -405,6 +459,9 @@
   <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="label12.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -412,7 +469,10 @@
     <value>Arial Narrow, 11.25pt</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1025, 87</value>
+    <value>950, 86</value>
+  </data>
+  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 20</value>
@@ -438,6 +498,9 @@
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="languageBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="languageBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Narrow, 12pt</value>
   </data>
@@ -451,13 +514,16 @@
     <value>لـغات</value>
   </data>
   <data name="languageBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 176</value>
+    <value>258, 176</value>
+  </data>
+  <data name="languageBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="languageBox.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="languageBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 28</value>
+    <value>205, 28</value>
   </data>
   <data name="languageBox.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -473,6 +539,9 @@
   </data>
   <data name="&gt;&gt;languageBox.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="academicYearBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="academicYearBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial Narrow, 12pt</value>
@@ -517,13 +586,16 @@
     <value>الثالث الثانوى</value>
   </data>
   <data name="academicYearBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 178</value>
+    <value>576, 176</value>
+  </data>
+  <data name="academicYearBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="academicYearBox.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="academicYearBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 28</value>
+    <value>221, 28</value>
   </data>
   <data name="academicYearBox.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -540,14 +612,17 @@
   <data name="&gt;&gt;academicYearBox.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="materialButton3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
   <data name="materialButton3.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
   <data name="materialButton3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 171</value>
+    <value>15, 170</value>
   </data>
   <data name="materialButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
+    <value>2, 4, 2, 4</value>
   </data>
   <data name="materialButton3.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 36</value>
@@ -570,14 +645,17 @@
   <data name="&gt;&gt;materialButton3.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="materialButton2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
   <data name="materialButton2.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
   <data name="materialButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 170</value>
+    <value>86, 170</value>
   </data>
   <data name="materialButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
+    <value>2, 4, 2, 4</value>
   </data>
   <data name="materialButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 36</value>
@@ -600,14 +678,17 @@
   <data name="&gt;&gt;materialButton2.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
+  <data name="materialButton6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
   <data name="materialButton6.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
   <data name="materialButton6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 84</value>
+    <value>15, 87</value>
   </data>
   <data name="materialButton6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
+    <value>2, 4, 2, 4</value>
   </data>
   <data name="materialButton6.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 36</value>
@@ -630,14 +711,17 @@
   <data name="&gt;&gt;materialButton6.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
+  <data name="materialButton5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
   <data name="materialButton5.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
   <data name="materialButton5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>212, 84</value>
+    <value>160, 87</value>
   </data>
   <data name="materialButton5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
+    <value>2, 4, 2, 4</value>
   </data>
   <data name="materialButton5.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 36</value>
@@ -660,14 +744,17 @@
   <data name="&gt;&gt;materialButton5.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
+  <data name="materialButton1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
   <data name="materialButton1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
   <data name="materialButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 170</value>
+    <value>160, 170</value>
   </data>
   <data name="materialButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 6, 4, 6</value>
+    <value>2, 4, 2, 4</value>
   </data>
   <data name="materialButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 36</value>
@@ -697,7 +784,10 @@
     <value>Arial Narrow, 14.25pt</value>
   </data>
   <data name="radioButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>339, 218</value>
+    <value>282, 210</value>
+  </data>
+  <data name="radioButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="radioButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 27</value>
@@ -727,7 +817,10 @@
     <value>Arial Narrow, 14.25pt</value>
   </data>
   <data name="radioButton1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 218</value>
+    <value>339, 210</value>
+  </data>
+  <data name="radioButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="radioButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 27</value>
@@ -757,16 +850,19 @@
     <value>Arial Narrow, 14.25pt</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 218</value>
+    <value>403, 211</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 23</value>
+    <value>46, 23</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>النوع</value>
+    <value>النــوع</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
@@ -780,6 +876,9 @@
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
+  <data name="label11.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -787,7 +886,10 @@
     <value>Arial Narrow, 14.25pt</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>569, 180</value>
+    <value>471, 176</value>
+  </data>
+  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 23</value>
@@ -810,6 +912,9 @@
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
+  <data name="label10.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -817,7 +922,10 @@
     <value>Arial Narrow, 14.25pt</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>894, 183</value>
+    <value>801, 181</value>
+  </data>
+  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 23</value>
@@ -840,6 +948,9 @@
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>20</value>
   </data>
+  <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -847,7 +958,10 @@
     <value>Arial Narrow, 14.25pt</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1227, 183</value>
+    <value>1142, 184</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 23</value>
@@ -870,11 +984,20 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>21</value>
   </data>
+  <data name="phoneBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="phoneBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="phoneBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>995, 180</value>
+    <value>925, 181</value>
+  </data>
+  <data name="phoneBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="phoneBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 27</value>
+    <value>213, 29</value>
   </data>
   <data name="phoneBox.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -891,6 +1014,9 @@
   <data name="&gt;&gt;phoneBox.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
+  <data name="label6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -898,7 +1024,10 @@
     <value>Arial Narrow, 14.25pt</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>569, 115</value>
+    <value>469, 114</value>
+  </data>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 23</value>
@@ -921,6 +1050,9 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
+  <data name="label9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -928,7 +1060,10 @@
     <value>Arial Narrow, 14.25pt</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>903, 115</value>
+    <value>828, 114</value>
+  </data>
+  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 23</value>
@@ -951,6 +1086,9 @@
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>24</value>
   </data>
+  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -958,7 +1096,10 @@
     <value>Arial Narrow, 14.25pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1227, 115</value>
+    <value>1142, 114</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 23</value>
@@ -981,11 +1122,17 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
+  <data name="addressBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="addressBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 111</value>
+    <value>258, 112</value>
+  </data>
+  <data name="addressBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="addressBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 27</value>
+    <value>205, 29</value>
   </data>
   <data name="addressBox.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1002,11 +1149,20 @@
   <data name="&gt;&gt;addressBox.ZOrder" xml:space="preserve">
     <value>26</value>
   </data>
+  <data name="stuNameBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="stuNameBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="stuNameBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>995, 111</value>
+    <value>923, 111</value>
+  </data>
+  <data name="stuNameBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="stuNameBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 27</value>
+    <value>212, 29</value>
   </data>
   <data name="stuNameBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1023,14 +1179,20 @@
   <data name="&gt;&gt;stuNameBox.ZOrder" xml:space="preserve">
     <value>27</value>
   </data>
+  <data name="textBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
   <data name="textBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.2pt</value>
+    <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 50</value>
+    <value>15, 40</value>
+  </data>
+  <data name="textBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="textBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 23</value>
+    <value>209, 29</value>
   </data>
   <data name="textBox2.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -1050,6 +1212,9 @@
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
     <value>28</value>
   </data>
+  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1057,7 +1222,10 @@
     <value>Arial Narrow, 14.25pt</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>569, 47</value>
+    <value>470, 43</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
@@ -1080,11 +1248,17 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>29</value>
   </data>
+  <data name="parentPhoneBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="parentPhoneBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 44</value>
+    <value>258, 40</value>
+  </data>
+  <data name="parentPhoneBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="parentPhoneBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 27</value>
+    <value>205, 29</value>
   </data>
   <data name="parentPhoneBox.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1101,6 +1275,9 @@
   <data name="&gt;&gt;parentPhoneBox.ZOrder" xml:space="preserve">
     <value>30</value>
   </data>
+  <data name="label8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1108,7 +1285,10 @@
     <value>Arial Narrow, 14.25pt</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>903, 47</value>
+    <value>830, 43</value>
+  </data>
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 23</value>
@@ -1131,11 +1311,20 @@
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>31</value>
   </data>
+  <data name="schoolNameBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="schoolNameBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="schoolNameBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>671, 44</value>
+    <value>576, 40</value>
+  </data>
+  <data name="schoolNameBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="schoolNameBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 27</value>
+    <value>221, 29</value>
   </data>
   <data name="schoolNameBox.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1152,6 +1341,9 @@
   <data name="&gt;&gt;schoolNameBox.ZOrder" xml:space="preserve">
     <value>32</value>
   </data>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1159,7 +1351,10 @@
     <value>Arial Narrow, 14.25pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1227, 47</value>
+    <value>1141, 43</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 23</value>
@@ -1182,14 +1377,23 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>33</value>
   </data>
+  <data name="stu_IDBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="stu_IDBox.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="stu_IDBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="stu_IDBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>995, 44</value>
+    <value>921, 40</value>
+  </data>
+  <data name="stu_IDBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="stu_IDBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 27</value>
+    <value>213, 29</value>
   </data>
   <data name="stu_IDBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1206,8 +1410,11 @@
   <data name="&gt;&gt;stu_IDBox.ZOrder" xml:space="preserve">
     <value>34</value>
   </data>
+  <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 14.25pt</value>
+  </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 95</value>
+    <value>18, 78</value>
   </data>
   <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1219,7 +1426,7 @@
     <value>Yes</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1331, 256</value>
+    <value>1233, 245</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1239,6 +1446,9 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1246,7 +1456,10 @@
     <value>Calibri, 27.75pt</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1251, 40</value>
+    <value>1133, 33</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 45</value>
@@ -1270,7 +1483,7 @@
     <value>4</value>
   </data>
   <data name="dataGridView1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
+    <value>Bottom, Left, Right</value>
   </data>
   <metadata name="St_ID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1282,7 +1495,7 @@
     <value>6</value>
   </data>
   <data name="St_ID.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>75</value>
   </data>
   <metadata name="St_Name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1291,7 +1504,7 @@
     <value>اسم الطالب</value>
   </data>
   <data name="St_Name.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>175</value>
   </data>
   <metadata name="St_Phone.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1327,7 +1540,7 @@
     <value>6</value>
   </data>
   <data name="St_Gender.Width" type="System.Int32, mscorlib">
-    <value>125</value>
+    <value>75</value>
   </data>
   <metadata name="St_Address.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1357,7 +1570,7 @@
     <value>True</value>
   </metadata>
   <data name="St_Grade.HeaderText" xml:space="preserve">
-    <value>المرحلة الدراسية</value>
+    <value>الصف الدراسى</value>
   </data>
   <data name="St_Grade.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1390,7 +1603,10 @@
     <value>125</value>
   </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 386</value>
+    <value>18, 372</value>
+  </data>
+  <data name="dataGridView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="dataGridView1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
@@ -1399,7 +1615,7 @@
     <value>51</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1331, 390</value>
+    <value>1233, 322</value>
   </data>
   <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1420,10 +1636,13 @@
     <value>Wingdings, 39.75pt</value>
   </data>
   <data name="metroSetButton4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 25</value>
+    <value>33, 31</value>
+  </data>
+  <data name="metroSetButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="metroSetButton4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 53</value>
+    <value>45, 55</value>
   </data>
   <data name="metroSetButton4.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1447,13 +1666,19 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>10, 20</value>
+    <value>6, 13</value>
   </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1386, 788</value>
+    <value>1280, 720</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

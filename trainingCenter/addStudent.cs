@@ -98,6 +98,8 @@ namespace trainingCenter
             EDPCenterEntities x = new EDPCenterEntities();
             List<Student> studs = x.Students.ToList();
             NewDataGrid(studs);
+            dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
+            
 
         }
 
@@ -347,6 +349,21 @@ namespace trainingCenter
             {
                 label16.Visible = false;
             }
+        }
+
+        private void ageUpDownMenu_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

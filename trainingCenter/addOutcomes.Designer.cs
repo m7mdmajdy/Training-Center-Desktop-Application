@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroSetControlBox1 = new MetroSet_UI.Controls.MetroSetControlBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -70,7 +75,7 @@
             this.metroSetControlBox1.CloseNormalForeColor = System.Drawing.Color.Gray;
             this.metroSetControlBox1.DisabledForeColor = System.Drawing.Color.Silver;
             this.metroSetControlBox1.IsDerivedStyle = true;
-            this.metroSetControlBox1.Location = new System.Drawing.Point(876, 2);
+            this.metroSetControlBox1.Location = new System.Drawing.Point(1183, 2);
             this.metroSetControlBox1.MaximizeBox = false;
             this.metroSetControlBox1.MaximizeHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.metroSetControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Gray;
@@ -112,33 +117,33 @@
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(12, 78);
+            this.groupBox1.Location = new System.Drawing.Point(18, 78);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(0);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(949, 203);
+            this.groupBox1.Size = new System.Drawing.Size(1225, 245);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "البيانات";
+            this.groupBox1.Text = "إضافة بند مصروفات";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(578, 115);
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(817, 132);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 24);
+            this.label6.Size = new System.Drawing.Size(49, 29);
             this.label6.TabIndex = 14;
             this.label6.Text = "الرقم";
             this.label6.Visible = false;
             // 
             // productBox
             // 
-            this.productBox.Location = new System.Drawing.Point(373, 113);
+            this.productBox.Location = new System.Drawing.Point(579, 132);
             this.productBox.Name = "productBox";
             this.productBox.Size = new System.Drawing.Size(199, 32);
-            this.productBox.TabIndex = 13;
+            this.productBox.TabIndex = 4;
             this.productBox.Visible = false;
             // 
             // materialButton7
@@ -149,7 +154,7 @@
             this.materialButton7.Depth = 0;
             this.materialButton7.HighEmphasis = true;
             this.materialButton7.Icon = null;
-            this.materialButton7.Location = new System.Drawing.Point(141, 89);
+            this.materialButton7.Location = new System.Drawing.Point(135, 89);
             this.materialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton7.Name = "materialButton7";
@@ -166,7 +171,7 @@
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePicker2.Location = new System.Drawing.Point(41, 50);
+            this.dateTimePicker2.Location = new System.Drawing.Point(41, 37);
             this.dateTimePicker2.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -178,7 +183,7 @@
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePicker1.Location = new System.Drawing.Point(372, 45);
+            this.dateTimePicker1.Location = new System.Drawing.Point(578, 39);
             this.dateTimePicker1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -191,7 +196,7 @@
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
             this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(682, 21);
+            this.label3.Location = new System.Drawing.Point(945, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(179, 23);
             this.label3.TabIndex = 10;
@@ -204,7 +209,7 @@
             this.label12.Font = new System.Drawing.Font("Arial Narrow", 11.25F);
             this.label12.ForeColor = System.Drawing.Color.Red;
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(697, 84);
+            this.label12.Location = new System.Drawing.Point(960, 106);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(147, 23);
             this.label12.TabIndex = 10;
@@ -221,7 +226,7 @@
             this.materialButton3.Enabled = false;
             this.materialButton3.HighEmphasis = true;
             this.materialButton3.Icon = null;
-            this.materialButton3.Location = new System.Drawing.Point(46, 144);
+            this.materialButton3.Location = new System.Drawing.Point(41, 157);
             this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton3.Name = "materialButton3";
@@ -242,7 +247,7 @@
             this.materialButton2.Depth = 0;
             this.materialButton2.HighEmphasis = true;
             this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(129, 144);
+            this.materialButton2.Location = new System.Drawing.Point(142, 157);
             this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton2.Name = "materialButton2";
@@ -263,7 +268,7 @@
             this.materialButton6.Depth = 0;
             this.materialButton6.HighEmphasis = true;
             this.materialButton6.Icon = null;
-            this.materialButton6.Location = new System.Drawing.Point(46, 89);
+            this.materialButton6.Location = new System.Drawing.Point(41, 89);
             this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton6.Name = "materialButton6";
@@ -305,7 +310,7 @@
             this.materialButton1.Depth = 0;
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(215, 144);
+            this.materialButton1.Location = new System.Drawing.Point(247, 157);
             this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
@@ -321,16 +326,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(875, 113);
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1141, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 24);
+            this.label2.Size = new System.Drawing.Size(74, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "المبلــــغ";
             // 
             // nameBox
             // 
-            this.nameBox.Location = new System.Drawing.Point(661, 47);
+            this.nameBox.Location = new System.Drawing.Point(924, 43);
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(199, 32);
             this.nameBox.TabIndex = 1;
@@ -338,7 +343,7 @@
             // 
             // numberBox
             // 
-            this.numberBox.Location = new System.Drawing.Point(661, 110);
+            this.numberBox.Location = new System.Drawing.Point(924, 132);
             this.numberBox.Name = "numberBox";
             this.numberBox.Size = new System.Drawing.Size(199, 32);
             this.numberBox.TabIndex = 2;
@@ -347,17 +352,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(587, 47);
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(799, 43);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 24);
+            this.label5.Size = new System.Drawing.Size(76, 29);
             this.label5.TabIndex = 1;
             this.label5.Text = "التاريــخ";
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(41, 50);
+            this.textBox2.Location = new System.Drawing.Point(41, 37);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(270, 30);
             this.textBox2.TabIndex = 3;
@@ -368,10 +373,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(875, 47);
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1141, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 24);
+            this.label1.Size = new System.Drawing.Size(75, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "إسم البند";
             // 
@@ -381,11 +386,11 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(818, 33);
+            this.label4.Location = new System.Drawing.Point(936, 35);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 45);
+            this.label4.Size = new System.Drawing.Size(378, 45);
             this.label4.TabIndex = 1;
-            this.label4.Text = "المصروفات";
+            this.label4.Text = "المصروفات والإيرادات اليومية";
             // 
             // metroSetButton4
             // 
@@ -397,7 +402,7 @@
             this.metroSetButton4.HoverColor = System.Drawing.Color.Transparent;
             this.metroSetButton4.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
             this.metroSetButton4.IsDerivedStyle = false;
-            this.metroSetButton4.Location = new System.Drawing.Point(30, 25);
+            this.metroSetButton4.Location = new System.Drawing.Point(33, 31);
             this.metroSetButton4.Name = "metroSetButton4";
             this.metroSetButton4.NormalBorderColor = System.Drawing.Color.Transparent;
             this.metroSetButton4.NormalColor = System.Drawing.Color.Transparent;
@@ -405,7 +410,7 @@
             this.metroSetButton4.PressBorderColor = System.Drawing.Color.Transparent;
             this.metroSetButton4.PressColor = System.Drawing.Color.Transparent;
             this.metroSetButton4.PressTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(207)))), ((int)(((byte)(255)))));
-            this.metroSetButton4.Size = new System.Drawing.Size(75, 53);
+            this.metroSetButton4.Size = new System.Drawing.Size(45, 55);
             this.metroSetButton4.Style = MetroSet_UI.Enums.Style.Light;
             this.metroSetButton4.StyleManager = null;
             this.metroSetButton4.TabIndex = 4;
@@ -421,7 +426,7 @@
             this.materialButton4.Depth = 0;
             this.materialButton4.HighEmphasis = true;
             this.materialButton4.Icon = null;
-            this.materialButton4.Location = new System.Drawing.Point(141, 25);
+            this.materialButton4.Location = new System.Drawing.Point(133, 35);
             this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton4.Name = "materialButton4";
@@ -446,11 +451,11 @@
             this.type,
             this.money});
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(31)))), ((int)(((byte)(74)))));
-            this.dataGridView1.Location = new System.Drawing.Point(12, 305);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 372);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(949, 249);
+            this.dataGridView1.Size = new System.Drawing.Size(1233, 322);
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -466,6 +471,8 @@
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column1.HeaderText = "اسم البند";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
@@ -474,22 +481,29 @@
             // subName
             // 
             this.subName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.subName.DefaultCellStyle = dataGridViewCellStyle2;
             this.subName.HeaderText = "كود العميل";
             this.subName.MinimumWidth = 6;
             this.subName.Name = "subName";
             this.subName.ReadOnly = true;
-            this.subName.Width = 107;
+            this.subName.Width = 116;
             // 
             // date
             // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.date.DefaultCellStyle = dataGridViewCellStyle3;
+            this.date.FillWeight = 150F;
             this.date.HeaderText = "تاريخ المعاملة";
-            this.date.MinimumWidth = 6;
+            this.date.MinimumWidth = 150;
             this.date.Name = "date";
             this.date.ReadOnly = true;
-            this.date.Width = 125;
+            this.date.Width = 150;
             // 
             // type
             // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.type.DefaultCellStyle = dataGridViewCellStyle4;
             this.type.HeaderText = "نوع البند";
             this.type.MinimumWidth = 6;
             this.type.Name = "type";
@@ -498,6 +512,8 @@
             // 
             // money
             // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.money.DefaultCellStyle = dataGridViewCellStyle5;
             this.money.HeaderText = "المبلغ";
             this.money.MinimumWidth = 6;
             this.money.Name = "money";
@@ -510,7 +526,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(23)))), ((int)(((byte)(62)))));
             this.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(54)))));
-            this.ClientSize = new System.Drawing.Size(973, 569);
+            this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.metroSetButton4);
             this.Controls.Add(this.groupBox1);
@@ -554,14 +570,14 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private MaterialSkin.Controls.MaterialButton materialButton7;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.TextBox productBox;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewTextBoxColumn subId;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn subName;
         private System.Windows.Forms.DataGridViewTextBoxColumn date;
         private System.Windows.Forms.DataGridViewTextBoxColumn type;
         private System.Windows.Forms.DataGridViewTextBoxColumn money;
-        private System.Windows.Forms.TextBox productBox;
-        private System.Windows.Forms.Label label6;
     }
 }
 
