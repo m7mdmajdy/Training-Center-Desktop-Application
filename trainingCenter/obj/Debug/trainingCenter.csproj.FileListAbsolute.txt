@@ -161,3 +161,17 @@ E:\tessssssssssssssssst\v6\Training-Center-Desktop-Application\trainingCenter\bi
 E:\tessssssssssssssssst\v6\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.xml
 E:\tessssssssssssssssst\v6\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CopyComplete
 E:\tessssssssssssssssst\v6\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addSchedule.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.AssemblyReference.cache
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.Dashboard.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addAcademicYear.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.studentPayment.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.totalIncomes.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addoutcomes.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addSubject.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.addStudent.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.Properties.Resources.resources
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.GenerateResource.cache
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.exe
+C:\Users\DELL\Documents\GitHub\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.pdb
