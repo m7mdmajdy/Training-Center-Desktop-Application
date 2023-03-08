@@ -18,6 +18,7 @@ namespace trainingCenter
         public Teacher()
         {
             this.GroupNames = new HashSet<GroupName>();
+            this.Schedules = new HashSet<Schedule>();
             this.Subjects = new HashSet<Subject>();
             this.AcademicYears = new HashSet<AcademicYear>();
         }
@@ -31,6 +32,8 @@ namespace trainingCenter
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<GroupName> GroupNames { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Schedule> Schedules { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Subject> Subjects { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

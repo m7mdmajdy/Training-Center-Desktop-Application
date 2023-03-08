@@ -18,7 +18,5 @@ namespace trainingCenter
         public int G_ID { get; set; }
         public System.DateTime Att_Date { get; set; }
         public bool Payment_State { get; set; }
-    
-        public virtual Student_Group Student_Group { get; set; }
     }
 }

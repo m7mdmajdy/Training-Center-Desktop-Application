@@ -14,14 +14,15 @@ namespace trainingCenter
     
     public partial class Instructor_Attendence
     {
+        public int Instructor_Attendance_ID { get; set; }
         public int Instructor_ID { get; set; }
         public Nullable<System.DateTime> Start_Time { get; set; }
         public Nullable<System.DateTime> End_Time { get; set; }
+        public System.DateTime Day { get; set; }
         public int Room_ID { get; set; }
         public Nullable<double> Cost { get; set; }
         public Nullable<double> Discount { get; set; }
     
         public virtual Instructor Instructor { get; set; }
-        public virtual Room Room { get; set; }
     }
 }
