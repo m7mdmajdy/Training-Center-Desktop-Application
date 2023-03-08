@@ -36,16 +36,26 @@
     <StartupObject>trainingCenter.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net48\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="MetroSet UI, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroSet_UI.2.0.0\lib\net45\MetroSet UI.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
@@ -59,11 +69,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addAcademicYear.cs">
+    <Compile Include="addGestWorkSpace.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="addAcademicYear.Designer.cs">
-      <DependentUpon>addAcademicYear.cs</DependentUpon>
+    <Compile Include="addGestWorkSpace.Designer.cs">
+      <DependentUpon>addGestWorkSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestWorkSpaceAttend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestWorkSpaceAttend.Designer.cs">
+      <DependentUpon>GestWorkSpaceAttend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addOutcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addOutcome.Designer.cs">
+      <DependentUpon>addOutcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addStudentGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addStudentGroup.Designer.cs">
+      <DependentUpon>addStudentGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="addGroup.cs">
       <SubType>Form</SubType>
@@ -71,77 +99,32 @@
     <Compile Include="addGroup.Designer.cs">
       <DependentUpon>addGroup.cs</DependentUpon>
     </Compile>
-    <Compile Include="addUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addUser.Designer.cs">
-      <DependentUpon>addUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="WorkSpace.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="WorkSpace.Designer.cs">
-      <DependentUpon>WorkSpace.cs</DependentUpon>
-    </Compile>
     <Compile Include="addRoom.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="addRoom.Designer.cs">
       <DependentUpon>addRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="addSubject.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addSubject.Designer.cs">
-      <DependentUpon>addSubject.cs</DependentUpon>
-    </Compile>
-    <Compile Include="addTeacher.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addTeacher.Designer.cs">
-      <DependentUpon>addTeacher.cs</DependentUpon>
-    </Compile>
-    <Compile Include="addInsructor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addInsructor.Designer.cs">
-      <DependentUpon>addInsructor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="addStudent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addStudent.Designer.cs">
-      <DependentUpon>addStudent.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BL\Utilities.cs" />
-    <EmbeddedResource Include="addAcademicYear.resx">
-      <DependentUpon>addAcademicYear.cs</DependentUpon>
+    <EmbeddedResource Include="addGestWorkSpace.resx">
+      <DependentUpon>addGestWorkSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestWorkSpaceAttend.resx">
+      <DependentUpon>GestWorkSpaceAttend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addOutcome.resx">
+      <DependentUpon>addOutcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addStudentGroup.resx">
+      <DependentUpon>addStudentGroup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addGroup.resx">
       <DependentUpon>addGroup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="addUser.resx">
-      <DependentUpon>addUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WorkSpace.resx">
-      <DependentUpon>WorkSpace.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="addRoom.resx">
       <DependentUpon>addRoom.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="addSubject.resx">
-      <DependentUpon>addSubject.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="addTeacher.resx">
-      <DependentUpon>addTeacher.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="addInsructor.resx">
-      <DependentUpon>addInsructor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="addStudent.resx">
-      <DependentUpon>addStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -167,6 +150,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

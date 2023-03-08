@@ -25,5 +25,73 @@ namespace trainingCenter.BL
                 return true;
             }
         }
+
+       
+        public static bool validateNameWithNumberInArabic(string name)
+        {
+            if (string.IsNullOrEmpty(name) || name == "")
+            {
+                return false;
+            }
+            else if (!Regex.IsMatch(name, @"^[\u0621-\u064A0-9 ]+$"))
+
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        public static bool ValidateFloatNumbers(string name)
+        {
+            Regex regex = new Regex("^-?\\d*(\\.\\d+)?$");
+            if (string.IsNullOrEmpty(name) || name == "")
+            {
+                return false;
+            }
+            else if (regex.IsMatch(name))
+
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool ValidateIntegerNumbers(string name)
+        {
+            Regex regex = new Regex("^\\d+$");
+            if (string.IsNullOrEmpty(name) || name == "")
+            {
+                return false;
+            }
+            else if (regex.IsMatch(name))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool ValidatPhoneNumber(string phoneNumber)
+        {
+
+            if (string.IsNullOrEmpty(phoneNumber) || (!Regex.IsMatch(phoneNumber, @"^01[0125][0-9]{8}$")))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
     }
+
+    
 }
