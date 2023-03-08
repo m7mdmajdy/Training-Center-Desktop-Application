@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="853f5f939673449391516312f0502f2e" Name="Diagram1">
+      <Diagram DiagramId="df81bff454744184856b7af939dd3d19" Name="Diagram1">
         <EntityTypeShape EntityType="EDPCenterModel.AcademicYear" Width="1.5" PointX="6" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="EDPCenterModel.Attendence" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="EDPCenterModel.Cost" Width="1.5" PointX="2.75" PointY="1.25" IsExpanded="true" />
@@ -30,15 +30,15 @@
         <EntityTypeShape EntityType="EDPCenterModel.Expens" Width="1.5" PointX="6.75" PointY="14.25" IsExpanded="true" />
         <EntityTypeShape EntityType="EDPCenterModel.Student_Addresses" Width="1.5" PointX="8.75" PointY="14.25" IsExpanded="true" />
         <AssociationConnector Association="EDPCenterModel.FK_GroupName_AcademicYear" ManuallyRouted="false" />
-        <AssociationConnector Association="EDPCenterModel.FK__Schedule__Group___74AE54BC" ManuallyRouted="false" />
-        <AssociationConnector Association="EDPCenterModel.FK__Student_Gr__G_ID__6A30C649" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.FK__Schedule__Group___693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.FK__Student_Gr__G_ID__6E01572D" ManuallyRouted="false" />
         <AssociationConnector Association="EDPCenterModel.FK_GroupName_Teacher" ManuallyRouted="false" />
         <AssociationConnector Association="EDPCenterModel.FK_Student_Group_GroupName" ManuallyRouted="false" />
         <AssociationConnector Association="EDPCenterModel.FK__Instructo__Instr__68487DD7" ManuallyRouted="false" />
-        <AssociationConnector Association="EDPCenterModel.FK__Schedule__Room_I__76969D2E" ManuallyRouted="false" />
-        <AssociationConnector Association="EDPCenterModel.FK__Schedule__Subjec__75A278F5" ManuallyRouted="false" />
-        <AssociationConnector Association="EDPCenterModel.FK__Schedule__Teache__73BA3083" ManuallyRouted="false" />
-        <AssociationConnector Association="EDPCenterModel.FK__Student_G__St_ID__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.FK__Schedule__Room_I__6A30C649" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.FK__Schedule__Subjec__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.FK__Schedule__Teache__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="EDPCenterModel.FK__Student_G__St_ID__6D0D32F4" ManuallyRouted="false" />
         <AssociationConnector Association="EDPCenterModel.FK_Student_Group_Student" ManuallyRouted="false" />
         <AssociationConnector Association="EDPCenterModel.FK_User_Attend_User" ManuallyRouted="false" />
         <AssociationConnector Association="EDPCenterModel.Group_Room" ManuallyRouted="false" />

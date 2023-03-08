@@ -282,7 +282,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Schedule__Group___74AE54BC">
+  <Association Name="FK__Schedule__Group___693CA210">
     <End Role="GroupName" Type="Self.GroupName" Multiplicity="1" />
     <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
     <ReferentialConstraint>
@@ -294,7 +294,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Schedule__Room_I__76969D2E">
+  <Association Name="FK__Schedule__Room_I__6A30C649">
     <End Role="Room" Type="Self.Room" Multiplicity="1" />
     <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
     <ReferentialConstraint>
@@ -306,7 +306,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Schedule__Subjec__75A278F5">
+  <Association Name="FK__Schedule__Subjec__6B24EA82">
     <End Role="Subject" Type="Self.Subject" Multiplicity="1" />
     <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
     <ReferentialConstraint>
@@ -318,7 +318,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Schedule__Teache__73BA3083">
+  <Association Name="FK__Schedule__Teache__6C190EBB">
     <End Role="Teacher" Type="Self.Teacher" Multiplicity="1" />
     <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
     <ReferentialConstraint>
@@ -330,7 +330,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Student_G__St_ID__693CA210">
+  <Association Name="FK__Student_G__St_ID__6D0D32F4">
     <End Role="Student" Type="Self.Student" Multiplicity="1" />
     <End Role="Student_Group" Type="Self.Student_Group" Multiplicity="*" />
     <ReferentialConstraint>
@@ -342,7 +342,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Student_Gr__G_ID__6A30C649">
+  <Association Name="FK__Student_Gr__G_ID__6E01572D">
     <End Role="GroupName" Type="Self.GroupName" Multiplicity="1" />
     <End Role="Student_Group" Type="Self.Student_Group" Multiplicity="*" />
     <ReferentialConstraint>
@@ -551,27 +551,27 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       <End Role="Instructors" EntitySet="Instructors" />
       <End Role="Instructor_Attendence" EntitySet="Instructor_Attendence" />
     </AssociationSet>
-    <AssociationSet Name="FK__Schedule__Group___74AE54BC" Association="Self.FK__Schedule__Group___74AE54BC">
+    <AssociationSet Name="FK__Schedule__Group___693CA210" Association="Self.FK__Schedule__Group___693CA210">
       <End Role="GroupName" EntitySet="GroupName" />
       <End Role="Schedule" EntitySet="Schedule" />
     </AssociationSet>
-    <AssociationSet Name="FK__Schedule__Room_I__76969D2E" Association="Self.FK__Schedule__Room_I__76969D2E">
+    <AssociationSet Name="FK__Schedule__Room_I__6A30C649" Association="Self.FK__Schedule__Room_I__6A30C649">
       <End Role="Room" EntitySet="Room" />
       <End Role="Schedule" EntitySet="Schedule" />
     </AssociationSet>
-    <AssociationSet Name="FK__Schedule__Subjec__75A278F5" Association="Self.FK__Schedule__Subjec__75A278F5">
+    <AssociationSet Name="FK__Schedule__Subjec__6B24EA82" Association="Self.FK__Schedule__Subjec__6B24EA82">
       <End Role="Subject" EntitySet="Subject" />
       <End Role="Schedule" EntitySet="Schedule" />
     </AssociationSet>
-    <AssociationSet Name="FK__Schedule__Teache__73BA3083" Association="Self.FK__Schedule__Teache__73BA3083">
+    <AssociationSet Name="FK__Schedule__Teache__6C190EBB" Association="Self.FK__Schedule__Teache__6C190EBB">
       <End Role="Teacher" EntitySet="Teacher" />
       <End Role="Schedule" EntitySet="Schedule" />
     </AssociationSet>
-    <AssociationSet Name="FK__Student_G__St_ID__693CA210" Association="Self.FK__Student_G__St_ID__693CA210">
+    <AssociationSet Name="FK__Student_G__St_ID__6D0D32F4" Association="Self.FK__Student_G__St_ID__6D0D32F4">
       <End Role="Student" EntitySet="Student" />
       <End Role="Student_Group" EntitySet="Student_Group" />
     </AssociationSet>
-    <AssociationSet Name="FK__Student_Gr__G_ID__6A30C649" Association="Self.FK__Student_Gr__G_ID__6A30C649">
+    <AssociationSet Name="FK__Student_Gr__G_ID__6E01572D" Association="Self.FK__Student_Gr__G_ID__6E01572D">
       <End Role="GroupName" EntitySet="GroupName" />
       <End Role="Student_Group" EntitySet="Student_Group" />
     </AssociationSet>

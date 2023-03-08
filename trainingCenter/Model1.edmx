@@ -287,7 +287,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Schedule__Group___74AE54BC">
+        <Association Name="FK__Schedule__Group___693CA210">
           <End Role="GroupName" Type="Self.GroupName" Multiplicity="1" />
           <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
           <ReferentialConstraint>
@@ -299,7 +299,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Schedule__Room_I__76969D2E">
+        <Association Name="FK__Schedule__Room_I__6A30C649">
           <End Role="Room" Type="Self.Room" Multiplicity="1" />
           <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
           <ReferentialConstraint>
@@ -311,7 +311,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Schedule__Subjec__75A278F5">
+        <Association Name="FK__Schedule__Subjec__6B24EA82">
           <End Role="Subject" Type="Self.Subject" Multiplicity="1" />
           <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
           <ReferentialConstraint>
@@ -323,7 +323,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Schedule__Teache__73BA3083">
+        <Association Name="FK__Schedule__Teache__6C190EBB">
           <End Role="Teacher" Type="Self.Teacher" Multiplicity="1" />
           <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
           <ReferentialConstraint>
@@ -335,7 +335,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Student_G__St_ID__693CA210">
+        <Association Name="FK__Student_G__St_ID__6D0D32F4">
           <End Role="Student" Type="Self.Student" Multiplicity="1" />
           <End Role="Student_Group" Type="Self.Student_Group" Multiplicity="*" />
           <ReferentialConstraint>
@@ -347,7 +347,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Student_Gr__G_ID__6A30C649">
+        <Association Name="FK__Student_Gr__G_ID__6E01572D">
           <End Role="GroupName" Type="Self.GroupName" Multiplicity="1" />
           <End Role="Student_Group" Type="Self.Student_Group" Multiplicity="*" />
           <ReferentialConstraint>
@@ -556,27 +556,27 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             <End Role="Instructors" EntitySet="Instructors" />
             <End Role="Instructor_Attendence" EntitySet="Instructor_Attendence" />
           </AssociationSet>
-          <AssociationSet Name="FK__Schedule__Group___74AE54BC" Association="Self.FK__Schedule__Group___74AE54BC">
+          <AssociationSet Name="FK__Schedule__Group___693CA210" Association="Self.FK__Schedule__Group___693CA210">
             <End Role="GroupName" EntitySet="GroupName" />
             <End Role="Schedule" EntitySet="Schedule" />
           </AssociationSet>
-          <AssociationSet Name="FK__Schedule__Room_I__76969D2E" Association="Self.FK__Schedule__Room_I__76969D2E">
+          <AssociationSet Name="FK__Schedule__Room_I__6A30C649" Association="Self.FK__Schedule__Room_I__6A30C649">
             <End Role="Room" EntitySet="Room" />
             <End Role="Schedule" EntitySet="Schedule" />
           </AssociationSet>
-          <AssociationSet Name="FK__Schedule__Subjec__75A278F5" Association="Self.FK__Schedule__Subjec__75A278F5">
+          <AssociationSet Name="FK__Schedule__Subjec__6B24EA82" Association="Self.FK__Schedule__Subjec__6B24EA82">
             <End Role="Subject" EntitySet="Subject" />
             <End Role="Schedule" EntitySet="Schedule" />
           </AssociationSet>
-          <AssociationSet Name="FK__Schedule__Teache__73BA3083" Association="Self.FK__Schedule__Teache__73BA3083">
+          <AssociationSet Name="FK__Schedule__Teache__6C190EBB" Association="Self.FK__Schedule__Teache__6C190EBB">
             <End Role="Teacher" EntitySet="Teacher" />
             <End Role="Schedule" EntitySet="Schedule" />
           </AssociationSet>
-          <AssociationSet Name="FK__Student_G__St_ID__693CA210" Association="Self.FK__Student_G__St_ID__693CA210">
+          <AssociationSet Name="FK__Student_G__St_ID__6D0D32F4" Association="Self.FK__Student_G__St_ID__6D0D32F4">
             <End Role="Student" EntitySet="Student" />
             <End Role="Student_Group" EntitySet="Student_Group" />
           </AssociationSet>
-          <AssociationSet Name="FK__Student_Gr__G_ID__6A30C649" Association="Self.FK__Student_Gr__G_ID__6A30C649">
+          <AssociationSet Name="FK__Student_Gr__G_ID__6E01572D" Association="Self.FK__Student_Gr__G_ID__6E01572D">
             <End Role="GroupName" EntitySet="GroupName" />
             <End Role="Student_Group" EntitySet="Student_Group" />
           </AssociationSet>
@@ -684,8 +684,8 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
           <Property Name="Grade" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
           <Property Name="AcademicYear_ID" Type="Int32" />
           <NavigationProperty Name="AcademicYear" Relationship="Self.FK_GroupName_AcademicYear" FromRole="GroupName" ToRole="AcademicYear" />
-          <NavigationProperty Name="Schedules" Relationship="Self.FK__Schedule__Group___74AE54BC" FromRole="GroupName" ToRole="Schedule" />
-          <NavigationProperty Name="Student_Group" Relationship="Self.FK__Student_Gr__G_ID__6A30C649" FromRole="GroupName" ToRole="Student_Group" />
+          <NavigationProperty Name="Schedules" Relationship="Self.FK__Schedule__Group___693CA210" FromRole="GroupName" ToRole="Schedule" />
+          <NavigationProperty Name="Student_Group" Relationship="Self.FK__Student_Gr__G_ID__6E01572D" FromRole="GroupName" ToRole="Student_Group" />
           <NavigationProperty Name="Teacher" Relationship="Self.FK_GroupName_Teacher" FromRole="GroupName" ToRole="Teacher" />
           <NavigationProperty Name="Student_Group1" Relationship="Self.FK_Student_Group_GroupName" FromRole="GroupName" ToRole="Student_Group" />
           <NavigationProperty Name="Rooms" Relationship="Self.Group_Room" FromRole="GroupName" ToRole="Room" />
@@ -741,7 +741,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
           <Property Name="Room_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Room_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Room_Capacity" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Schedules" Relationship="Self.FK__Schedule__Room_I__76969D2E" FromRole="Room" ToRole="Schedule" />
+          <NavigationProperty Name="Schedules" Relationship="Self.FK__Schedule__Room_I__6A30C649" FromRole="Room" ToRole="Schedule" />
           <NavigationProperty Name="GroupNames" Relationship="Self.Group_Room" FromRole="Room" ToRole="GroupName" />
         </EntityType>
         <EntityType Name="Schedule">
@@ -754,10 +754,10 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
           <Property Name="Subject_ID" Type="Int32" Nullable="false" />
           <Property Name="Room_ID" Type="Int32" Nullable="false" />
           <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
-          <NavigationProperty Name="GroupName" Relationship="Self.FK__Schedule__Group___74AE54BC" FromRole="Schedule" ToRole="GroupName" />
-          <NavigationProperty Name="Room" Relationship="Self.FK__Schedule__Room_I__76969D2E" FromRole="Schedule" ToRole="Room" />
-          <NavigationProperty Name="Subject" Relationship="Self.FK__Schedule__Subjec__75A278F5" FromRole="Schedule" ToRole="Subject" />
-          <NavigationProperty Name="Teacher" Relationship="Self.FK__Schedule__Teache__73BA3083" FromRole="Schedule" ToRole="Teacher" />
+          <NavigationProperty Name="GroupName" Relationship="Self.FK__Schedule__Group___693CA210" FromRole="Schedule" ToRole="GroupName" />
+          <NavigationProperty Name="Room" Relationship="Self.FK__Schedule__Room_I__6A30C649" FromRole="Schedule" ToRole="Room" />
+          <NavigationProperty Name="Subject" Relationship="Self.FK__Schedule__Subjec__6B24EA82" FromRole="Schedule" ToRole="Subject" />
+          <NavigationProperty Name="Teacher" Relationship="Self.FK__Schedule__Teache__6C190EBB" FromRole="Schedule" ToRole="Teacher" />
         </EntityType>
         <EntityType Name="Student">
           <Key>
@@ -773,7 +773,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
           <Property Name="St_Grade" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="St_School_Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
           <Property Name="St_Language" Type="String" MaxLength="120" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Student_Group" Relationship="Self.FK__Student_G__St_ID__693CA210" FromRole="Student" ToRole="Student_Group" />
+          <NavigationProperty Name="Student_Group" Relationship="Self.FK__Student_G__St_ID__6D0D32F4" FromRole="Student" ToRole="Student_Group" />
           <NavigationProperty Name="Student_Group1" Relationship="Self.FK_Student_Group_Student" FromRole="Student" ToRole="Student_Group" />
         </EntityType>
         <EntityType Name="Student_Group">
@@ -785,9 +785,9 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
           <Property Name="St_ID" Type="Int32" Nullable="false" />
           <Property Name="Payment_Method" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="St_Balance" Type="Double" />
-          <NavigationProperty Name="GroupName" Relationship="Self.FK__Student_Gr__G_ID__6A30C649" FromRole="Student_Group" ToRole="GroupName" />
+          <NavigationProperty Name="GroupName" Relationship="Self.FK__Student_Gr__G_ID__6E01572D" FromRole="Student_Group" ToRole="GroupName" />
           <NavigationProperty Name="GroupName1" Relationship="Self.FK_Student_Group_GroupName" FromRole="Student_Group" ToRole="GroupName" />
-          <NavigationProperty Name="Student" Relationship="Self.FK__Student_G__St_ID__693CA210" FromRole="Student_Group" ToRole="Student" />
+          <NavigationProperty Name="Student" Relationship="Self.FK__Student_G__St_ID__6D0D32F4" FromRole="Student_Group" ToRole="Student" />
           <NavigationProperty Name="Student1" Relationship="Self.FK_Student_Group_Student" FromRole="Student_Group" ToRole="Student" />
         </EntityType>
         <EntityType Name="Subject">
@@ -796,7 +796,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
           </Key>
           <Property Name="Sub_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Sub_Name" Type="String" MaxLength="120" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Schedules" Relationship="Self.FK__Schedule__Subjec__75A278F5" FromRole="Subject" ToRole="Schedule" />
+          <NavigationProperty Name="Schedules" Relationship="Self.FK__Schedule__Subjec__6B24EA82" FromRole="Subject" ToRole="Schedule" />
           <NavigationProperty Name="Teachers" Relationship="Self.Teacher_Subject" FromRole="Subject" ToRole="Teacher" />
         </EntityType>
         <EntityType Name="Teacher">
@@ -810,7 +810,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
           <Property Name="T_Balance" Type="Double" Nullable="false" />
           <Property Name="T_Income_Percent" Type="Double" Nullable="false" />
           <NavigationProperty Name="GroupNames" Relationship="Self.FK_GroupName_Teacher" FromRole="Teacher" ToRole="GroupName" />
-          <NavigationProperty Name="Schedules" Relationship="Self.FK__Schedule__Teache__73BA3083" FromRole="Teacher" ToRole="Schedule" />
+          <NavigationProperty Name="Schedules" Relationship="Self.FK__Schedule__Teache__6C190EBB" FromRole="Teacher" ToRole="Schedule" />
           <NavigationProperty Name="Subjects" Relationship="Self.Teacher_Subject" FromRole="Teacher" ToRole="Subject" />
           <NavigationProperty Name="AcademicYears" Relationship="Self.Teacher_Year" FromRole="Teacher" ToRole="AcademicYear" />
         </EntityType>
@@ -910,7 +910,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Schedule__Group___74AE54BC">
+        <Association Name="FK__Schedule__Group___693CA210">
           <End Role="GroupName" Type="Self.GroupName" Multiplicity="1" />
           <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
           <ReferentialConstraint>
@@ -922,7 +922,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Student_Gr__G_ID__6A30C649">
+        <Association Name="FK__Student_Gr__G_ID__6E01572D">
           <End Role="GroupName" Type="Self.GroupName" Multiplicity="1" />
           <End Role="Student_Group" Type="Self.Student_Group" Multiplicity="*" />
           <ReferentialConstraint>
@@ -974,7 +974,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Schedule__Room_I__76969D2E">
+        <Association Name="FK__Schedule__Room_I__6A30C649">
           <End Role="Room" Type="Self.Room" Multiplicity="1" />
           <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
           <ReferentialConstraint>
@@ -986,7 +986,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Schedule__Subjec__75A278F5">
+        <Association Name="FK__Schedule__Subjec__6B24EA82">
           <End Role="Subject" Type="Self.Subject" Multiplicity="1" />
           <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
           <ReferentialConstraint>
@@ -998,7 +998,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Schedule__Teache__73BA3083">
+        <Association Name="FK__Schedule__Teache__6C190EBB">
           <End Role="Teacher" Type="Self.Teacher" Multiplicity="1" />
           <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1010,7 +1010,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Student_G__St_ID__693CA210">
+        <Association Name="FK__Student_G__St_ID__6D0D32F4">
           <End Role="Student" Type="Self.Student" Multiplicity="1" />
           <End Role="Student_Group" Type="Self.Student_Group" Multiplicity="*" />
           <ReferentialConstraint>
@@ -1089,11 +1089,11 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             <End Role="AcademicYear" EntitySet="AcademicYears" />
             <End Role="GroupName" EntitySet="GroupNames" />
           </AssociationSet>
-          <AssociationSet Name="FK__Schedule__Group___74AE54BC" Association="Self.FK__Schedule__Group___74AE54BC">
+          <AssociationSet Name="FK__Schedule__Group___693CA210" Association="Self.FK__Schedule__Group___693CA210">
             <End Role="GroupName" EntitySet="GroupNames" />
             <End Role="Schedule" EntitySet="Schedules" />
           </AssociationSet>
-          <AssociationSet Name="FK__Student_Gr__G_ID__6A30C649" Association="Self.FK__Student_Gr__G_ID__6A30C649">
+          <AssociationSet Name="FK__Student_Gr__G_ID__6E01572D" Association="Self.FK__Student_Gr__G_ID__6E01572D">
             <End Role="GroupName" EntitySet="GroupNames" />
             <End Role="Student_Group" EntitySet="Student_Group" />
           </AssociationSet>
@@ -1109,19 +1109,19 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
             <End Role="Instructors" EntitySet="Instructors" />
             <End Role="Instructor_Attendence" EntitySet="Instructor_Attendence" />
           </AssociationSet>
-          <AssociationSet Name="FK__Schedule__Room_I__76969D2E" Association="Self.FK__Schedule__Room_I__76969D2E">
+          <AssociationSet Name="FK__Schedule__Room_I__6A30C649" Association="Self.FK__Schedule__Room_I__6A30C649">
             <End Role="Room" EntitySet="Rooms" />
             <End Role="Schedule" EntitySet="Schedules" />
           </AssociationSet>
-          <AssociationSet Name="FK__Schedule__Subjec__75A278F5" Association="Self.FK__Schedule__Subjec__75A278F5">
+          <AssociationSet Name="FK__Schedule__Subjec__6B24EA82" Association="Self.FK__Schedule__Subjec__6B24EA82">
             <End Role="Subject" EntitySet="Subjects" />
             <End Role="Schedule" EntitySet="Schedules" />
           </AssociationSet>
-          <AssociationSet Name="FK__Schedule__Teache__73BA3083" Association="Self.FK__Schedule__Teache__73BA3083">
+          <AssociationSet Name="FK__Schedule__Teache__6C190EBB" Association="Self.FK__Schedule__Teache__6C190EBB">
             <End Role="Teacher" EntitySet="Teachers" />
             <End Role="Schedule" EntitySet="Schedules" />
           </AssociationSet>
-          <AssociationSet Name="FK__Student_G__St_ID__693CA210" Association="Self.FK__Student_G__St_ID__693CA210">
+          <AssociationSet Name="FK__Student_G__St_ID__6D0D32F4" Association="Self.FK__Student_G__St_ID__6D0D32F4">
             <End Role="Student" EntitySet="Students" />
             <End Role="Student_Group" EntitySet="Student_Group" />
           </AssociationSet>

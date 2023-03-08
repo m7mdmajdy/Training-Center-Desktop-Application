@@ -16,7 +16,9 @@ namespace trainingCenter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new addStudentGroup());
+            //Application.Run(new addInstructor());
+            // Application.Run(new AddCostes());
+           Application.Run(new AttendenceInstructers());
         }
     }
 }
