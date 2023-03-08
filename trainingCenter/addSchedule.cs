@@ -14,26 +14,28 @@ using trainingCenter.BL;
 
 namespace trainingCenter
 {
-    public partial class addoutcomes : MetroSetForm
+    public partial class addSchedule : MetroSetForm
     {
         bool isValidName;
         bool isValidNumber;
-        string transactionType = "مصروفات";
 
         EDPCenterEntities eDPCenterEntities;
-        public addoutcomes()
+        List<Schedule> AllSchedules;
+        public addSchedule()
         {
             InitializeComponent();
             eDPCenterEntities = new EDPCenterEntities();
+            AllSchedules=eDPCenterEntities.Schedules.ToList();
 
             // set date to current date
+            
             dateTimePicker1.Text = DateTime.Now.ToString();
         }
 
         // validate fields
-        private bool checkValidation()
+        /*private bool checkValidation()
         {
-            isValidName = Utilities.validateNameInArabic(nameBox.Text);
+            *//*isValidName = Utilities.validateNameInArabic(nameBox.Text);
             isValidNumber = Utilities.checkDoubleNumber(numberBox.Text);
 
             if (!isValidName)
@@ -51,11 +53,11 @@ namespace trainingCenter
                 label3.Visible = false;
                 label12.Visible = false;
                 return true;
-            }
+            }*//*
 
 
 
-        }
+        }*/
 
         private void nameBox_Leave(object sender, EventArgs e)
         {
@@ -70,72 +72,35 @@ namespace trainingCenter
         {
             if (!isValidNumber)
             {
-                label12.Visible = false;
+               // label12.Visible = false;
 
             }
 
         }
 
 
-        private void addoutcomes_Load(object sender, EventArgs e)
+        private void addSchedule_Load_1(object sender, EventArgs e)
         {
-            if (textBox2.Text.Length == 0)
-                textBox2.Text = "ادخل التاريخ (الشهر-اليوم-السنة) او البند";
-
-            List<Daily_Transaction> daily_Transactions = eDPCenterEntities.Daily_Transaction.ToList();
-            NewDataGrid(daily_Transactions);
-            if (textBox2.Text.Length == 0)
-                textBox2.Text = "ادخل التاريخ (الشهر-اليوم-السنة) او البند";
-
+            List<Schedule> schedules = eDPCenterEntities.Schedules.ToList();
+            NewDataGrid(schedules);
         }
 
 
         private void materialButton1_Click(object sender, EventArgs e)
         {
 
-            if (checkValidation())
-            {
-                double price = double.Parse(numberBox.Text);
-                Daily_Transaction daily_Transaction = new Daily_Transaction()
-                {
-                    Name = nameBox.Text,
-                    Price = price,
-                    Date = Convert.ToDateTime(dateTimePicker1.Text),
-                    Transaction_Type = transactionType
+            string theDate = dateTimePicker1.Value.ToString("M/d/yyyy");
+            List<string> dates = AllSchedules.Select(x => x.date.ToString()).ToList();
+            List<Schedule> schedules = AllSchedules.Where(x => x.date.ToString().Contains(theDate)).ToList();
+            NewDataGrid(schedules);
 
-                };
-                eDPCenterEntities.Daily_Transaction.Add(daily_Transaction);
-                eDPCenterEntities.SaveChanges();
-                MessageBox.Show("تم اضافة البند");
-                List<Daily_Transaction> daily_Transactions = eDPCenterEntities.Daily_Transaction.ToList();
-                NewDataGrid(daily_Transactions);
 
-            }
+
         }
 
         private void materialButton2_Click(object sender, EventArgs e)
         {
-            if (checkValidation())
-            {
-                DateTime date = Convert.ToDateTime(dateTimePicker1.Text);
-                double price = double.Parse(numberBox.Text);
-                double productNo = double.Parse(productBox.Text);
-                Daily_Transaction daily_Transaction = eDPCenterEntities.Daily_Transaction.Where(x => x.ID == productNo).FirstOrDefault();
-
-                if (daily_Transaction != null)
-                {
-                    daily_Transaction.Name = nameBox.Text;
-                    daily_Transaction.Price = price;
-                    daily_Transaction.Date = date;
-                    eDPCenterEntities.SaveChanges();
-                    NewDataGrid(eDPCenterEntities.Daily_Transaction.ToList());
-                    MessageBox.Show("تم تعديل البند");
-                }
-                else
-                {
-                    MessageBox.Show("فشل التعديل");
-                }
-            }
+            
         }
 
         private void materialButton4_Click(object sender, EventArgs e)
@@ -164,66 +129,39 @@ namespace trainingCenter
         }
 
 
-        private void NewDataGrid(List<Daily_Transaction> daily_Transactions)
+        private void NewDataGrid(List<Schedule> schedules)
         {
-            nameBox.Text = "";
-            numberBox.Text = "";
-            textBox2.Text = "ادخل اسم البند";
-
             dataGridView1.Rows.Clear();
 
-            foreach (Daily_Transaction daily_Transaction in daily_Transactions)
+            foreach (Schedule schedule in schedules)
             {
                 DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-                row.Cells[0].Value = daily_Transaction.ID;
-                row.Cells[1].Value = daily_Transaction.Name;
-                row.Cells[2].Value = daily_Transaction.Person_ID;
-                row.Cells[3].Value = daily_Transaction.Date.ToString();
-                row.Cells[4].Value = daily_Transaction.Transaction_Type;
-                row.Cells[5].Value = daily_Transaction.Price;
+                row.Cells[0].Value = schedule.Teacher.T_Name.ToString();
+                row.Cells[1].Value = schedule.GroupName.G_Name.ToString();
+                row.Cells[2].Value = schedule.Room.Room_Name.ToString();
+                row.Cells[3].Value = schedule.Subject.Sub_Name.ToString();
+                row.Cells[4].Value = schedule.date.ToString();
                 dataGridView1.Rows.Add(row);
             }
         }
 
         private void textBox2_Enter(object sender, EventArgs e)
         {
-            textBox2.Text = "";
+            
         }
         private void textBox2_Leave(object sender, EventArgs e)
         {
-            if (textBox2.Text.Length == 0)
-                textBox2.Text = "ادخل اسم البند";
+            
         }
 
         private void materialButton5_Click(object sender, EventArgs e)
         {
-            if (textBox2.Visible == true)
-            {
-                if (textBox2.Text.Length == 0)
-                    MessageBox.Show("ادخل اسم البند");
-                else if (textBox2.Text == "ادخل اسم البند")
-                    MessageBox.Show("ادخل اسم البند");
-                else
-                {
-                    List<Daily_Transaction> daily_Transactions;
-                    daily_Transactions = eDPCenterEntities.Daily_Transaction.Where(a => a.Name.Contains(textBox2.Text)).ToList();
-                    if (daily_Transactions.Count > 0)
-                        NewDataGrid(daily_Transactions);
-                    else
-                        MessageBox.Show("لا توجد نتائج");
-                }
-            }
-            else
-            {
-                NewDataGrid(eDPCenterEntities.Daily_Transaction.ToList());
-            }
-            textBox2.Visible = true;
-            dateTimePicker2.Visible = false;
+            
         }
 
         private void materialButton7_Click(object sender, EventArgs e)
         {
-            if (dateTimePicker2.Visible == true)
+           /* if (dateTimePicker2.Visible == true)
             {
                 List<Daily_Transaction> daily_Transactions;
                 string theDate = dateTimePicker2.Value.ToString("M/d/yyyy");
@@ -238,17 +176,17 @@ namespace trainingCenter
                 NewDataGrid(eDPCenterEntities.Daily_Transaction.ToList());
             }
             textBox2.Visible = false;
-            dateTimePicker2.Visible = true;
+            dateTimePicker2.Visible = true;*/
         }
 
         private void materialButton6_Click(object sender, EventArgs e)
         {
-            NewDataGrid(eDPCenterEntities.Daily_Transaction.ToList());
+            
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int index = e.RowIndex;
+            /*int index = e.RowIndex;
             if (index >= 0)
             {
                 DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[index];
@@ -263,13 +201,30 @@ namespace trainingCenter
                 {
                     MessageBox.Show("لا توجد قيمة");
                 }
-            }
+            }*/
 
         }
 
-        private void materialButton3_Click(object sender, EventArgs e)
+        private void materialButton5_Click_1(object sender, EventArgs e)
         {
+            NewDataGrid(eDPCenterEntities.Schedules.ToList());
+            dateTimePicker1.Value= DateTime.Now;
+        }
 
+        private void materialButton6_Click_1(object sender, EventArgs e)
+        {
+            if (nameBox.Text.Length > 0)
+            {
+                label3.Visible = false;
+
+                List<Schedule> schedules =
+                    AllSchedules.Where(x => x.Teacher.T_Name.Contains( nameBox.Text)).ToList();
+                NewDataGrid(schedules);
+            }
+            else
+            {
+                label3.Visible = true;
+            }
         }
     }
     

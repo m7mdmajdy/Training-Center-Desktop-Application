@@ -80,7 +80,16 @@
     <Compile Include="addAcademicYear.Designer.cs">
       <DependentUpon>addAcademicYear.cs</DependentUpon>
     </Compile>
+    <Compile Include="addSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addSchedule.Designer.cs">
+      <DependentUpon>addSchedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Attendence.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cost.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Daily_Transaction.cs">
@@ -130,6 +139,12 @@
     </Compile>
     <Compile Include="Student.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentAttendance.Designer.cs">
+      <DependentUpon>StudentAttendance.cs</DependentUpon>
     </Compile>
     <Compile Include="Student_Addresses.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -191,6 +206,12 @@
     </Compile>
     <EmbeddedResource Include="addAcademicYear.resx">
       <DependentUpon>addAcademicYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addSchedule.resx">
+      <DependentUpon>addSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentAttendance.resx">
+      <DependentUpon>StudentAttendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="totalIncomes.resx">
       <DependentUpon>totalIncomes.cs</DependentUpon>

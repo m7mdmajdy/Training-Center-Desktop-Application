@@ -14,20 +14,15 @@ namespace trainingCenter
     
     public partial class Student_Group
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Student_Group()
-        {
-            this.Attendences = new HashSet<Attendence>();
-        }
-    
+        public int StID_GID_ID { get; set; }
         public int G_ID { get; set; }
         public int St_ID { get; set; }
         public string Payment_Method { get; set; }
         public Nullable<double> St_Balance { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Attendence> Attendences { get; set; }
         public virtual GroupName GroupName { get; set; }
+        public virtual GroupName GroupName1 { get; set; }
         public virtual Student Student { get; set; }
+        public virtual Student Student1 { get; set; }
     }
 }

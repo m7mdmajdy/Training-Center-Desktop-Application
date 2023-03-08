@@ -15,11 +15,11 @@ namespace trainingCenter
     public partial class Guest_WorkSpace_Attend
     {
         public int Guest_ID { get; set; }
-        public Nullable<System.DateTime> Start_Time { get; set; }
-        public Nullable<System.DateTime> End_Time { get; set; }
+        public Nullable<System.TimeSpan> Start_Time { get; set; }
+        public Nullable<System.TimeSpan> End_Time { get; set; }
+        public System.DateTime Day { get; set; }
+        public Nullable<double> Payment { get; set; }
         public Nullable<double> Cost { get; set; }
         public Nullable<double> Discount { get; set; }
-    
-        public virtual Guest_workspace Guest_workspace { get; set; }
     }
 }

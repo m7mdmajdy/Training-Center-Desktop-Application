@@ -18,6 +18,7 @@ namespace trainingCenter
         public Student()
         {
             this.Student_Group = new HashSet<Student_Group>();
+            this.Student_Group1 = new HashSet<Student_Group>();
         }
     
         public int St_ID { get; set; }
@@ -33,5 +34,11 @@ namespace trainingCenter
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Student_Group> Student_Group { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Student_Group> Student_Group1 { get; set; }
+        public override string ToString()
+        {
+            return St_ID.ToString();
+        }
     }
 }

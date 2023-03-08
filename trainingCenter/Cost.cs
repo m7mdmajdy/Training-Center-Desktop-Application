@@ -12,18 +12,10 @@ namespace trainingCenter
     using System;
     using System.Collections.Generic;
     
-    public partial class Schedule
+    public partial class Cost
     {
-        public int Schedule_ID { get; set; }
-        public int Teacher_ID { get; set; }
-        public int Group_ID { get; set; }
-        public int Subject_ID { get; set; }
-        public int Room_ID { get; set; }
-        public System.DateTime date { get; set; }
-    
-        public virtual GroupName GroupName { get; set; }
-        public virtual Room Room { get; set; }
-        public virtual Subject Subject { get; set; }
-        public virtual Teacher Teacher { get; set; }
+        public int Cost_ID { get; set; }
+        public string Name { get; set; }
+        public double Payment { get; set; }
     }
 }

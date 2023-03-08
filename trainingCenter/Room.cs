@@ -17,15 +17,16 @@ namespace trainingCenter
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Room()
         {
-            this.Instructor_Attendence = new HashSet<Instructor_Attendence>();
+            this.Schedules = new HashSet<Schedule>();
             this.GroupNames = new HashSet<GroupName>();
         }
     
         public int Room_ID { get; set; }
+        public string Room_Name { get; set; }
         public int Room_Capacity { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Instructor_Attendence> Instructor_Attendence { get; set; }
+        public virtual ICollection<Schedule> Schedules { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<GroupName> GroupNames { get; set; }
     }
