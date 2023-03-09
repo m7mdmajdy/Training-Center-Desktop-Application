@@ -184,6 +184,7 @@
             this.Name = "studentPayment";
             this.SmallLineColor1 = System.Drawing.Color.Transparent;
             this.SmallLineColor2 = System.Drawing.Color.Transparent;
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.studentPayment_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

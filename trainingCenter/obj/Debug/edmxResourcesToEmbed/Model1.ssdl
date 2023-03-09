@@ -120,6 +120,9 @@
     <Property Name="Subject_ID" Type="int" Nullable="false" />
     <Property Name="Room_ID" Type="int" Nullable="false" />
     <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="Start_Time" Type="time" Precision="7" />
+    <Property Name="End_Time" Type="time" Precision="7" />
+    <Property Name="week" Type="nvarchar" MaxLength="20" />
   </EntityType>
   <EntityType Name="Student">
     <Key>
@@ -213,65 +216,10 @@ warning 6002: The table/view 'EDPCenter.dbo.User_Attend' does not have a primary
     <Property Name="Attend_Time" Type="datetime" />
     <Property Name="Leave_Time" Type="datetime" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'EDPCenter.NewSchema.Exam' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-  <EntityType Name="Exam">
-    <Key>
-      <PropertyRef Name="Exam_Code" />
-      <PropertyRef Name="Group_ID" />
-    </Key>
-    <Property Name="Exam_Code" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="Group_ID" Type="nchar" MaxLength="10" Nullable="false" />
-  </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'EDPCenter.NewSchema.Expenses' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-  <EntityType Name="Expenses">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="Day_DateTime" Type="datetime" />
-  </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-  <EntityType Name="Student_Addresses">
-    <Key>
-      <PropertyRef Name="ID_Stud" />
-      <PropertyRef Name="Address_Stu" />
-    </Key>
-    <Property Name="ID_Stud" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="Address_Stu" Type="nvarchar" MaxLength="200" Nullable="false" />
-    <Property Name="Address2_Stu" Type="nvarchar" MaxLength="200" />
-    <Property Name="Address3_Stu" Type="nvarchar" MaxLength="200" />
-  </EntityType>
-  <EntityType Name="Student_Parents_Phones">
-    <Key>
-      <PropertyRef Name="ID_Stu" />
-      <PropertyRef Name="Stu_Parent_Phone" />
-    </Key>
-    <Property Name="ID_Stu" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="Stu_Parent_Phone" Type="nvarchar" MaxLength="16" Nullable="false" />
-    <Property Name="Stu_Parent_Relativity" Type="nvarchar" MaxLength="120" />
-  </EntityType>
-  <EntityType Name="Student_Phones">
-    <Key>
-      <PropertyRef Name="ID_Stu" />
-      <PropertyRef Name="Phone_Stu" />
-    </Key>
-    <Property Name="ID_Stu" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="Phone_Stu" Type="nchar" MaxLength="16" Nullable="false" />
-    <Property Name="Phone2_Stu" Type="nchar" MaxLength="16" />
-    <Property Name="Phone3_Stu" Type="nchar" MaxLength="10" />
-  </EntityType>
-  <EntityType Name="User_Roles">
-    <Key>
-      <PropertyRef Name="Role_Code" />
-    </Key>
-    <Property Name="Role_Code" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="Role_Title" Type="nvarchar" MaxLength="120" Nullable="false" />
-  </EntityType>
-  <Association Name="FK__Instructo__Instr__68487DD7">
-    <End Role="Instructors" Type="Self.Instructors" Multiplicity="1" />
+  <Association Name="FK__Instructo__Instr__66603565">
+    <End Role="Instructors" Type="Self.Instructors" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Instructor_Attendence" Type="Self.Instructor_Attendence" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Instructors">
@@ -282,7 +230,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Schedule__Group___74AE54BC">
+  <Association Name="FK__Schedule__Group___71D1E811">
     <End Role="GroupName" Type="Self.GroupName" Multiplicity="1" />
     <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
     <ReferentialConstraint>
@@ -294,7 +242,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Schedule__Room_I__76969D2E">
+  <Association Name="FK__Schedule__Room_I__72C60C4A">
     <End Role="Room" Type="Self.Room" Multiplicity="1" />
     <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
     <ReferentialConstraint>
@@ -306,7 +254,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Schedule__Subjec__75A278F5">
+  <Association Name="FK__Schedule__Subjec__73BA3083">
     <End Role="Subject" Type="Self.Subject" Multiplicity="1" />
     <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
     <ReferentialConstraint>
@@ -318,7 +266,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Schedule__Teache__73BA3083">
+  <Association Name="FK__Schedule__Teache__74AE54BC">
     <End Role="Teacher" Type="Self.Teacher" Multiplicity="1" />
     <End Role="Schedule" Type="Self.Schedule" Multiplicity="*" />
     <ReferentialConstraint>
@@ -330,7 +278,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Student_G__St_ID__693CA210">
+  <Association Name="FK__Student_G__St_ID__6754599E">
     <End Role="Student" Type="Self.Student" Multiplicity="1" />
     <End Role="Student_Group" Type="Self.Student_Group" Multiplicity="*" />
     <ReferentialConstraint>
@@ -342,7 +290,7 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Student_Gr__G_ID__6A30C649">
+  <Association Name="FK__Student_Gr__G_ID__68487DD7">
     <End Role="GroupName" Type="Self.GroupName" Multiplicity="1" />
     <End Role="Student_Group" Type="Self.Student_Group" Multiplicity="*" />
     <ReferentialConstraint>
@@ -496,6 +444,9 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="DailyTotalExpenses" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="DailyTotalRevenue" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetDailyExpensesAndRevenue" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="EDPCenterModelStoreContainer">
     <EntitySet Name="AcademicYear" EntityType="Self.AcademicYear" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Attendence" EntityType="Self.Attendence" Schema="dbo" store:Type="Tables" />
@@ -517,9 +468,6 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
     <EntitySet Name="Teacher_Year" EntityType="Self.Teacher_Year" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Total_Transaction" EntityType="Self.Total_Transaction" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Student_Parents_Phones" EntityType="Self.Student_Parents_Phones" Schema="NewSchema" store:Type="Tables" />
-    <EntitySet Name="Student_Phones" EntityType="Self.Student_Phones" Schema="NewSchema" store:Type="Tables" />
-    <EntitySet Name="User_Roles" EntityType="Self.User_Roles" Schema="NewSchema" store:Type="Tables" />
     <EntitySet Name="User_Attend" EntityType="Self.User_Attend" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [User_Attend].[User_ID] AS [User_ID], 
@@ -527,51 +475,31 @@ warning 6002: The table/view 'EDPCenter.NewSchema.Student_Addresses' does not ha
     [User_Attend].[Leave_Time] AS [Leave_Time]
     FROM [dbo].[User_Attend] AS [User_Attend]</DefiningQuery>
     </EntitySet>
-    <EntitySet Name="Exam" EntityType="Self.Exam" store:Type="Tables" store:Schema="NewSchema">
-      <DefiningQuery>SELECT 
-    [Exam].[Exam_Code] AS [Exam_Code], 
-    [Exam].[Group_ID] AS [Group_ID]
-    FROM [NewSchema].[Exam] AS [Exam]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="Expenses" EntityType="Self.Expenses" store:Type="Tables" store:Schema="NewSchema">
-      <DefiningQuery>SELECT 
-    [Expenses].[ID] AS [ID], 
-    [Expenses].[Day_DateTime] AS [Day_DateTime]
-    FROM [NewSchema].[Expenses] AS [Expenses]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="Student_Addresses" EntityType="Self.Student_Addresses" store:Type="Tables" store:Schema="NewSchema">
-      <DefiningQuery>SELECT 
-    [Student_Addresses].[ID_Stud] AS [ID_Stud], 
-    [Student_Addresses].[Address_Stu] AS [Address_Stu], 
-    [Student_Addresses].[Address2_Stu] AS [Address2_Stu], 
-    [Student_Addresses].[Address3_Stu] AS [Address3_Stu]
-    FROM [NewSchema].[Student_Addresses] AS [Student_Addresses]</DefiningQuery>
-    </EntitySet>
-    <AssociationSet Name="FK__Instructo__Instr__68487DD7" Association="Self.FK__Instructo__Instr__68487DD7">
+    <AssociationSet Name="FK__Instructo__Instr__66603565" Association="Self.FK__Instructo__Instr__66603565">
       <End Role="Instructors" EntitySet="Instructors" />
       <End Role="Instructor_Attendence" EntitySet="Instructor_Attendence" />
     </AssociationSet>
-    <AssociationSet Name="FK__Schedule__Group___74AE54BC" Association="Self.FK__Schedule__Group___74AE54BC">
+    <AssociationSet Name="FK__Schedule__Group___71D1E811" Association="Self.FK__Schedule__Group___71D1E811">
       <End Role="GroupName" EntitySet="GroupName" />
       <End Role="Schedule" EntitySet="Schedule" />
     </AssociationSet>
-    <AssociationSet Name="FK__Schedule__Room_I__76969D2E" Association="Self.FK__Schedule__Room_I__76969D2E">
+    <AssociationSet Name="FK__Schedule__Room_I__72C60C4A" Association="Self.FK__Schedule__Room_I__72C60C4A">
       <End Role="Room" EntitySet="Room" />
       <End Role="Schedule" EntitySet="Schedule" />
     </AssociationSet>
-    <AssociationSet Name="FK__Schedule__Subjec__75A278F5" Association="Self.FK__Schedule__Subjec__75A278F5">
+    <AssociationSet Name="FK__Schedule__Subjec__73BA3083" Association="Self.FK__Schedule__Subjec__73BA3083">
       <End Role="Subject" EntitySet="Subject" />
       <End Role="Schedule" EntitySet="Schedule" />
     </AssociationSet>
-    <AssociationSet Name="FK__Schedule__Teache__73BA3083" Association="Self.FK__Schedule__Teache__73BA3083">
+    <AssociationSet Name="FK__Schedule__Teache__74AE54BC" Association="Self.FK__Schedule__Teache__74AE54BC">
       <End Role="Teacher" EntitySet="Teacher" />
       <End Role="Schedule" EntitySet="Schedule" />
     </AssociationSet>
-    <AssociationSet Name="FK__Student_G__St_ID__693CA210" Association="Self.FK__Student_G__St_ID__693CA210">
+    <AssociationSet Name="FK__Student_G__St_ID__6754599E" Association="Self.FK__Student_G__St_ID__6754599E">
       <End Role="Student" EntitySet="Student" />
       <End Role="Student_Group" EntitySet="Student_Group" />
     </AssociationSet>
-    <AssociationSet Name="FK__Student_Gr__G_ID__6A30C649" Association="Self.FK__Student_Gr__G_ID__6A30C649">
+    <AssociationSet Name="FK__Student_Gr__G_ID__68487DD7" Association="Self.FK__Student_Gr__G_ID__68487DD7">
       <End Role="GroupName" EntitySet="GroupName" />
       <End Role="Student_Group" EntitySet="Student_Group" />
     </AssociationSet>

@@ -116,6 +116,7 @@
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button12.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.White;
             this.button12.Image = global::trainingCenter.Properties.Resources.schedule;
@@ -125,10 +126,14 @@
             this.button12.TabIndex = 5;
             this.button12.Text = "\r\n\r\n\r\n\r\n\r\n\r\nالجدول اليومى";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.button12.MouseLeave += new System.EventHandler(this.button12_MouseLeave);
+            this.button12.MouseHover += new System.EventHandler(this.button12_MouseHover);
             // 
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button11.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
@@ -138,10 +143,14 @@
             this.button11.TabIndex = 5;
             this.button11.Text = "\r\n\r\n\r\n\r\n\r\n\r\nإجمالى التعاملات المالية";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button11.MouseLeave += new System.EventHandler(this.button11_MouseLeave);
+            this.button11.MouseHover += new System.EventHandler(this.button11_MouseHover);
             // 
             // button10
             // 
             this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button10.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.White;
             this.button10.Image = global::trainingCenter.Properties.Resources.money_bag;
@@ -151,10 +160,14 @@
             this.button10.TabIndex = 5;
             this.button10.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسعيرة الخدمات";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.MouseLeave += new System.EventHandler(this.button10_MouseLeave);
+            this.button10.MouseHover += new System.EventHandler(this.button10_MouseHover);
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = global::trainingCenter.Properties.Resources.wallet;
@@ -168,6 +181,7 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Image = global::trainingCenter.Properties.Resources.wallet;
@@ -177,10 +191,12 @@
             this.button8.TabIndex = 5;
             this.button8.Text = "\r\n\r\n\r\n\r\n\r\n\r\nالمصروفات والإيرادات";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button15.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.Color.White;
             this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
@@ -190,10 +206,14 @@
             this.button15.TabIndex = 5;
             this.button15.Text = "\r\n\r\n\r\n\r\n\r\n\r\n\r\nتسجيل حضور قاعة العمل";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.button15.MouseLeave += new System.EventHandler(this.button15_MouseLeave);
+            this.button15.MouseHover += new System.EventHandler(this.button15_MouseHover);
             // 
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button14.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
@@ -207,6 +227,7 @@
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button13.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
@@ -216,10 +237,14 @@
             this.button13.TabIndex = 5;
             this.button13.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسجيل حضور الطلبة";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.button13.MouseLeave += new System.EventHandler(this.button13_MouseLeave);
+            this.button13.MouseHover += new System.EventHandler(this.button13_MouseHover);
             // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button9.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Image = global::trainingCenter.Properties.Resources.attendance;
@@ -233,6 +258,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::trainingCenter.Properties.Resources._class;
@@ -242,10 +268,14 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسجيل مجموعة";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
+            this.button4.MouseHover += new System.EventHandler(this.button4_MouseHover);
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Image = global::trainingCenter.Properties.Resources.calendar;
@@ -255,10 +285,14 @@
             this.button7.TabIndex = 5;
             this.button7.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسجيل سنة دراسية";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.MouseLeave += new System.EventHandler(this.button7_MouseLeave);
+            this.button7.MouseHover += new System.EventHandler(this.button7_MouseHover);
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Image = global::trainingCenter.Properties.Resources.profile;
@@ -268,10 +302,13 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "\r\n\r\n\r\n\r\n\r\n\r\nإضافة مستخدم";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
+            this.button5.MouseHover += new System.EventHandler(this.button5_MouseHover);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::trainingCenter.Properties.Resources.teacher;
@@ -281,10 +318,14 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسجيل مدرس";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
+            this.button3.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(71)))), ((int)(((byte)(161)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::trainingCenter.Properties.Resources.book_stack;
@@ -294,6 +335,9 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسجيل مادة";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
             // button1
             // 

@@ -20,6 +20,9 @@ namespace trainingCenter
         public int Subject_ID { get; set; }
         public int Room_ID { get; set; }
         public System.DateTime date { get; set; }
+        public Nullable<System.TimeSpan> Start_Time { get; set; }
+        public Nullable<System.TimeSpan> End_Time { get; set; }
+        public string week { get; set; }
     
         public virtual GroupName GroupName { get; set; }
         public virtual Room Room { get; set; }

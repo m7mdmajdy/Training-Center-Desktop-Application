@@ -120,6 +120,9 @@
           <ScalarProperty Name="Subject_ID" ColumnName="Subject_ID" />
           <ScalarProperty Name="Room_ID" ColumnName="Room_ID" />
           <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="Start_Time" ColumnName="Start_Time" />
+          <ScalarProperty Name="End_Time" ColumnName="End_Time" />
+          <ScalarProperty Name="week" ColumnName="week" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -195,65 +198,12 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Student_Parents_Phones">
-      <EntityTypeMapping TypeName="EDPCenterModel.Student_Parents_Phones">
-        <MappingFragment StoreEntitySet="Student_Parents_Phones">
-          <ScalarProperty Name="ID_Stu" ColumnName="ID_Stu" />
-          <ScalarProperty Name="Stu_Parent_Phone" ColumnName="Stu_Parent_Phone" />
-          <ScalarProperty Name="Stu_Parent_Relativity" ColumnName="Stu_Parent_Relativity" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Student_Phones">
-      <EntityTypeMapping TypeName="EDPCenterModel.Student_Phones">
-        <MappingFragment StoreEntitySet="Student_Phones">
-          <ScalarProperty Name="ID_Stu" ColumnName="ID_Stu" />
-          <ScalarProperty Name="Phone_Stu" ColumnName="Phone_Stu" />
-          <ScalarProperty Name="Phone2_Stu" ColumnName="Phone2_Stu" />
-          <ScalarProperty Name="Phone3_Stu" ColumnName="Phone3_Stu" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="User_Roles">
-      <EntityTypeMapping TypeName="EDPCenterModel.User_Roles">
-        <MappingFragment StoreEntitySet="User_Roles">
-          <ScalarProperty Name="Role_Code" ColumnName="Role_Code" />
-          <ScalarProperty Name="Role_Title" ColumnName="Role_Title" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="User_Attend">
       <EntityTypeMapping TypeName="EDPCenterModel.User_Attend">
         <MappingFragment StoreEntitySet="User_Attend">
           <ScalarProperty Name="User_ID" ColumnName="User_ID" />
           <ScalarProperty Name="Attend_Time" ColumnName="Attend_Time" />
           <ScalarProperty Name="Leave_Time" ColumnName="Leave_Time" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Exams">
-      <EntityTypeMapping TypeName="EDPCenterModel.Exam">
-        <MappingFragment StoreEntitySet="Exam">
-          <ScalarProperty Name="Exam_Code" ColumnName="Exam_Code" />
-          <ScalarProperty Name="Group_ID" ColumnName="Group_ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Expenses">
-      <EntityTypeMapping TypeName="EDPCenterModel.Expens">
-        <MappingFragment StoreEntitySet="Expenses">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-          <ScalarProperty Name="Day_DateTime" ColumnName="Day_DateTime" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Student_Addresses">
-      <EntityTypeMapping TypeName="EDPCenterModel.Student_Addresses">
-        <MappingFragment StoreEntitySet="Student_Addresses">
-          <ScalarProperty Name="ID_Stud" ColumnName="ID_Stud" />
-          <ScalarProperty Name="Address_Stu" ColumnName="Address_Stu" />
-          <ScalarProperty Name="Address2_Stu" ColumnName="Address2_Stu" />
-          <ScalarProperty Name="Address3_Stu" ColumnName="Address3_Stu" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -281,5 +231,18 @@
         <ScalarProperty Name="T_ID" ColumnName="Teacher_ID" />
       </EndProperty>
     </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="DailyTotalExpenses" FunctionName="EDPCenterModel.Store.DailyTotalExpenses" />
+    <FunctionImportMapping FunctionImportName="DailyTotalRevenue" FunctionName="EDPCenterModel.Store.DailyTotalRevenue" />
+    <FunctionImportMapping FunctionImportName="GetDailyExpensesAndRevenue" FunctionName="EDPCenterModel.Store.GetDailyExpensesAndRevenue">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="EDPCenterModel.GetDailyExpensesAndRevenue_Result">
+          <ScalarProperty Name="Person_ID" ColumnName="Person_ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Transaction_Type" ColumnName="Transaction_Type" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

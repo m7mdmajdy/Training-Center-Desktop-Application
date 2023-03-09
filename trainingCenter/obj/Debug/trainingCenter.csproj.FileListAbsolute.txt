@@ -213,3 +213,73 @@ C:\Users\DELL\Desktop\Project\tessssssssssssssssssssssssssssst\Training-Center-D
 C:\Users\DELL\Desktop\Project\tessssssssssssssssssssssssssssst\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.xml
 C:\Users\DELL\Desktop\Project\tessssssssssssssssssssssssssssst\Training-Center-Desktop-Application\trainingCenter\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\DELL\Desktop\Project\tessssssssssssssssssssssssssssst\Training-Center-Desktop-Application\trainingCenter\obj\Debug\trainingCenter.csproj.CopyComplete
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\bin\Debug\trainingCenter.exe.config
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\bin\Debug\trainingCenter.exe
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\bin\Debug\trainingCenter.pdb
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\bin\Debug\EntityFramework.dll
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\bin\Debug\MaterialSkin.dll
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\bin\Debug\MetroSet UI.dll
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\bin\Debug\EntityFramework.xml
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.csproj.AssemblyReference.cache
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.csproj.SuggestedBindingRedirects.cache
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.AddCostes.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.addGestWorkSpace.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.addGroup.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.addInstructor.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.addOutcome.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.addRoom.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.addSchedule.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.addStudentGroup.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.AttendenceInstructers.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.Dashboard.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.addAcademicYear.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.GestWorkSpaceAttend.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.StudentAttendance.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.studentPayment.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.totalIncomes.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.addoutcomes.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.addSubject.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.addStudent.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.Properties.Resources.resources
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.csproj.GenerateResource.cache
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.csproj.CoreCompileInputs.cache
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.csproj.CopyComplete
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.exe
+C:\Users\UNITED PC\Desktop\New folder\trainingCenter\obj\Debug\trainingCenter.pdb
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\bin\Debug\trainingCenter.exe.config
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\bin\Debug\trainingCenter.exe
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\bin\Debug\trainingCenter.pdb
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\bin\Debug\MaterialSkin.dll
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\bin\Debug\MetroSet UI.dll
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.AddCostes.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.addGestWorkSpace.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.addGroup.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.addInstructor.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.addOutcome.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.addRoom.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.addSchedule.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.addStudentGroup.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.AttendenceInstructers.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.Dashboard.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.addAcademicYear.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.GestWorkSpaceAttend.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.StudentAttendance.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.studentPayment.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.totalIncomes.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.addoutcomes.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.addSubject.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.addStudent.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.Properties.Resources.resources
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.csproj.CopyComplete
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.exe
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.pdb

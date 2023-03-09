@@ -290,7 +290,19 @@ namespace trainingCenter
         {
             if (textBox1.Text.Length>0 && textBox5.Text.Length>0)
             {
-                MessageBox.Show("روح لمعاذ هات الفورم منه");
+                int groupId = Convert.ToInt32(textBox5.Text);
+                GroupName groupName= context.GroupNames.Where(x=>x.G_ID==groupId).FirstOrDefault();
+                bool isPaid = groupName.G_PriceOfSession < Convert.ToInt32(textBox7.Text);
+
+                Attendence attendence = new Attendence()
+                {
+                    St_ID = Convert.ToInt32(textBox1.Text),
+                    G_ID = groupId,
+                    Att_Date = DateTime.Now,
+                    Payment_State = isPaid
+                };
+                studentPayment studentPayment = new studentPayment(attendence);
+                studentPayment.ShowDialog();
             }
             else
             {

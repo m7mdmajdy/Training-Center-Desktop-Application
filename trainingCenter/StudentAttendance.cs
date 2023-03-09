@@ -25,6 +25,7 @@ namespace trainingCenter
 
             InitializeComponent();
             eDPCenterEntities = new EDPCenterEntities();
+            MinimumSize = MaximumSize = Size;
 
         }
 
@@ -305,7 +306,7 @@ namespace trainingCenter
                         .Where(a=>a.Att_Date.ToString() ==attDate && a.St_ID == studId)
                         .FirstOrDefault();
                     studentPayment stPayment = new studentPayment(attendence);
-                    stPayment.Show();
+                    stPayment.ShowDialog();
 
                 }
                 else

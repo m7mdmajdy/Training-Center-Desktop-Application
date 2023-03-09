@@ -38,6 +38,7 @@ namespace trainingCenter
         public virtual ICollection<Subject> Subjects { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AcademicYear> AcademicYears { get; set; }
+
         public override string ToString()
         {
             return T_ID.ToString();

@@ -149,17 +149,14 @@
     <Compile Include="addAcademicYear.Designer.cs">
       <DependentUpon>addAcademicYear.cs</DependentUpon>
     </Compile>
-    <Compile Include="Exam.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Expens.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="GestWorkSpaceAttend.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GestWorkSpaceAttend.Designer.cs">
       <DependentUpon>GestWorkSpaceAttend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetDailyExpensesAndRevenue_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="GroupName.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -217,16 +214,7 @@
     <Compile Include="studentPayment.Designer.cs">
       <DependentUpon>studentPayment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Student_Addresses.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Student_Group.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Student_Parents_Phones.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Student_Phones.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Subject.cs">
@@ -270,9 +258,6 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="User_Attend.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="User_Roles.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddCostes.resx">

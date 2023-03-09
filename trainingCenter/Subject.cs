@@ -28,5 +28,10 @@ namespace trainingCenter
         public virtual ICollection<Schedule> Schedules { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Teacher> Teachers { get; set; }
+
+        public override string ToString()
+        {
+            return Sub_ID.ToString();
+        }
     }
 }

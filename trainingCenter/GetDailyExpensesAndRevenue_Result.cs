@@ -10,12 +10,13 @@
 namespace trainingCenter
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class Student_Parents_Phones
+    public partial class GetDailyExpensesAndRevenue_Result
     {
-        public string ID_Stu { get; set; }
-        public string Stu_Parent_Phone { get; set; }
-        public string Stu_Parent_Relativity { get; set; }
+        public Nullable<int> Person_ID { get; set; }
+        public string Name { get; set; }
+        public Nullable<double> Price { get; set; }
+        public string Transaction_Type { get; set; }
+        public Nullable<System.DateTime> Date { get; set; }
     }
 }

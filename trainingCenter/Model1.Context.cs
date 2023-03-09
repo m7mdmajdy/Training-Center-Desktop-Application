@@ -12,6 +12,8 @@ namespace trainingCenter
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class EDPCenterEntities : DbContext
     {
@@ -42,12 +44,21 @@ namespace trainingCenter
         public virtual DbSet<Teacher> Teachers { get; set; }
         public virtual DbSet<Total_Transaction> Total_Transaction { get; set; }
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<Student_Parents_Phones> Student_Parents_Phones { get; set; }
-        public virtual DbSet<Student_Phones> Student_Phones { get; set; }
-        public virtual DbSet<User_Roles> User_Roles { get; set; }
         public virtual DbSet<User_Attend> User_Attend { get; set; }
-        public virtual DbSet<Exam> Exams { get; set; }
-        public virtual DbSet<Expens> Expenses { get; set; }
-        public virtual DbSet<Student_Addresses> Student_Addresses { get; set; }
+    
+        public virtual ObjectResult<Nullable<double>> DailyTotalExpenses()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<double>>("DailyTotalExpenses");
+        }
+    
+        public virtual ObjectResult<Nullable<double>> DailyTotalRevenue()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<double>>("DailyTotalRevenue");
+        }
+    
+        public virtual ObjectResult<GetDailyExpensesAndRevenue_Result> GetDailyExpensesAndRevenue()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetDailyExpensesAndRevenue_Result>("GetDailyExpensesAndRevenue");
+        }
     }
 }
