@@ -283,3 +283,4 @@ C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter
 C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.csproj.CopyComplete
 C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.exe
 C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.pdb
+C:\Users\DELL\Desktop\Project\New folder\trainingCenter\obj\Debug\trainingCenter.ScheduleForm.resources

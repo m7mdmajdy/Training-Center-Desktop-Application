@@ -83,7 +83,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(853, 24);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(365, 42);
+            this.label4.Size = new System.Drawing.Size(457, 54);
             this.label4.TabIndex = 1;
             this.label4.Text = "منصة تطوير التعليم - الرئيسية";
             // 
@@ -235,7 +235,6 @@
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(191, 199);
             this.button13.TabIndex = 5;
-            this.button13.Text = "\r\n\r\n\r\n\r\n\r\n\r\nتسجيل حضور الطلبة";
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             this.button13.MouseLeave += new System.EventHandler(this.button13_MouseLeave);
@@ -359,7 +358,7 @@
             // Dashboard
             // 
             this.AllowResize = false;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(23)))), ((int)(((byte)(62)))));
             this.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(20)))), ((int)(((byte)(54)))));

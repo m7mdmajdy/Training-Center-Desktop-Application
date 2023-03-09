@@ -16,7 +16,7 @@ namespace trainingCenter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StudentAttendance());
+            Application.Run(new Dashboard());
         }
     }
 }
